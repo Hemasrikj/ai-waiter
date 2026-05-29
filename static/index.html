@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Udupi Park — AI Waiter</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f5f0eb;
+      display: flex;
+      flex-direction: column;
+      height: 100dvh;
+    }
+
+    header {
+      background: #7b3f00;
+      color: #fff;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+
+    header h1 { font-size: 1.1rem; font-weight: 600; letter-spacing: .03em; }
+
+    #restart-btn {
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.4);
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: .85rem;
+    }
+    #restart-btn:hover { background: rgba(255,255,255,.25); }
+
+    #chat-log {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bubble {
+      max-width: 72%;
+      padding: 9px 13px;
+      border-radius: 14px;
+      line-height: 1.45;
+      font-size: .95rem;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .bubble.user {
+      align-self: flex-end;
+      background: #7b3f00;
+      color: #fff;
+      border-bottom-right-radius: 4px;
+    }
+    .bubble.waiter {
+      align-self: flex-start;
+      background: #fff;
+      color: #1a1a1a;
+      border-bottom-left-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    }
+    .bubble.system {
+      align-self: center;
+      background: transparent;
+      color: #888;
+      font-size: .82rem;
+      font-style: italic;
+      padding: 2px 0;
+    }
+
+    #status-banner {
+      display: none;
+      background: #c0392b;
+      color: #fff;
+      text-align: center;
+      padding: 6px;
+      font-size: .85rem;
+      flex-shrink: 0;
+    }
+
+    footer {
+      display: flex;
+      gap: 8px;
+      padding: 10px 12px;
+      background: #fff;
+      border-top: 1px solid #e0d8d0;
+      flex-shrink: 0;
+    }
+
+    #user-input {
+      flex: 1;
+      padding: 9px 12px;
+      border: 1px solid #d0c8bf;
+      border-radius: 8px;
+      font-size: .95rem;
+      outline: none;
+    }
+    #user-input:focus { border-color: #7b3f00; }
+    #user-input:disabled { background: #f0ece8; }
+
+    #send-btn {
+      background: #7b3f00;
+      color: #fff;
+      border: none;
+      padding: 9px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: .95rem;
+      font-weight: 500;
+    }
+    #send-btn:hover:not(:disabled) { background: #5c2e00; }
+    #send-btn:disabled { opacity: .45; cursor: default; }
+
+    .typing {
+      align-self: flex-start;
+      color: #999;
+      font-size: .85rem;
+      padding: 4px 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍽 Udupi Park — AI Waiter</h1>
+    <button id="restart-btn">Restart</button>
+  </header>
+  <div id="status-banner">Connection lost. Reload to reconnect.</div>
+  <main id="chat-log"></main>
+  <footer>
+    <input id="user-input" type="text" placeholder="Type a message…" autocomplete="off" disabled>
+    <button id="send-btn" disabled>Send</button>
+  </footer>
+
+  <script>
+    const log       = document.getElementById('chat-log');
+    const input     = document.getElementById('user-input');
+    const sendBtn   = document.getElementById('send-btn');
+    const restartBtn= document.getElementById('restart-btn');
+    const banner    = document.getElementById('status-banner');
+
+    let waiting = false;   // true while waiting for a reply
+
+    function appendBubble(role, text) {
+      const div = document.createElement('div');
+      div.className = 'bubble ' + role;
+      div.textContent = text;
+      log.appendChild(div);
+      div.scrollIntoView({behavior: 'smooth', block: 'end'});
+      return div;
+    }
+
+    function setWaiting(on) {
+      waiting = on;
+      input.disabled = on;
+      sendBtn.disabled = on;
+      if (!on) input.focus();
+    }
+
+    function showTyping() {
+      const el = document.createElement('div');
+      el.className = 'typing';
+      el.id = 'typing-indicator';
+      el.textContent = 'Waiter is typing…';
+      log.appendChild(el);
+      el.scrollIntoView({behavior: 'smooth', block: 'end'});
+    }
+    function hideTyping() {
+      const el = document.getElementById('typing-indicator');
+      if (el) el.remove();
+    }
+
+    const ws = new WebSocket('ws://' + location.host + '/ws');
+
+    ws.onopen = () => {
+      setWaiting(true);
+      showTyping();
+    };
+
+    ws.onmessage = (event) => {
+      const msg = JSON.parse(event.data);
+      if (msg.type === 'reply') {
+        hideTyping();
+        appendBubble('waiter', msg.text);
+        setWaiting(false);
+      } else if (msg.type === 'order_update') {
+        appendBubble('system', '🔔 Order status: ' + msg.status.toUpperCase());
+      } else if (msg.type === 'error') {
+        hideTyping();
+        appendBubble('system', '⚠ Error: ' + msg.text);
+        setWaiting(false);
+      }
+    };
+
+    ws.onclose = ws.onerror = () => {
+      banner.style.display = 'block';
+      input.disabled = true;
+      sendBtn.disabled = true;
+    };
+
+    function sendMessage() {
+      const text = input.value.trim();
+      if (!text || waiting) return;
+      appendBubble('user', text);
+      ws.send(JSON.stringify({type: 'message', text}));
+      input.value = '';
+      setWaiting(true);
+      showTyping();
+    }
+
+    sendBtn.addEventListener('click', sendMessage);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+    });
+
+    restartBtn.addEventListener('click', () => {
+      log.innerHTML = '';
+      ws.send(JSON.stringify({type: 'restart'}));
+      setWaiting(true);
+      showTyping();
+    });
+  </script>
+</body>
+</html>

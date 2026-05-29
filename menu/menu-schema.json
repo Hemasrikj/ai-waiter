@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "menu-schema.json",
+  "title": "Restaurant Menu",
+  "description": "Normalized, multilingual restaurant menu with sections, sub-sections, and items.",
+  "type": "object",
+  "required": ["languages", "section"],
+  "additionalProperties": false,
+  "properties": {
+    "languages": {
+      "type": "array",
+      "description": "Languages in which text fields are provided.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["code", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "code": { "type": "string", "description": "BCP-47 language code, e.g. \"en\", \"kn\"." },
+          "name": { "type": "string", "description": "Human-readable language name." }
+        }
+      }
+    },
+    "section": {
+      "type": "array",
+      "description": "Top-level menu sections.",
+      "items": { "$ref": "#/$defs/Section" }
+    }
+  },
+  "$defs": {
+    "Section": {
+      "type": "object",
+      "required": ["id", "parentId", "sectionKey", "name", "displayOrder", "startTime", "endTime", "sectionText", "item", "section"],
+      "additionalProperties": false,
+      "properties": {
+        "id":           { "type": "integer", "description": "Globally unique section ID." },
+        "parentId":     { "type": ["integer", "null"], "description": "ID of the parent section, or null for top-level sections." },
+        "sectionKey":   { "type": "string", "description": "Original UPPER_SNAKE_CASE key from the source menu." },
+        "name":         { "type": "string", "description": "English display name (convenience copy of the 'en' entry in sectionText)." },
+        "displayOrder": { "type": "integer", "minimum": 1, "description": "1-based ordering position within the parent." },
+        "startTime":    { "type": "string", "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$", "description": "Availability window start in HH:MM (24-hour)." },
+        "endTime":      { "type": "string", "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$", "description": "Availability window end in HH:MM (24-hour)." },
+        "sectionText": {
+          "type": "array",
+          "description": "Multilingual section names.",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/LocalizedText" }
+        },
+        "item": {
+          "type": "array",
+          "description": "Menu items directly under this section.",
+          "items": { "$ref": "#/$defs/Item" }
+        },
+        "section": {
+          "type": "array",
+          "description": "Nested sub-sections (at most one level deep in practice).",
+          "items": { "$ref": "#/$defs/Section" }
+        }
+      }
+    },
+    "Item": {
+      "type": "object",
+      "required": ["id", "name", "displayOrder", "preparationType", "startTime", "endTime", "itemText", "price"],
+      "additionalProperties": false,
+      "properties": {
+        "id":              { "type": "integer", "description": "Globally unique item ID." },
+        "name":            { "type": "string", "description": "English display name (convenience copy of the 'en' entry in itemText)." },
+        "displayOrder":    { "type": "integer", "minimum": 1, "description": "1-based ordering position within the section. Slash-split and dry/gravy variants share the same displayOrder as their source item." },
+        "preparationType": {
+          "description": "Preparation style for items that come in multiple forms, or null for single-style items.",
+          "oneOf": [
+            { "type": "string", "enum": ["dry", "gravy"] },
+            { "type": "null" }
+          ]
+        },
+        "startTime": { "type": "string", "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$", "description": "Availability window start in HH:MM (24-hour)." },
+        "endTime":   { "type": "string", "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$", "description": "Availability window end in HH:MM (24-hour)." },
+        "itemText": {
+          "type": "array",
+          "description": "Multilingual item names.",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/LocalizedText" }
+        },
+        "price": { "type": "number", "minimum": 0, "description": "Item price in local currency (INR)." }
+      }
+    },
+    "LocalizedText": {
+      "type": "object",
+      "required": ["langCode", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "langCode": { "type": "string", "description": "BCP-47 language code matching an entry in the root languages array." },
+        "name":     { "type": "string", "description": "Display name in the given language." }
+      }
+    }
+  }
+}

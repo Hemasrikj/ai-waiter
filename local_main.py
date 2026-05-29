@@ -1,0 +1,191 @@
+import threading
+import time
+from typing import Annotated
+from typing_extensions import TypedDict
+
+from dotenv import load_dotenv
+from langchain.chat_models import init_chat_model
+from langchain_core.messages import SystemMessage
+from langchain_core.tools import tool
+from langgraph.graph import StateGraph, START, END
+from langgraph.graph.message import add_messages
+from langgraph.prebuilt import ToolNode, tools_condition
+
+from menu import MENU, _render_menu
+
+load_dotenv()
+
+# ── System prompt (menu inlined for context caching) ──────────────────────────
+
+SYSTEM_PROMPT = """You are a friendly AI waiter at Udupi Park restaurant. Your job is to:
+1. Greet the customer warmly and ask how you can help.
+2. Help them browse the menu — the full menu is listed below.
+3. Add items to their tray using add_to_tray (always confirm item id and quantity first).
+4. Show the tray with view_tray when asked or before placing the order.
+5. Place the order with place_order only when the customer explicitly confirms.
+6. Check order status with check_order_status when asked.
+
+Always be helpful, suggest popular items (dosas, idlis, coffee), and confirm before placing the order.
+When the customer says things like "I'll have X" or "add X", find the matching item id from the menu and call add_to_tray.
+Before placing the order always show the tray and ask for confirmation.
+
+Full menu:
+""" + _render_menu(initial_indent=1)
+
+# ── In-memory order state ─────────────────────────────────────────────────────
+
+tray: dict[int, int] = {}          # item_id → quantity
+order: dict | None = None          # set once user confirms
+
+ORDER_STATUSES = ["placed", "preparing", "ready", "served"]
+
+# ── Tools ─────────────────────────────────────────────────────────────────────
+
+@tool
+def add_to_tray(item_id: int, quantity: int) -> str:
+    """Add or update an item quantity in the tray. Use quantity=0 to remove."""
+    global tray
+    if item_id not in MENU:
+        return f"Item id {item_id} not found on the menu."
+    if quantity <= 0:
+        tray.pop(item_id, None)
+        return f"Removed {MENU[item_id]['name']} from tray."
+    tray[item_id] = quantity
+    return f"Tray updated: {quantity}× {MENU[item_id]['name']} (₹{MENU[item_id]['price']} each)."
+
+
+@tool
+def view_tray() -> str:
+    """Show the current tray contents and total."""
+    if not tray:
+        return "Your tray is empty."
+    lines = ["Current tray:"]
+    total = 0
+    for item_id, qty in tray.items():
+        item = MENU[item_id]
+        subtotal = item["price"] * qty
+        total += subtotal
+        lines.append(f"  {qty}× {item['name']} — ₹{item['price']} × {qty} = ₹{subtotal}")
+    lines.append(f"Total: ₹{total}")
+    return "\n".join(lines)
+
+
+@tool
+def place_order() -> str:
+    """Place the order for everything currently in the tray."""
+    global order, tray
+    if not tray:
+        return "Cannot place an empty order. Please add items to the tray first."
+    order = {
+        "items": dict(tray),
+        "status": "placed",
+        "status_index": 0,
+    }
+    tray = {}
+    _start_order_simulation()
+    return "Order placed! Status: placed. I'll keep you updated as it progresses."
+
+
+@tool
+def check_order_status() -> str:
+    """Check the current status of the placed order."""
+    if order is None:
+        return "No order has been placed yet."
+    items_summary = ", ".join(
+        f"{qty}× {MENU[iid]['name']}" for iid, qty in order["items"].items()
+    )
+    return f"Order [{items_summary}] — Status: {order['status'].upper()}"
+
+
+# ── Order status simulation ───────────────────────────────────────────────────
+
+def _start_order_simulation():
+    def _advance():
+        for delay, status in [(60, "preparing"), (120, "ready"), (180, "served")]:
+            time.sleep(delay)
+            if order is None:
+                break
+            order["status"] = status
+            print(f"\n[Order update] Status changed to: {status.upper()}")
+            print("You: ", end="", flush=True)
+    threading.Thread(target=_advance, daemon=True).start()
+
+
+# ── LangGraph setup ───────────────────────────────────────────────────────────
+
+tools = [add_to_tray, view_tray, place_order, check_order_status]
+llm = init_chat_model("google_genai:gemini-2.5-flash")
+llm_with_tools = llm.bind_tools(tools)
+
+
+class State(TypedDict):
+    messages: Annotated[list, add_messages]
+
+
+def chatbot(state: State) -> State:
+    messages = [SystemMessage(content=SYSTEM_PROMPT)] + state["messages"]
+    return {"messages": [llm_with_tools.invoke(messages)]}
+
+
+builder = StateGraph(State)
+builder.add_node("chatbot", chatbot)
+builder.add_node("tools", ToolNode(tools))
+builder.add_edge(START, "chatbot")
+builder.add_conditional_edges("chatbot", tools_condition)
+builder.add_edge("tools", "chatbot")
+graph = builder.compile()
+
+
+# ── Main loop ─────────────────────────────────────────────────────────────────
+
+def _extract_text(content) -> str:
+    """Gemini 2.5 returns content as a list of typed blocks; extract text."""
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        parts = [b.get("text", "") for b in content if isinstance(b, dict) and b.get("type") == "text"]
+        return " ".join(parts).strip()
+    return str(content)
+
+
+def main():
+    print("=" * 60)
+    print("  Welcome to Udupi Park Restaurant")
+    print("  (type 'quit'/'exit' to leave, 'restart' to reset)")
+    print("=" * 60)
+
+    state: State = {"messages": []}
+
+    # Kick off with a greeting from the bot
+    state = graph.invoke(
+        {"messages": [{"role": "user", "content": "Hello"}]}
+    )
+    print(f"\nWaiter: {_extract_text(state['messages'][-1].content)}\n")
+
+    while True:
+        try:
+            user_input = input("You: ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print("\nThank you for visiting! Goodbye!")
+            break
+
+        if not user_input:
+            continue
+        if user_input.lower() in {"quit", "exit"}:
+            print("Thank you for visiting! Goodbye!")
+            break
+        if user_input.lower() == "restart":
+            global tray, order
+            tray = {}
+            order = None
+            state = graph.invoke({"messages": [{"role": "user", "content": "Hello"}]})
+            print(f"\nWaiter: {_extract_text(state['messages'][-1].content)}\n")
+            continue
+
+        state["messages"].append({"role": "user", "content": user_input})
+        state = graph.invoke(state)
+        print(f"\nWaiter: {_extract_text(state['messages'][-1].content)}\n")
+
+
+if __name__ == "__main__":
+    main()

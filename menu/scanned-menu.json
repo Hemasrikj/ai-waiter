@@ -1,0 +1,512 @@
+{
+  "menu": {
+    "HOT_BEVERAGES": {
+      "section_name": "HOT BEVERAGES",
+      "section_name_kannada": "ಹಾಟ್ ಬೆವರೇಜ್",
+      "items": [
+        { "name": "Coffee / Tea", "name_kannada": "ಕಾಫಿ /ಟೀ", "price": 32 },
+        { "name": "Badam Milk", "name_kannada": "ಬದಾಮ್ ಮಿಲ್ಕ್", "price": 35 },
+        { "name": "Bournvita / Boost", "name_kannada": "ಬೋರ್ನ್ವಿಟಾ /ಬೂಸ್ಟ್", "price": 40 },
+        { "name": "Horlicks", "name_kannada": "ಹಾರ್ಲಿಕ್ಸ್", "price": 40 }
+      ]
+    },
+    "SOUTH_HEALTHY_FOOD": {
+      "section_name": "SOUTH HEALTHY FOOD",
+      "section_name_kannada": "ಸೌತ್ ಹೆಲ್ತಿ ಫುಡ್",
+      "timings": "8 am to 10 pm",
+      "items": [
+        { "name": "Idly (2) Vada (1)", "name_kannada": "ಇಡ್ಲಿ (2) ವಡೆ (1)", "price": 105 },
+        { "name": "Idly (1) Vada (1)", "name_kannada": "ಇಡ್ಲಿ (1) ವಡೆ (1)", "price": 90 },
+        { "name": "Thatte Idly", "name_kannada": "ತಟ್ಟೆ ಇಡ್ಲಿ", "price": 75 },
+        { "name": "Idly (2)", "name_kannada": "ಇಡ್ಲಿ (2)", "price": 65 },
+        { "name": "Vada (1)", "name_kannada": "ವಡೆ (1)", "price": 65 },
+        { "name": "Rava Idly", "name_kannada": "ರವಾ ಇಡ್ಲಿ", "price": 80 },
+        { "name": "Sabudhan Idly", "name_kannada": "ಸಬುದಾನ್ ಇಡ್ಲಿ", "price": 80 },
+        { "name": "Ghee Pudi Idly", "name_kannada": "ಘೀ ಪುಡಿ ಇಡ್ಲಿ", "price": 100 },
+        { "name": "Ghee Spl. Paddu", "name_kannada": "ಘೀ ಸ್ಪೆಶಲ್ ಪದ್ದು", "price": 100 },
+        { "name": "Button Idly", "name_kannada": "ಬಟನ್ ಇಡ್ಲಿ", "price": 100 },
+        { "name": "Bonda Soup", "name_kannada": "ಬೋಂಡಾ ಸೂಪ್", "price": 85 },
+        { "name": "Mangalore Buns", "name_kannada": "ಮಂಗಳೂರು ಬನ್ಸ್", "price": 95 },
+        { "name": "Bajji / Pakoda", "name_kannada": "ಬಜ್ಜಿ /ಪಕೋಡ", "timings": "4 pm to 10pm", "price": 75 },
+        { "name": "Kara Bath", "name_kannada": "ಖಾರಾ ಬಾತ್", "price": 65 },
+        { "name": "Kesari Bath", "name_kannada": "ಕೇಸರಿ ಬಾತ್", "price": 65 },
+        { "name": "Chow Chow Bath", "name_kannada": "ಚೌಚೌ ಬಾತ್", "price": 105 },
+        { "name": "Rice Bath", "name_kannada": "ರ್ಯಸ್ ಬಾತ್", "price": 90 },
+        { "name": "Curd Vada", "name_kannada": "ಮೊಸರು ವಡಾ", "price": 80 },
+        { "name": "Poori", "name_kannada": "ಪೂರಿ", "timings": "8 am to 3.30 pm", "price": 95 }
+      ]
+    },
+    "DOSA_TREAT": {
+      "section_name": "DOSA TREAT",
+      "section_name_kannada": "ದೋಸೆ ಟ್ರೇಟ್",
+      "timings": "8 am to 10 pm",
+      "items": [
+        { "name": "Masala Dosa", "name_kannada": "ಮಸಾಲೆ ದೋಸೆ", "price": 100 },
+        { "name": "Plain Dosa", "name_kannada": "ಪ್ಲೇನ್ ದೋಸೆ", "price": 90 },
+        { "name": "Onion Dosa", "name_kannada": "ಈರುಳ್ಳಿ ದೋಸೆ", "price": 105 },
+        { "name": "Set Dosa", "name_kannada": "ಸೆಟ್ ದೋಸೆ", "price": 100 },
+        { "name": "Paper Massla Dosa", "name_kannada": "ಪೇಪರ್ ಮಸಾಲೆ ದೋಸೆ", "price": 140 },
+        { "name": "Paper Plain Dosa", "name_kannada": "ಪೇಪರ್ ಪ್ಲೇನ್ ದೋಸೆ", "price": 125 },
+        { "name": "Butter Masala Dosa", "name_kannada": "ಬಟರ್ ಮಸಾಲೆ ದೋಸೆ", "price": 115 },
+        { "name": "Butter Plain Dosa", "name_kannada": "ಬಟರ್ ಪ್ಲೇನ್ ದೋಸೆ", "price": 105 },
+        { "name": "Paneer Masala Dosa", "name_kannada": "ಪನೀರ್ ಮಸಾಲೆ ದೋಸೆ", "price": 125 },
+        { "name": "Paneer Plain Dosa", "name_kannada": "ಪನೀರ್ ಪ್ಲೇನ್ ದೋಸೆ", "price": 115 },
+        { "name": "Cheese Plain Dosa", "name_kannada": "ಚೀಸ್ ಪ್ಲೇನ್ ದೋಸೆ", "price": 115 },
+        { "name": "Cheese Masala Dosa", "name_kannada": "ಚೀಸ್ ಮಸಾಲೆ ದೋಸೆ", "price": 125 },
+        { "name": "Rava Dosa", "name_kannada": "ರವಾ ದೋಸೆ", "price": 115 },
+        { "name": "Rava Onion Masala Dosa", "name_kannada": "ರವಾ ಈರುಳ್ಳಿ ಮಸಾಲೆ ದೋಸೆ", "price": 135 },
+        { "name": "Rava Masala Dosa", "name_kannada": "ರವಾ ಮಸಾಲೆ ದೋಸೆ", "price": 125 },
+        { "name": "Khali Dosa", "name_kannada": "ಖಾಲಿ ದೋಸೆ", "price": 110 },
+        { "name": "Ghee Masala Dosa", "name_kannada": "ಘೀ ಮಸಾಲೆ ದೋಸೆ", "price": 115 },
+        { "name": "Ghee Plain Dosa", "name_kannada": "ಘೀ ಪ್ಲೇನ್ ದೋಸೆ", "price": 105 },
+        { "name": "Mysore Masala Dosa", "name_kannada": "ಮೈಸೂರು ಮಸಾಲೆ ದೋಸೆ", "price": 120 },
+        { "name": "Open Dosa", "name_kannada": "ಓಪನ್ ದೋಸೆ", "price": 130 },
+        { "name": "Akki Rotti", "name_kannada": "ಅಕ್ಕಿ ರೊಟ್ಟಿ", "timings": "12 noon to 10 pm", "price": 100 },
+        { "name": "Daily Spl. Dosa's", "name_kannada": "ಡೈಲಿ ಸ್ಪೆಶಲ್ ದೋಸೆ", "price": 125 },
+        { "name": "Ghee Pudi Masala Dosa", "name_kannada": "ಘೀ ಪುಡಿ ಮಸಾಲೆ ದೋಸೆ", "price": 130 },
+        { "name": "Ghee Pudi Plain Dosa", "name_kannada": "ಘೀ ಪುಡಿ ಪ್ಲೇನ್ ದೋಸೆ", "price": 120 }
+      ]
+    },
+    "SOUP_VARIETIES": {
+      "section_name": "SOUP VARIETIES",
+      "section_name_kannada": "ಸೂಪ್ ವರ್ಣಿಗೆಸ್",
+      "items": [
+        { "name": "Mushroom with Veg. Soup", "name_kannada": "ಮಶ್ರೂಮ್ ವಿತ್ ವೆಜ್ ಸೂಪ್", "price": 145 },
+        { "name": "Udupi Park Special Soup", "name_kannada": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್ ಸೂಪ್", "price": 160 },
+        { "name": "Lemon Coriander Soup", "name_kannada": "ಲೆಮನ್ ಕೋರಿಯಂದರ್ ಸೂಪ್", "price": 140 },
+        { "name": "Palak Jade Soup", "name_kannada": "ಪಾಲಕ್ ಜಡ ಸೂಪ್", "price": 140 },
+        { "name": "Cream of Veg.", "name_kannada": "ಕ್ರೀಮ್ ಆಫ್ ವೆಜ್", "price": 130 },
+        { "name": "Cream of Mushroom", "name_kannada": "ಕ್ರೀಮ್ ಆಫ್ ಮಶ್ರೂಮ್", "price": 140 },
+        { "name": "Sweet Corn Soup", "name_kannada": "ಸ್ವೀಟ್ ಕಾರ್ನ್ ಸೂಪ್", "price": 130 },
+        { "name": "Sweet Corn Veg.", "name_kannada": "ಸ್ವೀಟ್ ಕಾರ್ನ್ ವೆಜ್", "price": 135 },
+        { "name": "Hot & Sour / Manchew Soup", "name_kannada": "ಹಾಟ್ & ಸೂರ್ /ಮಂಚೂ ಸೂಪ್", "price": 130 },
+        { "name": "Tomato Soup", "name_kannada": "ಟೊಮೆಟೊ ಸೂಪ್", "price": 125 },
+        { "name": "French Onion Soup", "name_kannada": "ಫ್ರೆಂಚ್ ಅನಿಯನ್ ಸೂಪ್", "price": 145 },
+        { "name": "Spicy Green Peas Soup", "name_kannada": "ಸ್ಪೈಸಿ ಗ್ರೀನ್ ಏಿಸ್ ಸೂಪ್", "price": 145 },
+        { "name": "Veg. Noodles Soup", "name_kannada": "ವೆಜ್ ನೂಡಲ್ಸ್ ಸೂಪ್", "price": 130 },
+        { "name": "Veg. Clear Soup", "name_kannada": "ವೆಜ್ ಕ್ಲಿಯರ್ ಸೂಪ್", "price": 130 },
+        { "name": "Schezwa Veg. Soup", "name_kannada": "ಸಜ್ವಾನ್ ವೆಜ್ ಸೂಪ್", "price": 140 }
+      ]
+    },
+    "TASTY_STARTERS": {
+      "section_name": "TASTY STARTERS",
+      "section_name_kannada": "ಟೇಸ್ಟಿ ಸ್ಟಾರ್ಟರ್ಸ್",
+      "timings": "12 noon to 11 pm",
+      "sub_sections": {
+        "MANCHURIAN_CHILLY": {
+          "sub_section_name": "MANCHURIAN / CHILLY",
+          "items": [
+            { "name": "Gobi", "name_kannada": "ಗೋಬಿ", "price_dry": 190, "price_gravy": 195 },
+            { "name": "Baby Corn", "name_kannada": "ಬೇಬಿ ಕಾರ್ನ್", "price_dry": 200, "price_gravy": 205 },
+            { "name": "Mushroom", "name_kannada": "ಮಶ್ರೂಮ್", "price_dry": 215, "price_gravy": 220 },
+            { "name": "Paneer", "name_kannada": "ಪನ್ನೀರ್", "price_dry": 235, "price_gravy": 240 },
+            { "name": "Veg. Ball", "name_kannada": "ವೆಜ್ ಬಾಲ್", "price_dry": 210, "price_gravy": 220 },
+            { "name": "Spinach", "name_kannada": "ಪಾಲಕ್", "price_dry": 220, "price_gravy": 225 }
+          ]
+        },
+        "PEPPER_DRY": {
+          "sub_section_name": "PEPPER DRY",
+          "sub_section_name_kannada": "ಪೆಪ್ಪರ್ ಡ್ರೈ",
+          "items": [
+            { "name": "Gobi", "name_kannada": "ಗೋಬಿ", "price": 195 },
+            { "name": "Baby Corn", "name_kannada": "ಬೇಬಿ ಕಾರ್ನ್", "price": 205 },
+            { "name": "Paneer", "name_kannada": "ಪನ್ನೀರ್", "price": 240 },
+            { "name": "Mushroom", "name_kannada": "ಮಶ್ರೂಮ್", "price": 220 },
+            { "name": "Finger Chips", "name_kannada": "ಫಿಂಗರ್ ಚಿಪ್ಸ್", "price": 120 }
+          ]
+        },
+        "OUR_SPECIAL_STARTERS": {
+          "sub_section_name": "OUR SPECIAL STARTERS",
+          "sub_section_name_kannada": "ಸ್ಪೆಶಲ್ ಸ್ಟಾರ್ಟರ್ಸ್",
+          "items": [
+            { "name": "Crispy Honey Potato", "name_kannada": "ಕ್ರಿಸ್ಟಿ ಹನಿ ಪೊಟಾಟೊ", "price": 215 },
+            { "name": "American Corn Pepper Dry", "name_kannada": "ಅಮೆರಿಕನ್ ಕಾರ್ನ್ ಪೆಪ್ಪರ್ ಡ್ರೈ", "price": 215 },
+            { "name": "Paneer Lemon Dry / Paneer Mint Dry", "name_kannada": "ಪನ್ನೀರ್ ಲೆಮನ್ ಡ್ರೈ /ಪನ್ನೀರ್ ಮಿಂಟ್ ಡ್ರೈ", "price": 260 },
+            { "name": "Mushroom Lemon Dry / Mint Dry", "name_kannada": "ಮಶ್ರೂಮ್ ಲೆಮನ್ ಡ್ರೈ /ಮಿಂಟ್ ಡ್ರೈ", "price": 240 },
+            { "name": "Paneer Havai / Paneer Satay", "name_kannada": "ಪನ್ನೀರ್ ಹವಾಯ್ /ಪನ್ನೀರ್ ಸಾಟೇ", "price": 260 },
+            { "name": "Gobi Lollipop", "name_kannada": "ಗೋಬಿ ಲಾಲಿಪಾಪ್", "price": 215 },
+            { "name": "Mushroom Green Dry / Sholey", "name_kannada": "ಮಶ್ರೂಮ್ ಗ್ರೀನ್ ಡ್ರೈ /ಶೋಲೆ", "price": 235 },
+            { "name": "Paneer Sholey / Paneer China Town", "name_kannada": "ಪನ್ನೀರ್ ಶೋಲೆ /ಪನ್ನೀರ್ ಚೈನಾ ಟೌನ್", "price": 270 },
+            { "name": "Baby Corn Golden Fry", "name_kannada": "ಬೇಬಿ ಕಾರ್ನ್ ಗೋಲ್ಡನ್ ಫ್ರೈ", "price": 220 },
+            { "name": "Veg. China Town", "name_kannada": "ವೆಜ್ ಚೈನಾ ಟೌನ್", "price": 250 },
+            { "name": "Baby Corn Satay", "name_kannada": "ಬೇಬಿ ಕಾರ್ನ್ ಸಾಟೇ", "price": 240 },
+            { "name": "Gobi 65", "name_kannada": "ಗೋಬಿ 65", "price": 195 },
+            { "name": "Paneer 65", "name_kannada": "ಪನ್ನೀರ್ 65", "price": 245 },
+            { "name": "Mushroom 65", "name_kannada": "ಮಶ್ರೂಮ್ 65", "price": 225 },
+            { "name": "Veg. Crispy", "name_kannada": "ವೆಜ್ ಕ್ರಿಸ್ಟಿ", "price": 220 },
+            { "name": "Veg. Spring Roll", "name_kannada": "ವೆಜ್ ಸ್ಪ್ರಿಂಗ್ ರೋಲ್", "price": 215 },
+            { "name": "Paneer Spring Roll", "name_kannada": "ಪನ್ನೀರ್ ಸ್ಪ್ರಿಂಗ್ ರೋಲ್", "price": 265 },
+            { "name": "Mushroom Spring Roll", "name_kannada": "ಮಶ್ರೂಮ್ ಸ್ಪ್ರಿಂಗ್ ರೋಲ್", "price": 245 },
+            { "name": "Hara Bhara Kabab", "name_kannada": "ಹರಭರಾ ಕಬಾಬ್", "price": 210 }
+          ]
+        }
+      }
+    },
+    "MANCHURIAN_GRAVY": {
+      "section_name": "MANCHURIAN GRAVY",
+      "section_name_kannada": "ಮಂಚೂರಿಯನ್ ಗ್ರೇವಿ",
+      "timings": "12 noon to 11 pm",
+      "items": [
+        { "name": "Veg. Ball Manchurian", "name_kannada": "ವೆಜ್ ಬಾಲ್ ಮಂಚೂರಿಯನ್", "price": 230 },
+        { "name": "Veg. Ball Garlic Sauce", "name_kannada": "ವೆಜ್. ಬಾಲ್ ಗಾರ್ಲಿಕ್ ಸಾಸ್", "price": 230 },
+        { "name": "Veg. Ball Ginger Sauce", "name_kannada": "ವೆಜ್. ಬಾಲ್ ಜಿಂಗರ್ ಸಾಸ್", "price": 235 },
+        { "name": "Spinach Manchurian", "name_kannada": "ಸ್ಪಿನಾಚ್ ಮಂಚೂರಿಯನ್", "price": 240 },
+        { "name": "Baby Corn Manchurian", "name_kannada": "ಬೇಬಿ ಕಾರ್ನ್ ಮಂಚೂರಿಯನ್", "price": 215 },
+        { "name": "Paneer Chilly", "name_kannada": "ಪನ್ನೀರ್ ಚಿಲ್ಲಿ", "price": 250 },
+        { "name": "Mushroom Chilly", "name_kannada": "ಮಶ್ರೂಮ್ ಚಿಲ್ಲಿ", "price": 240 }
+      ]
+    },
+    "TANDOORI_STARTERS": {
+      "section_name": "TANDOORI STARTERS",
+      "section_name_kannada": "ತಂದೂರಿ ಸ್ಟಾರ್ಟರ್ಸ್",
+      "timings": "12 noon to 3.30 pm - 7 pm to 10.30 pm",
+      "items": [
+        { "name": "Paneer Tikka", "name_kannada": "ಪನ್ನೀರ್ ಟಿಕ್ಕಾ", "price": 270 },
+        { "name": "Mushroom Tikka", "name_kannada": "ಮಶ್ರೂಮ್ ಟಿಕ್ಕಾ", "price": 260 },
+        { "name": "Baby Corn Tikka", "name_kannada": "ಬೇಬಿ ಕಾರ್ನ್ ಟಿಕ್ಕಾ", "price": 240 },
+        { "name": "Malai Paneer Tikka", "name_kannada": "ಮಲಾಯ್ ಪನ್ನೀರ್ ಟಿಕ್ಕಾ", "price": 280 },
+        { "name": "Malai Mushroom Tikka", "name_kannada": "ಮಲಾಯ್ ಮಶ್ರೂಮ್ ಟಿಕ್ಕಾ", "price": 270 },
+        { "name": "Hariyali Paneer Tikka", "name_kannada": "ಹರಿಯಾಲಿ ಪನ್ನೀರ್ ಟಿಕ್ಕಾ", "price": 285 },
+        { "name": "Hariyali Mushroom Tikka", "name_kannada": "ಹರಿಯಾಲಿ ಮಶ್ರೂಮ್ ಟಿಕ್ಕಾ", "price": 270 }
+      ]
+    },
+    "TANDOORI_BREAD": {
+      "section_name": "TANDOORI BREAD",
+      "section_name_kannada": "ತಂದೂರಿ ಬ್ರೆಡ್",
+      "timings": "12 noon to 4 pm - 7 pm to 11 pm",
+      "items": [
+        { "name": "Roti", "name_kannada": "ರೋಟಿ", "price": 65 },
+        { "name": "Nan", "name_kannada": "ನಾನ್", "price": 73 },
+        { "name": "Kulcha", "name_kannada": "ಕುಲ್ಚಾ", "price": 73 },
+        { "name": "Parota", "name_kannada": "ಪರೋಟಾ", "price": 85 },
+        { "name": "Butter Roti", "name_kannada": "ಬಟರ್ ರೋಟಿ", "price": 70 },
+        { "name": "Butter Naan", "name_kannada": "ಬಟರ್ ನಾನ್", "price": 80 },
+        { "name": "Butter Kulcha", "name_kannada": "ಬಟರ್ ಕುಲ್ಚಾ", "price": 80 },
+        { "name": "Butter Parota", "name_kannada": "ಬಟರ್ ಕುಲ್ಚಾ", "price": 95 },
+        { "name": "Stuffed Parota", "name_kannada": "ಸ್ಟಫ್ಡ್ ಪರೋಟಾ", "price": 100 },
+        { "name": "Staffed Kulcha", "name_kannada": "ಸ್ಟಫ್ಡ್ ಕುಲ್ಚಾ", "price": 100 },
+        { "name": "Staffed Naan", "name_kannada": "ಸ್ಟಫ್ಡ್ ನಾನ್", "price": 100 },
+        { "name": "Masala Kulcha", "name_kannada": "ಮಸಾಲೆ ಕುಲ್ಚಾ", "price": 100 },
+        { "name": "Kashmiri Naan", "name_kannada": "ಕಾಶ್ಮೀರಿ ನಾನ್", "price": 110 },
+        { "name": "Mughlai Naan", "name_kannada": "ಮುಗಲ್ಯೇ ನಾನ್", "price": 110 },
+        { "name": "Methi Kulcha", "name_kannada": "ಮೇತಿ ಕುಲ್ಚಾ", "price": 75 },
+        { "name": "Methi Roti", "name_kannada": "ಮೇಥಿ ರೋಟಿ", "price": 70 },
+        { "name": "Aloo Parota", "name_kannada": "ಆಲೂ ಪರೋಟಾ", "price": 100 },
+        { "name": "Pudina Parota", "name_kannada": "ಪುದಿನಾ ಪರೋಟಾ", "price": 90 },
+        { "name": "Gobi Parota", "name_kannada": "ಗೋಬಿ ಪರೋಟಾ", "price": 100 },
+        { "name": "Garlic Naan", "name_kannada": "ಗಾರ್ಲಿಕ್ ನಾನ್", "price": 100 },
+        { "name": "Roasted Papad", "name_kannada": "ರೋಸ್ಟೆಡ್ ಪಾಪಡ್", "price": 55 },
+        { "name": "Fry Papad", "name_kannada": "ಫ್ರೈ ಪಾಪಡ್", "price": 50 },
+        { "name": "Masala Papad", "name_kannada": "ಮಸಾಲೆ ಪಾಪಡ್", "price": 70 }
+      ]
+    },
+    "NORTH_INDIAN_DISHES": {
+      "section_name": "NORTH INDIAN DISHES",
+      "section_name_kannada": "ನಾರ್ಥ್ ಇಂಡಿಯನ್ ಡಿಶೆಸ್",
+      "timings": "12 noon to 4 pm - 7 pm to 11 pm",
+      "items": [
+        { "name": "Dal Fry", "name_kannada": "ದಾಲ್ ಫ್ರೈ", "price": 175 },
+        { "name": "Dal Tadka", "name_kannada": "ದಾಲ್ ತಡ್ಕಾ", "price": 185 },
+        { "name": "Dal Palak / Dal Makhani", "name_kannada": "ದಾಲ್ ಪಲಾಕ್ /ದಾಲ್ ಮಖನಿ", "price": 190 },
+        { "name": "Channa Masala", "name_kannada": "ಚನ್ನಾ ಮಸಾಲೆ", "price": 180 },
+        { "name": "Gobi Masala / Aloo Gobi Masala", "name_kannada": "ಗೋಬಿ ಮಸಾಲ /ಆಲೂ ಗೋಬಿ ಮಸಾಲೆ", "price": 180 },
+        { "name": "Aloo Mutter", "name_kannada": "ಆಲೂ ಮಟರ್", "price": 170 },
+        { "name": "Baby Corn Green Masala", "name_kannada": "ಬೇಬಿ ಕಾರ್ನ್ ಗ್ರೀನ್ ಮಸಾಲೆ", "price": 200 },
+        { "name": "Mushroom Masala", "name_kannada": "ಮಶ್ರೂಮ್ ಮಸಾಲೆ", "price": 225 },
+        { "name": "Plain Palak", "name_kannada": "ಪ್ಲೇನ್ ಪಲಾಕ್", "price": 175 },
+        { "name": "Aloo Palak", "name_kannada": "ಆಲೂ ಪಲಾಕ್", "price": 180 },
+        { "name": "Capsicum Masala", "name_kannada": "ಕ್ಯಾಪ್ಸಿಕಮ್ ಮಸಾಲೆ", "price": 180 },
+        { "name": "Mix Veg. Curry", "name_kannada": "ಮಿಕ್ಸಿ ವೆಜ್. ಕರಿ", "price": 190 },
+        { "name": "Veg. Hydrabadi / Veg. Do-Pyaza", "name_kannada": "ವೆಜ್ ಹೈದರಾಬಾದಿ/ವೆಜ್ ದೋ-ಪ್ಯಾಜಾ", "price": 205 },
+        { "name": "Veg. Kurma", "name_kannada": "ವೆಜ್ ಕುರ್ಮಾ", "price": 190 },
+        { "name": "Veg. Makhanwala", "name_kannada": "ವೆಜ್ ಮಖನ್ವಾಲಾ", "price": 210 },
+        { "name": "Veg. Shahi Kurma", "name_kannada": "ವೆಜ್ ಶಾಹಿ ಕುರ್ಮಾ", "price": 220 },
+        { "name": "Palak Paneer", "name_kannada": "ಪಲಾಕ್ ಪನ್ನೀರ್", "price": 245 },
+        { "name": "Paneer Butter Masala", "name_kannada": "ಪನ್ನೀರ್ ಬಟರ್ ಮಸಾಲೆ", "price": 250 },
+        { "name": "Paneer Kurma", "name_kannada": "ಪನ್ನೀರ್ ಕುರ್ಮಾ", "price": 240 },
+        { "name": "Paneer Mutter", "name_kannada": "ಪನ್ನೀರ್ ಮಟರ್", "price": 235 },
+        { "name": "Paneer Gucchi", "name_kannada": "ಪನ್ನೀರ್ ಗುಚಿ", "price": 250 },
+        { "name": "Paneer Shahi Kurma", "name_kannada": "ಪನ್ನೀರ್ ಶಾಹಿ ಕುರ್ಮಾ", "price": 250 },
+        { "name": "Dum Aloo Kashmiri", "name_kannada": "ದಮ್ ಆಲೂ ಕಾಶ್ಮೀರಿ", "price": 230 },
+        { "name": "Dum Aloo Hyderabadi", "name_kannada": "ಧಮ್ ಆಲೂ ಹೈದರಾಬಾದಿ", "price": 235 },
+        { "name": "Stuffed Aloo / Stuffed Tomato", "name_kannada": "ಸ್ಟಫ್ಡ್ ಆಲೂ/ ಸ್ಟಫ್ಡ್ ಟೊಮೆಟೊ", "price": 205 },
+        { "name": "Stuffed Capsicum", "name_kannada": "ಸ್ಟಫ್ಡ್ ಕ್ಯಾಪ್ಸಿಕಮ್", "price": 215 },
+        { "name": "Veg. Kofta", "name_kannada": "ವೆಜ್ ಕೋಫ್ತಾ", "price": 220 },
+        { "name": "Paneer Kofta", "name_kannada": "ಪನ್ನೀರ್ ಕೋಫ್ತಾ", "price": 250 },
+        { "name": "Nurgis Kofta / Kashimiri Kofta", "name_kannada": "ನರ್ಗಿಸ್ ಕೋಫ್ತಾ/ಕಾಶ್ಮೀರಿ ಕೋಫ್ತಾ", "price": 240 },
+        { "name": "Kaju Masala", "name_kannada": "ಕಾಜು ಮಸಾಲೆ", "price": 270 },
+        { "name": "Kaju Mutter", "name_kannada": "ಕಾಜು ಮಟರ್", "price": 255 },
+        { "name": "Kaju Paneer", "name_kannada": "ಕಾಜು ಪನ್ನೀರ್", "price": 270 },
+        { "name": "Malai Methi Mutter", "name_kannada": "ಮಲಾಯ್ ಮೇಥಿ ಮಟರ್", "price": 240 },
+        { "name": "Navarathna Kurma", "name_kannada": "ನವರತ್ನ ಕುರ್ಮಾ", "price": 240 }
+      ]
+    },
+    "SPECIAL_KADAI_DISHES": {
+      "section_name": "SPECIAL KADAI DISHES",
+      "section_name_kannada": "ಸ್ಪೆಶಲ್ ಕಡಾಯ್ ಡಿಶೆಸ್",
+      "timings": "12 noon to 4 pm - 7 pm to 11 pm",
+      "items": [
+        { "name": "Veg Kollapuri", "name_kannada": "ವೆಜ್ ಕೊಲ್ಲಾಪುರಿ", "price": 240 },
+        { "name": "Kadai Mix Veg.", "name_kannada": "ಕಡಾಯ್ ಮಿಕ್ಸ್ ವೆಜ್", "price": 240 },
+        { "name": "Kadai Mushroom", "name_kannada": "ಕಡಾಯ್ ಮಶ್ರೂಮ್", "price": 255 },
+        { "name": "Kadai Paneer", "name_kannada": "ಕಡಾಯ್ ಪನ್ನೀರ್", "price": 270 },
+        { "name": "Kadai Jaipuri", "name_kannada": "ಕಡಾಯ್ ಜೈಪುರಿ", "price": 240 }
+      ]
+    },
+    "JAIN_OPTION": {
+      "section_name": "JAIN OPTION",
+      "section_name_kannada": "ಜೈನ್ ಅಪ್ಶನ್",
+      "timings": "12 noon to 4 pm - 7 pm to 11 pm",
+      "items": [
+        { "name": "Paneer Butter Masala", "name_kannada": "ಪನ್ನೀರ್ ಬಟರ್ ಮಸಾಲೆ", "price": 270 },
+        { "name": "Veg. Makhanwala", "name_kannada": "ವೆಜ್ ಮಖನ್ವಾಲಾ", "price": 230 },
+        { "name": "Veg. Shahi Kurma", "name_kannada": "ವೆಜ್. ಶಾಹಿ ಕುರ್ಮಾ", "price": 230 },
+        { "name": "Malai Mutter", "name_kannada": "ಮಲಾಯ್ ಮಟರ್", "price": 240 }
+      ]
+    },
+    "DRY_VEG": {
+      "section_name": "DRY VEG.",
+      "section_name_kannada": "ಡ್ರೈ ವೆಜ್",
+      "timings": "12 noon to 4 pm - 7 pm to 11 pm",
+      "items": [
+        { "name": "Aloo Jeera Dry", "name_kannada": "ಆಲೂ ಜೀರಾ ಡ್ರೈ", "price": 205 },
+        { "name": "Aloo Capsicum Dry", "name_kannada": "ಆಲೂ ಕ್ಯಾಪ್ಸಿಕಮ್ ಡ್ರೈ", "price": 200 },
+        { "name": "Paneer Burji", "name_kannada": "ಪನ್ನೀರ್ ಬುರ್ಜಿ", "price": 270 },
+        { "name": "Aloo Gobi Dry", "name_kannada": "ಆಲೂ ಗೋಬಿ ಡ್ರೈ", "price": 195 }
+      ]
+    },
+    "SPECIAL_MAKE_NORTH_DISHES": {
+      "section_name": "SPECIAL MAKE NORTH DISHES",
+      "section_name_kannada": "ಸ್ಪೆಶಲ್ ಮೇಕ್ ನಾರ್ಥ್ ಡಿಶೆಸ್",
+      "items": [
+        { "name": "Paneer Tikka Masala", "name_kannada": "ಪನ್ನೀರ್ ಟಿಕ್ಕಾ ಮಸಾಲ", "price": 280 },
+        { "name": "Paneer Pasand", "name_kannada": "ಪನ್ನೀರ್ ಪಸಂದ್", "price": 270 },
+        { "name": "Veg. Patiyala", "name_kannada": "ವೆಜ್ ಪಟಿಯಾಲಾ", "price": 260 },
+        { "name": "Bara Bangi Kofta", "name_kannada": "ಬಾರಾ ಬಂಗಿ ಕೋಫ್ತಾ", "price": 265 },
+        { "name": "Udupi Park Spl.", "name_kannada": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್", "price": 270 },
+        { "name": "Veg. Hariyali", "name_kannada": "ವೆಜ್ ಹರಿಯಾಲಿ", "price": 260 },
+        { "name": "Veg. Thiranga", "name_kannada": "ವೆಜ್ ತಿರಂಗ", "price": 270 }
+      ]
+    },
+    "BASUMATHI_BANDHAR": {
+      "section_name": "BASUMATHI BANDHAR",
+      "section_name_kannada": "ಬಾಸುಮತಿ ಬಂದರ್",
+      "timings": "12 noon to 4 pm - 7 pm to 11 pm",
+      "items": [
+        { "name": "Steam Rice", "name_kannada": "ಸ್ಟೀಮ್ ರ್ಯಸ್", "price": 150 },
+        { "name": "Veg. Pulav", "name_kannada": "ವೆಜ್ ಪಲಾವ್", "price": 185 },
+        { "name": "Peas Pulav", "name_kannada": "ಪೀಸ್ ಪಲಾವ್", "price": 190 },
+        { "name": "Paneer Pulav", "name_kannada": "ಪನ್ನೀರ್ ಪಲಾವ್", "price": 200 },
+        { "name": "Kashmiri Pulav", "name_kannada": "ಕಾಶ್ಮೀರಿ ಪಲಾವ್", "price": 205 },
+        { "name": "Veg. Biriyani", "name_kannada": "ವೆಜ್ ಬಿರಿಯಾನಿ", "price": 200 },
+        { "name": "Mughlai Biriyani", "name_kannada": "ಮುಗಲ್ಯೇ ಬಿರಿಯಾನಿ", "price": 210 },
+        { "name": "Hydrabad Biriyani", "name_kannada": "ಹೈದರಾಬಾದಿ ಬಿರಿಯಾನಿ", "price": 215 },
+        { "name": "Mushroom Handi Biriyani", "name_kannada": "ಮಶ್ರೂಮ್ ಹಂಡಿ ಬಿರಿಯಾನಿ", "price": 230 },
+        { "name": "Veg. Handi Biriyani", "name_kannada": "ವೆಜ್ ಹಂಡಿ ಬಿರಿಯಾನಿ", "price": 210 },
+        { "name": "Dal Kichdi", "name_kannada": "ದಾಲ್ ಖಿಚಡಿ", "price": 195 },
+        { "name": "Palak Kichdi", "name_kannada": "ಪಾಲಕ್ ಖಿಚಡಿ", "price": 195 },
+        { "name": "Udupi Park Spl. Biriyani", "name_kannada": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್ ಬಿರಿಯಾನಿ", "price": 220 },
+        { "name": "Curd Rice", "name_kannada": "ಮೊಸರನ್ನ", "price": 125 }
+      ]
+    },
+    "SALADS_AND_RAITHA": {
+      "section_name": "SALADS AND RAITHA",
+      "section_name_kannada": "ಸಲಾದ್ ಮತ್ತು ರ್ಯಥಾ",
+      "timings": "12 noon to 4 pm - 7 pm to 11 pm",
+      "items": [
+        { "name": "Green Salad", "name_kannada": "ಗ್ರೀನ್ ಸಲಾದ್", "price": 115 },
+        { "name": "Mix Raitha", "name_kannada": "ಮಿಕ್ಸ್ ರ್ಯಥಾ", "price": 105 },
+        { "name": "Boondi Raitha", "name_kannada": "ಬೂಂದಿ ರ್ಯಥಾ", "price": 120 },
+        { "name": "Pineapple Raitha", "name_kannada": "ಪೈನಾಪಲ್ ರ್ಯಥಾ", "price": 120 },
+        { "name": "Cup Curd", "name_kannada": "ಮೊಸರು ಕಪ್", "price": 55 },
+        { "name": "Bowl Curd", "name_kannada": "ಬೌಲ್ ಕರ್ದೋ", "price": 80 }
+      ]
+    },
+    "MEALS": {
+      "section_name": "MEALS",
+      "section_name_kannada": "ಮೀಲ್ಸ್",
+      "timings": "12 noon to 4 pm",
+      "items": [
+        { "name": "South Executive", "name_kannada": "ಸೌತ್ ಎಕ್ಸಿಕ್ಯೂಟಿವ್", "price": 185 },
+        { "name": "North Executive", "name_kannada": "ನಾರ್ಥ್ ಎಕ್ಸಿಕ್ಯೂಟಿವ್", "price": 210 },
+        { "name": "North Deluxe", "name_kannada": "ನಾರ್ಥ್ ಡೀಲಕ್ಸ್", "price": 310 },
+        { "name": "Chole Batura", "name_kannada": "ಚೋಲೆ ಬಥರ", "price": 170 }
+      ]
+    },
+    "CHINESE_RICE_VARIETIES": {
+      "section_name": "CHINESE RICE VARIETIES",
+      "section_name_kannada": "ಚೈನೀಸ್ ರ್ಯಸ್ ವರ್ಣಿಗೆಸ್",
+      "timings": "12 noon to 11 pm",
+      "items": [
+        { "name": "Veg. Fried Rice", "name_kannada": "ವೆಜ್ ಫ್ರೈಡ್ ರ್ಯಸ್", "price": 190 },
+        { "name": "Schezwan Veg. Fried Rice", "name_kannada": "ಸಜ್ವಾನ್ ಫ್ರೈಡ್ ರ್ಯಸ್", "price": 200 },
+        { "name": "Paneer Fried Rice", "name_kannada": "ಪನ್ನೀರ್ ಫ್ರೈಡ್ ರ್ಯಸ್", "price": 210 },
+        { "name": "Mushroom Fried Rice", "name_kannada": "ಮಶ್ರೂಮ್ ಫ್ರೈಡ್ ರ್ಯಸ್", "price": 200 },
+        { "name": "Triple Schezwan Fried Rice", "name_kannada": "ಟ್ರಿಪಲ್ ಸಜ್ವಾನ್ ಫ್ರೈಡ್ ರ್ಯಸ್", "price": 240 },
+        { "name": "Udupi Park Spl. Fried Rice", "name_kannada": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್ ಫ್ರೈಡ್ ರ್ಯಸ್", "price": 210 },
+        { "name": "Veg. Ginger Friend Rice", "name_kannada": "ವೆಜ್ ಜಿಂಗರ್ ಫ್ರೈಡ್ ರ್ಯಸ್", "price": 190 },
+        { "name": "Singapore Fried Rice", "name_kannada": "ಸಿಂಗಾಪೂರ್ ಫ್ರೈಡ್ ರ್ಯಸ್", "price": 200 },
+        { "name": "Hong Kong Fried Rice", "name_kannada": "ಹಾಂಗ್‌ಕಾಂಗ್ ಫ್ರೈಡ್ ರ್ಯಸ್", "price": 205 },
+        { "name": "American Chopsy", "name_kannada": "ಅಮೆರಿಕನ್ ಚಾಪ್ಸಿ", "price": 215 },
+        { "name": "Chinese Chopsy", "name_kannada": "ಚೈನೀಸ್ ಚಾಪ್ಸಿ", "price": 210 },
+        { "name": "Chinese Bhel", "name_kannada": "ಚೈನೀಸ್ ಭೇಲ್", "price": 180 },
+        { "name": "Ghee Rice", "name_kannada": "ಘೀ ರ್ಯಸ್", "price": 190 },
+        { "name": "Jeera Rice", "name_kannada": "ಜೀರಾ ರ್ಯಸ್", "price": 195 }
+      ]
+    },
+    "NOODLES_VARIETIES": {
+      "section_name": "NOODLES VARIETIES",
+      "section_name_kannada": "ನೂಡಲ್ಸ್ ವರ್ಣಿಗೆಸ್",
+      "timings": "12 noon to 11 pm",
+      "items": [
+        { "name": "Veg. Noodles", "name_kannada": "ವೆಜ್ ನೂಡಲ್ಸ್", "price": 195 },
+        { "name": "Schezwan Noodles", "name_kannada": "ಸಜ್ವಾನ್ ನೂಡಲ್ಸ್", "price": 205 },
+        { "name": "Mushroom Noodles", "name_kannada": "ಮಶ್ರೂಮ್ ನೂಡಲ್ಸ್", "price": 205 },
+        { "name": "Paneer Noodles", "name_kannada": "ಪನ್ನೀರ್ ನೂಡಲ್ಸ್", "price": 210 },
+        { "name": "Veg. Chow Mien", "name_kannada": "ವೆಜ್ ಚೌಮೀನ್", "price": 210 }
+      ]
+    },
+    "PAV_BHAJI_VARIETIES": {
+      "section_name": "PAV BHAJI VARIETIES",
+      "section_name_kannada": "ಪಾವ್ ಭಾಜಿ ವರ್ಣಿಗೆಸ್",
+      "timings": "2.30 pm to 10.30 pm",
+      "items": [
+        { "name": "Pav Bhaji", "name_kannada": "ಪಾವ್ ಭಾಜಿ", "price": 125 },
+        { "name": "Paneer Pav Bhaji", "name_kannada": "ಪನ್ನೀರ್ ಪಾವ್ ಭಾಜಿ", "price": 145 },
+        { "name": "Cheese Pav Bhaji", "name_kannada": "ಚೀಸ್ ಪಾವ್ ಭಾಜಿ", "price": 155 },
+        { "name": "Extra Pav", "name_kannada": "ಎಕ್ಸ್ಟ್ರಾ ಪಾವ್", "price": 70 },
+        { "name": "Masala Pav", "name_kannada": "ಮಸಾಲೆ ಪಾವ್", "price": 130 },
+        { "name": "Udupi Park Spl. Pav Bhaji", "name_kannada": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್ ಪಾವ್ ಭಾಜಿ", "price": 160 }
+      ]
+    },
+    "CHATS_STALL": {
+      "section_name": "CHATS STALL",
+      "section_name_kannada": "ಚಾಟ್ಸ್ ಸ್ಟಾಲ್",
+      "timings": "2.30 pm to 10.30 pm",
+      "items": [
+        { "name": "Udupi Park Spl. Chat", "name_kannada": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್ ಚಾಟ್", "price": 110 },
+        { "name": "Pani Puri", "name_kannada": "ಪಾನಿ ಪುರಿ", "price": 90 },
+        { "name": "Masala Puri", "name_kannada": "ಮಸಾಲೆ ಪುರಿ", "price": 90 },
+        { "name": "Bhel Puri", "name_kannada": "ಭೇಲ್ ಪುರಿ", "price": 90 },
+        { "name": "Shev Puri", "name_kannada": "ಸೇವ್ ಪುರಿ", "price": 90 },
+        { "name": "Aloo Puri", "name_kannada": "ಆಲೂ ಪುರಿ", "price": 90 },
+        { "name": "Dahi Puri", "name_kannada": "ದಹಿ ಪುರಿ", "price": 95 },
+        { "name": "Sev Dahi Batata Puri", "name_kannada": "ಸೇವ್ ದಹಿ ಬಟಾಟಾ ಪುರಿ", "price": 95 },
+        { "name": "Special Bhel", "name_kannada": "ಸ್ಪೆಶಲ್ ಭೇಲ್", "price": 95 },
+        { "name": "Samosa Plain", "name_kannada": "ಸಮೋಸಾ ಪ್ಲೇನ್", "price": 55 },
+        { "name": "Samosa Masala", "name_kannada": "ಸಮೋಸಾ ಮಸಾಲೆ", "price": 90 },
+        { "name": "Vada Pav", "name_kannada": "ವಡಾ ಪಾವ್", "price": 70 },
+        { "name": "Cheese Vada Pav", "name_kannada": "ಚೀಸ್ ವಡಾ ಪಾವ್", "price": 80 }
+      ]
+    },
+    "CREAM_OF_PARLOUR": {
+      "section_name": "CREAM OF PARLOUR",
+      "section_name_kannada": "ಕ್ರೀಮ್ ಆಫ್ ಪಾಲರ್",
+      "timings": "9 am to 11 pm",
+      "items": [
+        { "name": "Vanilla / Strawberry", "name_kannada": "ವೆನಿಲ್ಲಾ /ಸ್ಟ್ರಾಬೆರ್ರಿ", "price": 80 },
+        { "name": "Mango / Pista", "name_kannada": "ಮ್ಯಾಂಗೋ /ಪಿಸ್ತಾ", "price": 90 },
+        { "name": "Kesari Pista", "name_kannada": "ಕೇಸರಿ ಪಿಸ್ತಾ", "price": 95 },
+        { "name": "Chocolate / Butter Scotch", "name_kannada": "ಚಾಕ್ಲೇಟ್ /ಬಟರ್ಸ್ಕಾಚ್", "price": 90 },
+        { "name": "Fig & Honey / Black Current", "name_kannada": "ಅಂಜ್ & ಹನಿ /ಬ್ಲಾಕ್ ಕರಂಟ್", "price": 90 },
+        { "name": "Dry Fruit", "name_kannada": "ಡ್ರೈ ಫ್ರೂಟ್", "price": 100 }
+      ]
+    },
+    "SPECIAL_MAKE_ICE_CREAMS": {
+      "section_name": "SPECIAL MAKE ICE CREAMS",
+      "section_name_kannada": "ಸ್ಪೆಶಲ್ ಮೇಕ್ ಐಸ್ ಕ್ರೀಮ್ಸ್",
+      "timings": "9 am to 11 pm",
+      "items": [
+        { "name": "Fried Ice Cream", "name_kannada": "ಫ್ರೈಡ್ ಐ ಕ್ರೀಮ್", "price": 185 },
+        { "name": "Gud Bud", "name_kannada": "ಗಡ್ ಬಡ್", "price": 155 },
+        { "name": "Banana Split / Double Sundae", "name_kannada": "ಬನಾನಾ ಸ್ಪ್ಲಿಟ್ /ದಬಲ್ ಸಂಡೇ", "price": 165 },
+        { "name": "Triple Sundae", "name_kannada": "ಟ್ರಿಪಲ್ ಸಂಡೇ", "price": 185 },
+        { "name": "Udupi Park Spl.", "name_kannada": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್", "price": 200 },
+        { "name": "Nut Sundae / Vanilla Nut Sundae", "name_kannada": "ನಟ್ ಸಂಡೇ /ವೆನಿಲ್ಲಾ ನಟ್ ಸಂಡೇ", "price": 160 },
+        { "name": "Chocolate Nut Sundae", "name_kannada": "ಚಾಕ್ಲೇಟ್ ನಟ್ ಸಂಡೇ", "price": 165 },
+        { "name": "Titanic Special", "name_kannada": "ಟೈಟಾನಿಕ್ ಸ್ಪೆಶಲ್", "price": 205 },
+        { "name": "Raja Rani", "name_kannada": "ರಾಜ ರಾಣಿ", "price": 160 },
+        { "name": "Honey Moon Special", "name_kannada": "ಹನಿಮೂನ್ ಸ್ಪೆಶಲ್", "price": 170 },
+        { "name": "Fruit Sundae", "name_kannada": "ಫ್ರೂಟ್ ಸಂಡೇ", "price": 150 },
+        { "name": "Fruit Salad with Ice Cream", "name_kannada": "ಫ್ರೂಟ್ ಸಲಾದ್ ವಿತ್ ಐಸ್ ಕ್ರೀಮ್", "price": 130 },
+        { "name": "Fruit Salad Jelly with Ice Cream", "name_kannada": "ಫ್ರೂಟ್ ಸಲಾದ್ ಜೆಲ್ಲಿ ವಿತ್ ಐಸ್ ಕ್ರೀಮ್", "price": 140 },
+        { "name": "Fruit Salad", "name_kannada": "ಫ್ರೂಟ್ ಸಲಾದ್", "price": 105 },
+        { "name": "Tutty Fruity Special", "name_kannada": "ಟಟ್ಟಿ ಫ್ರೂಟಿ ಸ್ಪೆಶಲ್", "price": 160 },
+        { "name": "Mango Queen (Seasonal)", "name_kannada": "ಮ್ಯಾಂಗೋ ಕ್ವೀನ್ (ಸೀಸನಲ್)", "price": 170 },
+        { "name": "Kesar Falooda / Royal Falooda", "name_kannada": "ಕೇಸರ್ ಫಲೂದಾ /ರಾಯಲ್ ಫಲೂದಾ", "price": 145 },
+        { "name": "Special Falooda", "name_kannada": "ಸ್ಪೆಶಲ್ ಫಲೂದಾ", "price": 160 },
+        { "name": "Jamoon (1 Pc.)", "name_kannada": "ಜಾಮೂನ್ (1 ಪೀಸ್)", "price": 50 }
+      ]
+    },
+    "SANDWICHES": {
+      "section_name": "SANDWICHES",
+      "section_name_kannada": "ಸ್ಯಾಂಡ್ ವಿಚ್",
+      "timings": "9 am to 10.30 pm",
+      "items": [
+        { "name": "Veg. Sandwich", "name_kannada": "ವೆಜ್ ಸ್ಯಾಂಡ್ವಿಚ್", "price": 95 },
+        { "name": "Veg. Cheese Sandwich", "name_kannada": "ವೆಜ್ ಚೀಸ್ ಸ್ಯಾಂಡ್ವಿಚ್", "price": 110 },
+        { "name": "Cheese Sandwich", "name_kannada": "ಚೀಸ್ ಸ್ಯಾಂಡ್ವಿಚ್", "price": 110 },
+        { "name": "Veg. Grill Sandwich", "name_kannada": "ವೆಜ್ ಗ್ರಿಲ್ ಸ್ಯಾಂಡ್ವಿಚ್", "price": 110 },
+        { "name": "Veg. Cheese Grill Sandwich", "name_kannada": "ವೆಜ್ ಚೀಸ್ ಗ್ರಿಲ್ ಸ್ಯಾಂಡ್ವಿಚ್", "price": 125 },
+        { "name": "Cheese Grill Sandwich", "name_kannada": "ಚೀಸ್ ಗ್ರಿಲ್ ಸ್ಯಾಂಡ್ವಿಚ್", "price": 120 },
+        { "name": "Chilly Cheese Grill Sandwich", "name_kannada": "ಚಿಲ್ಲಿ ಚೀಸ್ ಗ್ರಿಲ್ ಸ್ಯಾಂಡ್ವಿಚ್", "price": 125 },
+        { "name": "Bread Butter Jam", "name_kannada": "ಬ್ರೆಡ್ ಬಟರ್ ಜಾಮ್", "price": 85 }
+      ]
+    },
+    "FRESH_FRUIT_JUICES": {
+      "section_name": "FRESH FRUIT JUICES",
+      "section_name_kannada": "ಫ್ರೆಶ್ ಫ್ರೂಟ್ ಜ್ಯೂಸ್",
+      "timings": "9 am to 11 pm",
+      "items": [
+        { "name": "Mosambi", "name_kannada": "ಮೂಸಂಬಿ", "price": 95 },
+        { "name": "Orange (Seasonal)", "name_kannada": "ಕಿತ್ತಲೆ", "price": 100 },
+        { "name": "Pineapple", "name_kannada": "ಅನಾನಸ್", "price": 95 },
+        { "name": "Apple", "name_kannada": "ಆಪಲ್", "price": 110 },
+        { "name": "Grape", "name_kannada": "ದ್ರಾಕ್ಷಿ", "price": 95 },
+        { "name": "Cocktail", "name_kannada": "ಕಾಕ್‌ಟೇಲ್", "price": 105 },
+        { "name": "Watermelon", "name_kannada": "ಹಲ್ಲಂಗಡಿ", "price": 95 },
+        { "name": "Muskmelon", "name_kannada": "ಮಸ್ಕ್‌ಮೆಲನ್", "price": 95 },
+        { "name": "Pomegranate", "name_kannada": "ದಾಳಿಂಬೆ", "price": 110 },
+        { "name": "Mango (Seasonal)", "name_kannada": "ಮಾವಿನ ಹಣ್ಣು (ಸೀಸನಲ್)", "price": 120 },
+        { "name": "Fresh Lime Soda", "name_kannada": "ಫ್ರೆಶ್ ಲೈಮ್ ಸೋಡಾ", "price": 80 },
+        { "name": "Khara Lassi", "name_kannada": "ಖಾರಾ ಲಸ್ಸಿ", "price": 85 },
+        { "name": "Sweet Lassi", "name_kannada": "ಸ್ವೀಟ್ ಲಸ್ಸಿ", "price": 85 },
+        { "name": "Lime Juice", "name_kannada": "ಫ್ರೆಶ್ ಲೈಮ್ ಜ್ಯೂಸ್", "price": 70 },
+        { "name": "Butter Milk", "name_kannada": "ಮಜ್ಜಿಗೆ", "price": 75 }
+      ]
+    },
+    "MILK_SHAKES": {
+      "section_name": "MILK SHAKES",
+      "section_name_kannada": "ಮಿಲ್ಕ್ ಶೇಕ್ಸ್",
+      "timings": "9 am to 11 pm",
+      "items": [
+        { "name": "Apple", "name_kannada": "ಆಪಲ್", "price": 125 },
+        { "name": "Chikku", "name_kannada": "ಚಿಕ್ಕು", "price": 115 },
+        { "name": "Mango (Seasonal)", "name_kannada": "ಮಾವಿನ ಹಣ್ಣು (ಸೀಸನಲ್)", "price": 140 },
+        { "name": "Banana", "name_kannada": "ಬನಾನಾ", "price": 95 },
+        { "name": "Vanilla", "name_kannada": "ವನಿಲ್ಲಾ", "price": 115 },
+        { "name": "Chocolate", "name_kannada": "ಚಾಕೊಲೇಟ್", "price": 120 },
+        { "name": "Strawberry", "name_kannada": "ಸ್ಟ್ರಾಬೆರ್ರಿ", "price": 115 },
+        { "name": "Pista", "name_kannada": "ಪಿಸ್ತಾ", "price": 115 },
+        { "name": "Pomegranate", "name_kannada": "ದಾಳಿಂಬೆ", "price": 125 },
+        { "name": "Cold Coffee", "name_kannada": "ಕೋಲ್ಡ್ ಕಾಫಿ", "price": 110 },
+        { "name": "Cold Badam Milk", "name_kannada": "ಕೋಲ್ಡ್ ಬಾದಾಮ್ ಮಿಲ್ಕ್", "price": 110 },
+        { "name": "Dry Fruit", "name_kannada": "ಡ್ರೈ ಫ್ರೂಟ್", "price": 150 }
+      ]
+    },
+    "MOCKTAILS": {
+      "section_name": "MOCKTAILS",
+      "section_name_kannada": "ಮಾಕ್‌ಟೇಲ್ಸ್",
+      "timings": "12 noon to 9 pm",
+      "items": [
+        { "name": "Fruit Punch", "name_kannada": "ಫ್ರೂಟ್ ಪಂಚ್", "price": 125 },
+        { "name": "Blue Lagoon", "name_kannada": "ಬ್ಲೂ ಲಗೂನ್", "price": 135 },
+        { "name": "Orange Lemonade", "name_kannada": "ಆರೇಂಜ್ ಲೆಮೊನೇಡ್", "price": 135 },
+        { "name": "Strawberry Lemonade", "name_kannada": "ಸ್ಟ್ರಾಬೆರ್ರಿ ಲೆಮೊನೇಡ್", "price": 125 },
+        { "name": "Mojito", "name_kannada": "ಮೊಹಿಟೊ", "price": 135 },
+        { "name": "Red Sun", "name_kannada": "ರೆಡ್ ಸನ್", "price": 135 },
+        { "name": "Litchi Spacral", "name_kannada": "ಅತಿ ಸ್ಪಕ್ರಲ್", "price": 145 }
+      ]
+    }
+  }
+}

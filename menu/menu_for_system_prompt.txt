@@ -1,0 +1,394 @@
+Hot Beverages:
+ [2] Coffee — ₹32
+ [3] Tea — ₹32
+ [4] Badam Milk — ₹35
+ [5] Bournvita — ₹40
+ [6] Boost — ₹40
+ [7] Horlicks — ₹40
+
+South Healthy Food:
+ [9] Idly (2) Vada (1) — ₹105
+ [10] Idly (1) Vada (1) — ₹90
+ [11] Thatte Idly — ₹75
+ [12] Idly (2) — ₹65
+ [13] Vada (1) — ₹65
+ [14] Rava Idly — ₹80
+ [15] Sabudhan Idly — ₹80
+ [16] Ghee Pudi Idly — ₹100
+ [17] Ghee Spl. Paddu — ₹100
+ [18] Button Idly — ₹100
+ [19] Bonda Soup — ₹85
+ [20] Mangalore Buns — ₹95
+ [21] Bajji — ₹75
+ [22] Pakoda — ₹75
+ [23] Kara Bath — ₹65
+ [24] Kesari Bath — ₹65
+ [25] Chow Chow Bath — ₹105
+ [26] Rice Bath — ₹90
+ [27] Curd Vada — ₹80
+ [28] Poori — ₹95
+
+Dosa Treat:
+ [30] Masala Dosa — ₹100
+ [31] Plain Dosa — ₹90
+ [32] Onion Dosa — ₹105
+ [33] Set Dosa — ₹100
+ [34] Paper Massla Dosa — ₹140
+ [35] Paper Plain Dosa — ₹125
+ [36] Butter Masala Dosa — ₹115
+ [37] Butter Plain Dosa — ₹105
+ [38] Paneer Masala Dosa — ₹125
+ [39] Paneer Plain Dosa — ₹115
+ [40] Cheese Plain Dosa — ₹115
+ [41] Cheese Masala Dosa — ₹125
+ [42] Rava Dosa — ₹115
+ [43] Rava Onion Masala Dosa — ₹135
+ [44] Rava Masala Dosa — ₹125
+ [45] Khali Dosa — ₹110
+ [46] Ghee Masala Dosa — ₹115
+ [47] Ghee Plain Dosa — ₹105
+ [48] Mysore Masala Dosa — ₹120
+ [49] Open Dosa — ₹130
+ [50] Akki Rotti — ₹100
+ [51] Daily Spl. Dosa's — ₹125
+ [52] Ghee Pudi Masala Dosa — ₹130
+ [53] Ghee Pudi Plain Dosa — ₹120
+
+Soup Varieties:
+ [55] Mushroom with Veg. Soup — ₹145
+ [56] Udupi Park Special Soup — ₹160
+ [57] Lemon Coriander Soup — ₹140
+ [58] Palak Jade Soup — ₹140
+ [59] Cream of Veg. — ₹130
+ [60] Cream of Mushroom — ₹140
+ [61] Sweet Corn Soup — ₹130
+ [62] Sweet Corn Veg. — ₹135
+ [63] Hot & Sour — ₹130
+ [64] Manchew Soup — ₹130
+ [65] Tomato Soup — ₹125
+ [66] French Onion Soup — ₹145
+ [67] Spicy Green Peas Soup — ₹145
+ [68] Veg. Noodles Soup — ₹130
+ [69] Veg. Clear Soup — ₹130
+ [70] Schezwa Veg. Soup — ₹140
+
+Tasty Starters:
+ Manchurian / Chilly:
+  [73] Gobi (dry) — ₹190
+  [74] Gobi (gravy) — ₹195
+  [75] Baby Corn (dry) — ₹200
+  [76] Baby Corn (gravy) — ₹205
+  [77] Mushroom (dry) — ₹215
+  [78] Mushroom (gravy) — ₹220
+  [79] Paneer (dry) — ₹235
+  [80] Paneer (gravy) — ₹240
+  [81] Veg. Ball (dry) — ₹210
+  [82] Veg. Ball (gravy) — ₹220
+  [83] Spinach (dry) — ₹220
+  [84] Spinach (gravy) — ₹225
+ Pepper Dry:
+  [86] Gobi — ₹195
+  [87] Baby Corn — ₹205
+  [88] Paneer — ₹240
+  [89] Mushroom — ₹220
+  [90] Finger Chips — ₹120
+ Our Special Starters:
+  [92] Crispy Honey Potato — ₹215
+  [93] American Corn Pepper Dry — ₹215
+  [94] Paneer Lemon Dry — ₹260
+  [95] Paneer Mint Dry — ₹260
+  [96] Mushroom Lemon Dry — ₹240
+  [97] Mint Dry — ₹240
+  [98] Paneer Havai — ₹260
+  [99] Paneer Satay — ₹260
+  [100] Gobi Lollipop — ₹215
+  [101] Mushroom Green Dry — ₹235
+  [102] Sholey — ₹235
+  [103] Paneer Sholey — ₹270
+  [104] Paneer China Town — ₹270
+  [105] Baby Corn Golden Fry — ₹220
+  [106] Veg. China Town — ₹250
+  [107] Baby Corn Satay — ₹240
+  [108] Gobi 65 — ₹195
+  [109] Paneer 65 — ₹245
+  [110] Mushroom 65 — ₹225
+  [111] Veg. Crispy — ₹220
+  [112] Veg. Spring Roll — ₹215
+  [113] Paneer Spring Roll — ₹265
+  [114] Mushroom Spring Roll — ₹245
+  [115] Hara Bhara Kabab — ₹210
+
+Manchurian Gravy:
+ [117] Veg. Ball Manchurian — ₹230
+ [118] Veg. Ball Garlic Sauce — ₹230
+ [119] Veg. Ball Ginger Sauce — ₹235
+ [120] Spinach Manchurian — ₹240
+ [121] Baby Corn Manchurian — ₹215
+ [122] Paneer Chilly — ₹250
+ [123] Mushroom Chilly — ₹240
+
+Tandoori Starters:
+ [125] Paneer Tikka — ₹270
+ [126] Mushroom Tikka — ₹260
+ [127] Baby Corn Tikka — ₹240
+ [128] Malai Paneer Tikka — ₹280
+ [129] Malai Mushroom Tikka — ₹270
+ [130] Hariyali Paneer Tikka — ₹285
+ [131] Hariyali Mushroom Tikka — ₹270
+
+Tandoori Bread:
+ [133] Roti — ₹65
+ [134] Nan — ₹73
+ [135] Kulcha — ₹73
+ [136] Parota — ₹85
+ [137] Butter Roti — ₹70
+ [138] Butter Naan — ₹80
+ [139] Butter Kulcha — ₹80
+ [140] Butter Parota — ₹95
+ [141] Stuffed Parota — ₹100
+ [142] Staffed Kulcha — ₹100
+ [143] Staffed Naan — ₹100
+ [144] Masala Kulcha — ₹100
+ [145] Kashmiri Naan — ₹110
+ [146] Mughlai Naan — ₹110
+ [147] Methi Kulcha — ₹75
+ [148] Methi Roti — ₹70
+ [149] Aloo Parota — ₹100
+ [150] Pudina Parota — ₹90
+ [151] Gobi Parota — ₹100
+ [152] Garlic Naan — ₹100
+ [153] Roasted Papad — ₹55
+ [154] Fry Papad — ₹50
+ [155] Masala Papad — ₹70
+
+North Indian Dishes:
+ [157] Dal Fry — ₹175
+ [158] Dal Tadka — ₹185
+ [159] Dal Palak — ₹190
+ [160] Dal Makhani — ₹190
+ [161] Channa Masala — ₹180
+ [162] Gobi Masala — ₹180
+ [163] Aloo Gobi Masala — ₹180
+ [164] Aloo Mutter — ₹170
+ [165] Baby Corn Green Masala — ₹200
+ [166] Mushroom Masala — ₹225
+ [167] Plain Palak — ₹175
+ [168] Aloo Palak — ₹180
+ [169] Capsicum Masala — ₹180
+ [170] Mix Veg. Curry — ₹190
+ [171] Veg. Hydrabadi — ₹205
+ [172] Veg. Do-Pyaza — ₹205
+ [173] Veg. Kurma — ₹190
+ [174] Veg. Makhanwala — ₹210
+ [175] Veg. Shahi Kurma — ₹220
+ [176] Palak Paneer — ₹245
+ [177] Paneer Butter Masala — ₹250
+ [178] Paneer Kurma — ₹240
+ [179] Paneer Mutter — ₹235
+ [180] Paneer Gucchi — ₹250
+ [181] Paneer Shahi Kurma — ₹250
+ [182] Dum Aloo Kashmiri — ₹230
+ [183] Dum Aloo Hyderabadi — ₹235
+ [184] Stuffed Aloo — ₹205
+ [185] Stuffed Tomato — ₹205
+ [186] Stuffed Capsicum — ₹215
+ [187] Veg. Kofta — ₹220
+ [188] Paneer Kofta — ₹250
+ [189] Nurgis Kofta — ₹240
+ [190] Kashimiri Kofta — ₹240
+ [191] Kaju Masala — ₹270
+ [192] Kaju Mutter — ₹255
+ [193] Kaju Paneer — ₹270
+ [194] Malai Methi Mutter — ₹240
+ [195] Navarathna Kurma — ₹240
+
+Special Kadai Dishes:
+ [197] Veg Kollapuri — ₹240
+ [198] Kadai Mix Veg. — ₹240
+ [199] Kadai Mushroom — ₹255
+ [200] Kadai Paneer — ₹270
+ [201] Kadai Jaipuri — ₹240
+
+Jain Option:
+ [203] Paneer Butter Masala — ₹270
+ [204] Veg. Makhanwala — ₹230
+ [205] Veg. Shahi Kurma — ₹230
+ [206] Malai Mutter — ₹240
+
+Dry Veg.:
+ [208] Aloo Jeera Dry — ₹205
+ [209] Aloo Capsicum Dry — ₹200
+ [210] Paneer Burji — ₹270
+ [211] Aloo Gobi Dry — ₹195
+
+Special Make North Dishes:
+ [213] Paneer Tikka Masala — ₹280
+ [214] Paneer Pasand — ₹270
+ [215] Veg. Patiyala — ₹260
+ [216] Bara Bangi Kofta — ₹265
+ [217] Udupi Park Spl. — ₹270
+ [218] Veg. Hariyali — ₹260
+ [219] Veg. Thiranga — ₹270
+
+Basumathi Bandhar:
+ [221] Steam Rice — ₹150
+ [222] Veg. Pulav — ₹185
+ [223] Peas Pulav — ₹190
+ [224] Paneer Pulav — ₹200
+ [225] Kashmiri Pulav — ₹205
+ [226] Veg. Biriyani — ₹200
+ [227] Mughlai Biriyani — ₹210
+ [228] Hydrabad Biriyani — ₹215
+ [229] Mushroom Handi Biriyani — ₹230
+ [230] Veg. Handi Biriyani — ₹210
+ [231] Dal Kichdi — ₹195
+ [232] Palak Kichdi — ₹195
+ [233] Udupi Park Spl. Biriyani — ₹220
+ [234] Curd Rice — ₹125
+
+Salads And Raitha:
+ [236] Green Salad — ₹115
+ [237] Mix Raitha — ₹105
+ [238] Boondi Raitha — ₹120
+ [239] Pineapple Raitha — ₹120
+ [240] Cup Curd — ₹55
+ [241] Bowl Curd — ₹80
+
+Meals:
+ [243] South Executive — ₹185
+ [244] North Executive — ₹210
+ [245] North Deluxe — ₹310
+ [246] Chole Batura — ₹170
+
+Chinese Rice Varieties:
+ [248] Veg. Fried Rice — ₹190
+ [249] Schezwan Veg. Fried Rice — ₹200
+ [250] Paneer Fried Rice — ₹210
+ [251] Mushroom Fried Rice — ₹200
+ [252] Triple Schezwan Fried Rice — ₹240
+ [253] Udupi Park Spl. Fried Rice — ₹210
+ [254] Veg. Ginger Friend Rice — ₹190
+ [255] Singapore Fried Rice — ₹200
+ [256] Hong Kong Fried Rice — ₹205
+ [257] American Chopsy — ₹215
+ [258] Chinese Chopsy — ₹210
+ [259] Chinese Bhel — ₹180
+ [260] Ghee Rice — ₹190
+ [261] Jeera Rice — ₹195
+
+Noodles Varieties:
+ [263] Veg. Noodles — ₹195
+ [264] Schezwan Noodles — ₹205
+ [265] Mushroom Noodles — ₹205
+ [266] Paneer Noodles — ₹210
+ [267] Veg. Chow Mien — ₹210
+
+Pav Bhaji Varieties:
+ [269] Pav Bhaji — ₹125
+ [270] Paneer Pav Bhaji — ₹145
+ [271] Cheese Pav Bhaji — ₹155
+ [272] Extra Pav — ₹70
+ [273] Masala Pav — ₹130
+ [274] Udupi Park Spl. Pav Bhaji — ₹160
+
+Chats Stall:
+ [276] Udupi Park Spl. Chat — ₹110
+ [277] Pani Puri — ₹90
+ [278] Masala Puri — ₹90
+ [279] Bhel Puri — ₹90
+ [280] Shev Puri — ₹90
+ [281] Aloo Puri — ₹90
+ [282] Dahi Puri — ₹95
+ [283] Sev Dahi Batata Puri — ₹95
+ [284] Special Bhel — ₹95
+ [285] Samosa Plain — ₹55
+ [286] Samosa Masala — ₹90
+ [287] Vada Pav — ₹70
+ [288] Cheese Vada Pav — ₹80
+
+Cream Of Parlour:
+ [290] Vanilla — ₹80
+ [291] Strawberry — ₹80
+ [292] Mango — ₹90
+ [293] Pista — ₹90
+ [294] Kesari Pista — ₹95
+ [295] Chocolate — ₹90
+ [296] Butter Scotch — ₹90
+ [297] Fig & Honey — ₹90
+ [298] Black Current — ₹90
+ [299] Dry Fruit — ₹100
+
+Special Make Ice Creams:
+ [301] Fried Ice Cream — ₹185
+ [302] Gud Bud — ₹155
+ [303] Banana Split — ₹165
+ [304] Double Sundae — ₹165
+ [305] Triple Sundae — ₹185
+ [306] Udupi Park Spl. — ₹200
+ [307] Nut Sundae — ₹160
+ [308] Vanilla Nut Sundae — ₹160
+ [309] Chocolate Nut Sundae — ₹165
+ [310] Titanic Special — ₹205
+ [311] Raja Rani — ₹160
+ [312] Honey Moon Special — ₹170
+ [313] Fruit Sundae — ₹150
+ [314] Fruit Salad with Ice Cream — ₹130
+ [315] Fruit Salad Jelly with Ice Cream — ₹140
+ [316] Fruit Salad — ₹105
+ [317] Tutty Fruity Special — ₹160
+ [318] Mango Queen (Seasonal) — ₹170
+ [319] Kesar Falooda — ₹145
+ [320] Royal Falooda — ₹145
+ [321] Special Falooda — ₹160
+ [322] Jamoon (1 Pc.) — ₹50
+
+Sandwiches:
+ [324] Veg. Sandwich — ₹95
+ [325] Veg. Cheese Sandwich — ₹110
+ [326] Cheese Sandwich — ₹110
+ [327] Veg. Grill Sandwich — ₹110
+ [328] Veg. Cheese Grill Sandwich — ₹125
+ [329] Cheese Grill Sandwich — ₹120
+ [330] Chilly Cheese Grill Sandwich — ₹125
+ [331] Bread Butter Jam — ₹85
+
+Fresh Fruit Juices:
+ [333] Mosambi — ₹95
+ [334] Orange (Seasonal) — ₹100
+ [335] Pineapple — ₹95
+ [336] Apple — ₹110
+ [337] Grape — ₹95
+ [338] Cocktail — ₹105
+ [339] Watermelon — ₹95
+ [340] Muskmelon — ₹95
+ [341] Pomegranate — ₹110
+ [342] Mango (Seasonal) — ₹120
+ [343] Fresh Lime Soda — ₹80
+ [344] Khara Lassi — ₹85
+ [345] Sweet Lassi — ₹85
+ [346] Lime Juice — ₹70
+ [347] Butter Milk — ₹75
+
+Milk Shakes:
+ [349] Apple — ₹125
+ [350] Chikku — ₹115
+ [351] Mango (Seasonal) — ₹140
+ [352] Banana — ₹95
+ [353] Vanilla — ₹115
+ [354] Chocolate — ₹120
+ [355] Strawberry — ₹115
+ [356] Pista — ₹115
+ [357] Pomegranate — ₹125
+ [358] Cold Coffee — ₹110
+ [359] Cold Badam Milk — ₹110
+ [360] Dry Fruit — ₹150
+
+Mocktails:
+ [362] Fruit Punch — ₹125
+ [363] Blue Lagoon — ₹135
+ [364] Orange Lemonade — ₹135
+ [365] Strawberry Lemonade — ₹125
+ [366] Mojito — ₹135
+ [367] Red Sun — ₹135
+ [368] Litchi Spacral — ₹145
+
