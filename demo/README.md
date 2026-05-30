@@ -1,8 +1,8 @@
 # Demo Run
 
-## Terminal runtime - local_main.py
+## Terminal runtime - console.py
 
-`uv run python local_main.py`
+`uv run python console.py`
 
 
 ```txt
@@ -35,9 +35,9 @@ Thank you for visiting! Goodbye!
 ## WebServer with web sockets - cbatbot_server.py
 
 ```bash
-uv run python chatbot_server.py
+uv run python server.py
 ```
 
 Access the chatbot [http://localhost:8000](http://localhost:8000)
 
-![chatbot_websocket_server.png](./chatbot_websocket_server.png)
+![server.png](./server.png)
