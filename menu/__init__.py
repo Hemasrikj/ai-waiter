@@ -1,1 +1,1 @@
-from menu.accessor import MENU
+from menu.accessor import MENU, menu_search

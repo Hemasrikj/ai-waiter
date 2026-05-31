@@ -13,8 +13,7 @@ from langgraph.graph import StateGraph, START
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
 
-from menu import MENU
-from menu.accessor import menu_search
+from menu import MENU, menu_search
 
 DEFAULT_MODEL = "google_genai:gemini-2.5-flash"
 
