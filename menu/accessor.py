@@ -74,6 +74,86 @@ def menu_search(terms: list[str], limit: int = 10) -> list[dict]:
     return [MENU[item_id] for _, item_id in scored[:limit]]
 
 
+def _build_section_index() -> list[dict]:
+    """Build a flat list of all sections with hierarchy metadata."""
+    raw = json.loads((Path(__file__).parent / "menu.json").read_text(encoding="utf-8"))
+    sections: list[dict] = []
+
+    def _count_items(section) -> int:
+        total = len(section.get("item", []))
+        for sub in section.get("section", []):
+            total += _count_items(sub)
+        return total
+
+    def _walk(section_list, ancestor_path="", depth=0):
+        for section in section_list:
+            name = section["name"]
+            path = f"{ancestor_path} {name}".strip()
+            direct_item_names = [
+                (f"{it['name']} ({it['preparationType']})" if it.get("preparationType") else it["name"])
+                for it in section.get("item", [])
+            ]
+            subsection_names = [
+                {"name": s["name"], "item_count": _count_items(s)}
+                for s in section.get("section", [])
+            ]
+            sections.append({
+                "name": name,
+                "path": path,
+                "depth": depth,
+                "item_count": _count_items(section),
+                "subsections": subsection_names,
+                "sample_items": direct_item_names[:3],
+            })
+            _walk(section.get("section", []), path, depth + 1)
+
+    _walk(raw["section"])
+    return sections
+
+
+SECTION_INDEX: list[dict] = _build_section_index()
+
+
+def format_section_results(results: list[dict]) -> str:
+    """Format a list of section dicts (from menu_section_search) into a human-readable string.
+    Returns only the section lines — no header — so callers can prepend their own."""
+    lines = []
+    for section in results:
+        lines.append(f"  [{section['path']}] — {section['item_count']} item(s)")
+        if section["subsections"]:
+            sub_str = ", ".join(f"{s['name']} ({s['item_count']})" for s in section["subsections"])
+            lines.append(f"    Subsections: {sub_str}")
+        if section["sample_items"]:
+            lines.append(f"    Includes: {', '.join(section['sample_items'])}")
+    return "\n".join(lines)
+
+
+def menu_section_search(terms: list[str] | None = None) -> list[dict]:
+    """Search menu sections/categories by keyword using the same scoring as menu_search.
+    Returns all top-level sections when terms is empty — useful for listing all categories."""
+    if not terms:
+        return [s for s in SECTION_INDEX if s["depth"] == 0]
+
+    query_terms = [t.lower() for t in terms if t]
+    scored: list[tuple[float, dict]] = []
+    for section in SECTION_INDEX:
+        words = section["path"].lower().split()
+        scores = [_term_score(term, words) for term in query_terms]
+        if all(s >= 70 for s in scores):
+            scored.append((min(scores), section))
+
+    scored.sort(reverse=True, key=lambda x: x[0])
+
+    # deduplicate: if both a parent and its child match, keep only the parent
+    seen_paths: set[str] = set()
+    results: list[dict] = []
+    for _, section in scored:
+        if not any(section["path"].startswith(p + " ") for p in seen_paths):
+            seen_paths.add(section["path"])
+            results.append(section)
+    return results
+
+
 def _render_menu(initial_indent: int = 0) -> str:
     raw = json.loads((Path(__file__).parent / "menu.json").read_text(encoding="utf-8"))
     lines = []

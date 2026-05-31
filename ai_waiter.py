@@ -13,7 +13,7 @@ from langgraph.graph import StateGraph, START
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
 
-from menu import MENU, menu_search
+from menu import MENU, menu_search, menu_section_search, format_section_results
 
 DEFAULT_MODEL = "google_genai:gemini-2.5-flash"
 
@@ -24,24 +24,31 @@ SYSTEM_PROMPT = """You are a friendly AI waiter at Udupi Park restaurant.
 MENU LOOKUP RULE (mandatory):
 - Before every add_to_tray call, you MUST call menu_lookup first to get the correct item_id.
 - Never guess or invent an item_id.
-- When browsing ("what dosas do you have?", "show me starters"), call menu_lookup to list options.
+
+CATEGORY vs. ITEM LOOKUP:
+- "What food/categories do you have?" or any open-ended menu overview → call list_sections()
+- Broad questions about a specific category ("what starters?", "what drinks?", "do you serve North Indian?") → call menu_section_lookup(terms)
+- Once the user narrows to a specific item ("show me all dosas", "I want a coffee",
+  "add masala dosa") → call menu_lookup(terms) to get item IDs, names, and prices.
 
 TERM EXTRACTION (any language → English):
 From the user message, extract English search terms covering:
   • item name (e.g. "masala dosa", "coffee", "gobi")
   • section/type (e.g. "dosa", "starters", "drinks", "ice cream", "biryani")
   • modifiers (e.g. "butter", "paneer", "fried", "schezwan")
-Pass these terms as a list to menu_lookup.
+Pass these terms as a list to menu_lookup or menu_section_lookup.
 
 WORKFLOW:
 1. Greet warmly and ask how you can help.
-2. User mentions food → extract English terms → call menu_lookup(terms).
-3. If one clear match: confirm with user, then add_to_tray(item_id, quantity).
-4. If multiple matches: show options and ask which one.
-5. If no match: tell the user and ask to clarify.
-6. Show tray with view_tray when asked or before placing the order.
-7. Place order with place_order only after the customer explicitly confirms.
-8. Check status with check_order_status when asked.
+2. User asks what's available (overview) → call list_sections().
+3. User asks about a category → call menu_section_lookup(terms).
+4. User mentions a specific food → extract English terms → call menu_lookup(terms).
+4. If one clear match: confirm with user, then add_to_tray(item_id, quantity).
+5. If multiple matches: show options and ask which one.
+6. If no match: tell the user and ask to clarify.
+7. Show tray with view_tray when asked or before placing the order.
+8. Place order with place_order only after the customer explicitly confirms.
+9. Check status with check_order_status when asked.
 
 Suggest popular items: dosas, idlis, coffee, tandoori starters, biriyani.
 Always confirm before placing the order."""
@@ -75,6 +82,26 @@ def menu_lookup(terms: list[str]) -> str:
     for item in results:
         lines.append(f"  [{item['id']}] {item['name']} ({item['section_path']}) — ₹{item['price']}")
     return "\n".join(lines)
+
+
+@tool
+def menu_section_lookup(terms: list[str]) -> str:
+    """Browse menu categories/sections by keyword.
+    Use for broad questions like 'what food do you have?', 'what starters/drinks/desserts?'.
+    Returns matching sections with item count, subsections, and sample items.
+    Pass [] to list all top-level categories."""
+    results = menu_section_search(terms if terms else None)
+    if not results:
+        return f"No menu sections found for: {', '.join(terms)}. Try different keywords."
+    return f"Found {len(results)} section(s):\n{format_section_results(results)}"
+
+
+@tool
+def list_sections() -> str:
+    """List all top-level menu categories.
+    Use when the user asks what food/categories/types of dishes are available."""
+    results = menu_section_search(None)
+    return f"Found {len(results)} section(s):\n{format_section_results(results)}"
 
 
 @tool
@@ -149,7 +176,7 @@ def _start_order_simulation():
 
 # ── LangGraph setup ───────────────────────────────────────────────────────────
 
-tools = [menu_lookup, add_to_tray, view_tray, place_order, check_order_status]
+tools = [menu_lookup, menu_section_lookup, list_sections, add_to_tray, view_tray, place_order, check_order_status]
 
 
 class State(TypedDict):
