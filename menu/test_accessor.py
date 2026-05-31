@@ -9,7 +9,7 @@ def fuzzy_search(query: str) -> str:
         return f"No matches for: {query!r}"
     lines = [f"Found {len(results)} match(es) for {query!r}:"]
     for item in results:
-        lines.append(f"  [{item['id']}] {item['name']} ({item['section']}) — ₹{item['price']}")
+        lines.append(f"  [{item['id']}] {item['name']} ({item['section_path']}) — ₹{item['price']}")
     return "\n".join(lines)
 
 

@@ -73,7 +73,7 @@ def menu_lookup(terms: list[str]) -> str:
         return f"No menu items found for: {', '.join(terms)}. Try different keywords."
     lines = [f"Found {len(results)} match(es):"]
     for item in results:
-        lines.append(f"  [{item['id']}] {item['name']} ({item['section']}) — ₹{item['price']}")
+        lines.append(f"  [{item['id']}] {item['name']} ({item['section_path']}) — ₹{item['price']}")
     return "\n".join(lines)
 
 
