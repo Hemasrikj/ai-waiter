@@ -32,7 +32,7 @@ You: exit
 Thank you for visiting! Goodbye!
 ```
 
-## WebServer with web sockets - cbatbot_server.py
+## WebServer with web sockets - server.py
 
 ```bash
 uv run python server.py
