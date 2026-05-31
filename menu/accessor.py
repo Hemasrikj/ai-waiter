@@ -55,7 +55,7 @@ def menu_search(terms: list[str], limit: int = 10) -> list[dict]:
         limit=limit,
         score_cutoff=55,
     )
-    matched_ids = [item_id for item_id, *_ in hits]
+    matched_ids = [item_id for _text, _score, item_id in hits]
     return [MENU[item_id] for item_id in matched_ids]
 
 
