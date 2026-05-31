@@ -45,18 +45,33 @@ def _build_search_index() -> list[tuple[int, str]]:
 SEARCH_INDEX: list[tuple[int, str]] = _build_search_index()
 
 
+def _term_score(term: str, words: list[str]) -> float:
+    """Score how well a single query term matches a list of words from an index entry.
+
+    Returns 95 for a prefix match, otherwise the best character-level ratio (0–100).
+    """
+    for word in words:
+        if word.startswith(term):
+            return 95.0
+    best = fuzz_process.extractOne(term, words, scorer=fuzz.ratio)
+    return best[1] if best else 0.0
+
+
 def menu_search(terms: list[str], limit: int = 10) -> list[dict]:
     """Fuzzy-search the menu by English keywords. Returns up to `limit` matching MENU entries."""
-    query = " ".join(terms).lower()
-    hits = fuzz_process.extract(
-        query,
-        {item_id: text for item_id, text in SEARCH_INDEX},
-        scorer=fuzz.token_set_ratio,
-        limit=limit,
-        score_cutoff=55,
-    )
-    matched_ids = [item_id for _text, _score, item_id in hits]
-    return [MENU[item_id] for item_id in matched_ids]
+    query_terms = [t.lower() for t in terms if t]
+    if not query_terms:
+        return []
+
+    scored: list[tuple[float, int]] = []
+    for item_id, text in SEARCH_INDEX:
+        words = text.split()
+        scores = [_term_score(term, words) for term in query_terms]
+        if all(s >= 70 for s in scores):
+            scored.append((min(scores), item_id))
+
+    scored.sort(reverse=True)
+    return [MENU[item_id] for _, item_id in scored[:limit]]
 
 
 def _render_menu(initial_indent: int = 0) -> str:
