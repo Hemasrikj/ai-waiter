@@ -198,8 +198,10 @@ def build_graph():
 def extract_text(content) -> str:
     """Gemini 2.5 returns content as a list of typed blocks; extract text."""
     if isinstance(content, str):
-        return content
-    if isinstance(content, list):
+        text = content
+    elif isinstance(content, list):
         parts = [b.get("text", "") for b in content if isinstance(b, dict) and b.get("type") == "text"]
-        return " ".join(parts).strip()
-    return str(content)
+        text = " ".join(parts).strip()
+    else:
+        text = str(content)
+    return text.replace("\\n", "\n").replace("\\t", "\t")
