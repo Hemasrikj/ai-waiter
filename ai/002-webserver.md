@@ -1,0 +1,1 @@
+replicate the behaviour of console.py into a python web server that also hosts static html for websocket based chat client

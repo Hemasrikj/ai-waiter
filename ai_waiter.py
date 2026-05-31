@@ -13,26 +13,39 @@ from langgraph.graph import StateGraph, START
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
 
-from menu import MENU, _render_menu
+from menu import MENU
+from menu.accessor import menu_search
 
 DEFAULT_MODEL = "google_genai:gemini-2.5-flash"
 
 # ── System prompt ─────────────────────────────────────────────────────────────
 
-SYSTEM_PROMPT = """You are a friendly AI waiter at Udupi Park restaurant. Your job is to:
-1. Greet the customer warmly and ask how you can help.
-2. Help them browse the menu — the full menu is listed below.
-3. Add items to their tray using add_to_tray (always confirm item id and quantity first).
-4. Show the tray with view_tray when asked or before placing the order.
-5. Place the order with place_order only when the customer explicitly confirms.
-6. Check order status with check_order_status when asked.
+SYSTEM_PROMPT = """You are a friendly AI waiter at Udupi Park restaurant.
 
-Always be helpful, suggest popular items (dosas, idlis, coffee), and confirm before placing the order.
-When the customer says things like "I'll have X" or "add X", find the matching item id from the menu and call add_to_tray.
-Before placing the order always show the tray and ask for confirmation.
+MENU LOOKUP RULE (mandatory):
+- Before every add_to_tray call, you MUST call menu_lookup first to get the correct item_id.
+- Never guess or invent an item_id.
+- When browsing ("what dosas do you have?", "show me starters"), call menu_lookup to list options.
 
-Full menu:
-""" + _render_menu(initial_indent=1)
+TERM EXTRACTION (any language → English):
+From the user message, extract English search terms covering:
+  • item name (e.g. "masala dosa", "coffee", "gobi")
+  • section/type (e.g. "dosa", "starters", "drinks", "ice cream", "biryani")
+  • modifiers (e.g. "butter", "paneer", "fried", "schezwan")
+Pass these terms as a list to menu_lookup.
+
+WORKFLOW:
+1. Greet warmly and ask how you can help.
+2. User mentions food → extract English terms → call menu_lookup(terms).
+3. If one clear match: confirm with user, then add_to_tray(item_id, quantity).
+4. If multiple matches: show options and ask which one.
+5. If no match: tell the user and ask to clarify.
+6. Show tray with view_tray when asked or before placing the order.
+7. Place order with place_order only after the customer explicitly confirms.
+8. Check status with check_order_status when asked.
+
+Suggest popular items: dosas, idlis, coffee, tandoori starters, biriyani.
+Always confirm before placing the order."""
 
 # ── In-memory order state ─────────────────────────────────────────────────────
 
@@ -50,6 +63,20 @@ def reset_state() -> None:
 
 
 # ── Tools ─────────────────────────────────────────────────────────────────────
+
+@tool
+def menu_lookup(terms: list[str]) -> str:
+    """Search the menu by item name, section, or type using English keywords.
+    Use for browsing ("what dosas do you have?") and before every add_to_tray.
+    Returns up to 10 matches with item IDs, names, sections, and prices."""
+    results = menu_search(terms)
+    if not results:
+        return f"No menu items found for: {', '.join(terms)}. Try different keywords."
+    lines = [f"Found {len(results)} match(es):"]
+    for item in results:
+        lines.append(f"  [{item['id']}] {item['name']} ({item['section']}) — ₹{item['price']}")
+    return "\n".join(lines)
+
 
 @tool
 def add_to_tray(item_id: int, quantity: int) -> str:
@@ -123,7 +150,7 @@ def _start_order_simulation():
 
 # ── LangGraph setup ───────────────────────────────────────────────────────────
 
-tools = [add_to_tray, view_tray, place_order, check_order_status]
+tools = [menu_lookup, add_to_tray, view_tray, place_order, check_order_status]
 
 
 class State(TypedDict):

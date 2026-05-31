@@ -1,1 +1,1 @@
-from menu.accessor import MENU, _render_menu
+from menu.accessor import MENU
