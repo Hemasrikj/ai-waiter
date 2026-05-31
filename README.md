@@ -16,7 +16,7 @@ graph TD
     tools --> chatbot
 
     chatbot["chatbot\n─────────────\nLLM + bound tools\n(any provider via MODEL env var)"]
-    tools["tools\n─────────────\nadd_to_tray\nview_tray\nplace_order\ncheck_order_status"]
+    tools["tools\n─────────────\nmenu_lookup\nadd_to_tray\nview_tray\nplace_order\ncheck_order_status"]
 ```
 
 Flow: the LLM receives the system prompt and conversation history, then either responds directly (→ `__end__`) or emits a tool call (→ `tools` → back to `chatbot`). This loop continues until no further tool calls are needed.
