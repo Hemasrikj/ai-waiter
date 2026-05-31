@@ -1,13 +1,7 @@
 import json
 from pathlib import Path
 
-try:
-    from rapidfuzz import process as fuzz_process, fuzz
-    _USE_RAPIDFUZZ = True
-except ImportError:
-    import difflib
-    _USE_RAPIDFUZZ = False
-
+from rapidfuzz import process as fuzz_process, fuzz
 
 def _load_menu() -> dict[int, dict]:
     menu_path = Path(__file__).parent / "menu.json"
@@ -54,20 +48,14 @@ SEARCH_INDEX: list[tuple[int, str]] = _build_search_index()
 def menu_search(terms: list[str], limit: int = 10) -> list[dict]:
     """Fuzzy-search the menu by English keywords. Returns up to `limit` matching MENU entries."""
     query = " ".join(terms).lower()
-    if _USE_RAPIDFUZZ:
-        hits = fuzz_process.extract(
-            query,
-            {item_id: text for item_id, text in SEARCH_INDEX},
-            scorer=fuzz.token_set_ratio,
-            limit=limit,
-            score_cutoff=55,
-        )
-        matched_ids = [item_id for item_id, _score, _key in hits]
-    else:
-        texts = [text for _id, text in SEARCH_INDEX]
-        close = difflib.get_close_matches(query, texts, n=limit, cutoff=0.4)
-        close_set = set(close)
-        matched_ids = [item_id for item_id, text in SEARCH_INDEX if text in close_set]
+    hits = fuzz_process.extract(
+        query,
+        {item_id: text for item_id, text in SEARCH_INDEX},
+        scorer=fuzz.token_set_ratio,
+        limit=limit,
+        score_cutoff=55,
+    )
+    matched_ids = [item_id for item_id, *_ in hits]
     return [MENU[item_id] for item_id in matched_ids]
 
 
