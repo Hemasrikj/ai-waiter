@@ -77,6 +77,13 @@
       font-style: italic;
       padding: 2px 0;
     }
+    .bubble-ts {
+      font-size: .72em;
+      opacity: 0.5;
+      margin-right: 6px;
+      white-space: nowrap;
+      font-style: normal;
+    }
 
     #status-banner {
       display: none;
@@ -150,10 +157,33 @@
 
     let waiting = false;   // true while waiting for a reply
 
+    function _ts() {
+      const now = new Date();
+      const h = now.getHours(), m = now.getMinutes(), s = now.getSeconds();
+      const ampm = h >= 12 ? 'PM' : 'AM';
+      const hh = String(h % 12 || 12).padStart(2, '0');
+      const mm = String(m).padStart(2, '0');
+      const ss = String(s).padStart(2, '0');
+      const timePart = `${hh}:${mm}:${ss} ${ampm}`;
+      const today = new Date();
+      if (now.toDateString() === today.toDateString()) return timePart;
+      const dd = String(now.getDate()).padStart(2, '0');
+      const mo = String(now.getMonth() + 1).padStart(2, '0');
+      return `${dd}-${mo}-${now.getFullYear()} ${timePart}`;
+    }
+
     function appendBubble(role, text) {
       const div = document.createElement('div');
       div.className = 'bubble ' + role;
-      div.textContent = text;
+      if (role === 'user' || role === 'waiter') {
+        const ts = document.createElement('span');
+        ts.className = 'bubble-ts';
+        ts.textContent = _ts();
+        div.appendChild(ts);
+      }
+      const msg = document.createElement('span');
+      msg.textContent = text;
+      div.appendChild(msg);
       log.appendChild(div);
       div.scrollIntoView({behavior: 'smooth', block: 'end'});
       return div;

@@ -1,10 +1,10 @@
 """
-Convert scanned-menu.json to the normalised menu.json format.
+Normalise scanned-menu.json to the structured normalized-menu.json format.
 
 Usage:
-    python menu/convert.py [input.json] [output.json]
+    python menu/normalize-menu.py [input.json] [output.json]
 
-Defaults: scanned-menu.json → menu.json (same directory as this script).
+Defaults: scanned-menu.json → normalized-menu.json (same directory as this script).
 """
 
 import json
@@ -17,7 +17,7 @@ from pathlib import Path
 _dir = Path(__file__).parent
 args = sys.argv[1:]
 menu_path = Path(args[0]) if len(args) > 0 else _dir / "scanned-menu.json"
-out_path  = Path(args[1]) if len(args) > 1 else _dir / "menu.json"
+out_path  = Path(args[1]) if len(args) > 1 else _dir / "normalized-menu.json"
 
 # ── Timing parser ─────────────────────────────────────────────────────────────
 

@@ -1,0 +1,7077 @@
+{
+  "languages": [
+    {
+      "code": "en",
+      "name": "English"
+    },
+    {
+      "code": "kn",
+      "name": "Kannada"
+    }
+  ],
+  "section": [
+    {
+      "id": 1,
+      "parentId": null,
+      "sectionKey": "HOT_BEVERAGES",
+      "name": "Hot Beverages",
+      "displayOrder": 1,
+      "startTime": "00:00",
+      "endTime": "23:59",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Hot Beverages"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಹಾಟ್ ಬೆವರೇಜ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 2,
+          "name": "Coffee",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Coffee"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಾಫಿ"
+            }
+          ],
+          "price": 32
+        },
+        {
+          "id": 3,
+          "name": "Tea",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Tea"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಟೀ"
+            }
+          ],
+          "price": 32
+        },
+        {
+          "id": 4,
+          "name": "Badam Milk",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Badam Milk"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬದಾಮ್ ಮಿಲ್ಕ್"
+            }
+          ],
+          "price": 35
+        },
+        {
+          "id": 5,
+          "name": "Bournvita",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Bournvita"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬೋರ್ನ್ವಿಟಾ"
+            }
+          ],
+          "price": 40
+        },
+        {
+          "id": 6,
+          "name": "Boost",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Boost"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬೂಸ್ಟ್"
+            }
+          ],
+          "price": 40
+        },
+        {
+          "id": 7,
+          "name": "Horlicks",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Horlicks"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಹಾರ್ಲಿಕ್ಸ್"
+            }
+          ],
+          "price": 40
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 8,
+      "parentId": null,
+      "sectionKey": "SOUTH_HEALTHY_FOOD",
+      "name": "South Healthy Food",
+      "displayOrder": 2,
+      "startTime": "08:00",
+      "endTime": "22:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "South Healthy Food"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಸೌತ್ ಹೆಲ್ತಿ ಫುಡ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 9,
+          "name": "Idly (2) Vada (1)",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Idly (2) Vada (1)"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಇಡ್ಲಿ (2) ವಡೆ (1)"
+            }
+          ],
+          "price": 105
+        },
+        {
+          "id": 10,
+          "name": "Idly (1) Vada (1)",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Idly (1) Vada (1)"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಇಡ್ಲಿ (1) ವಡೆ (1)"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 11,
+          "name": "Thatte Idly",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Thatte Idly"
+            },
+            {
+              "langCode": "kn",
+              "name": "ತಟ್ಟೆ ಇಡ್ಲಿ"
+            }
+          ],
+          "price": 75
+        },
+        {
+          "id": 12,
+          "name": "Idly (2)",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Idly (2)"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಇಡ್ಲಿ (2)"
+            }
+          ],
+          "price": 65
+        },
+        {
+          "id": 13,
+          "name": "Vada (1)",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Vada (1)"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವಡೆ (1)"
+            }
+          ],
+          "price": 65
+        },
+        {
+          "id": 14,
+          "name": "Rava Idly",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Rava Idly"
+            },
+            {
+              "langCode": "kn",
+              "name": "ರವಾ ಇಡ್ಲಿ"
+            }
+          ],
+          "price": 80
+        },
+        {
+          "id": 15,
+          "name": "Sabudhan Idly",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Sabudhan Idly"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸಬುದಾನ್ ಇಡ್ಲಿ"
+            }
+          ],
+          "price": 80
+        },
+        {
+          "id": 16,
+          "name": "Ghee Pudi Idly",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Ghee Pudi Idly"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಘೀ ಪುಡಿ ಇಡ್ಲಿ"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 17,
+          "name": "Ghee Spl. Paddu",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Ghee Spl. Paddu"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಘೀ ಸ್ಪೆಶಲ್ ಪದ್ದು"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 18,
+          "name": "Button Idly",
+          "displayOrder": 10,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Button Idly"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬಟನ್ ಇಡ್ಲಿ"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 19,
+          "name": "Bonda Soup",
+          "displayOrder": 11,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Bonda Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬೋಂಡಾ ಸೂಪ್"
+            }
+          ],
+          "price": 85
+        },
+        {
+          "id": 20,
+          "name": "Mangalore Buns",
+          "displayOrder": 12,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mangalore Buns"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಂಗಳೂರು ಬನ್ಸ್"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 21,
+          "name": "Bajji",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "16:00",
+          "endTime": "22:00",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Bajji"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬಜ್ಜಿ"
+            }
+          ],
+          "price": 75
+        },
+        {
+          "id": 22,
+          "name": "Pakoda",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "16:00",
+          "endTime": "22:00",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Pakoda"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪಕೋಡ"
+            }
+          ],
+          "price": 75
+        },
+        {
+          "id": 23,
+          "name": "Kara Bath",
+          "displayOrder": 14,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kara Bath"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಖಾರಾ ಬಾತ್"
+            }
+          ],
+          "price": 65
+        },
+        {
+          "id": 24,
+          "name": "Kesari Bath",
+          "displayOrder": 15,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kesari Bath"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕೇಸರಿ ಬಾತ್"
+            }
+          ],
+          "price": 65
+        },
+        {
+          "id": 25,
+          "name": "Chow Chow Bath",
+          "displayOrder": 16,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Chow Chow Bath"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚೌಚೌ ಬಾತ್"
+            }
+          ],
+          "price": 105
+        },
+        {
+          "id": 26,
+          "name": "Rice Bath",
+          "displayOrder": 17,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Rice Bath"
+            },
+            {
+              "langCode": "kn",
+              "name": "ರ್ಯಸ್ ಬಾತ್"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 27,
+          "name": "Curd Vada",
+          "displayOrder": 18,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Curd Vada"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮೊಸರು ವಡಾ"
+            }
+          ],
+          "price": 80
+        },
+        {
+          "id": 28,
+          "name": "Poori",
+          "displayOrder": 19,
+          "preparationType": null,
+          "startTime": "08:00",
+          "endTime": "15:30",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Poori"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪೂರಿ"
+            }
+          ],
+          "price": 95
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 29,
+      "parentId": null,
+      "sectionKey": "DOSA_TREAT",
+      "name": "Dosa Treat",
+      "displayOrder": 3,
+      "startTime": "08:00",
+      "endTime": "22:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Dosa Treat"
+        },
+        {
+          "langCode": "kn",
+          "name": "ದೋಸೆ ಟ್ರೇಟ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 30,
+          "name": "Masala Dosa",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Masala Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಸಾಲೆ ದೋಸೆ"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 31,
+          "name": "Plain Dosa",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Plain Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪ್ಲೇನ್ ದೋಸೆ"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 32,
+          "name": "Onion Dosa",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Onion Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಈರುಳ್ಳಿ ದೋಸೆ"
+            }
+          ],
+          "price": 105
+        },
+        {
+          "id": 33,
+          "name": "Set Dosa",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Set Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸೆಟ್ ದೋಸೆ"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 34,
+          "name": "Paper Massla Dosa",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paper Massla Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪೇಪರ್ ಮಸಾಲೆ ದೋಸೆ"
+            }
+          ],
+          "price": 140
+        },
+        {
+          "id": 35,
+          "name": "Paper Plain Dosa",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paper Plain Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪೇಪರ್ ಪ್ಲೇನ್ ದೋಸೆ"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 36,
+          "name": "Butter Masala Dosa",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Butter Masala Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬಟರ್ ಮಸಾಲೆ ದೋಸೆ"
+            }
+          ],
+          "price": 115
+        },
+        {
+          "id": 37,
+          "name": "Butter Plain Dosa",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Butter Plain Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬಟರ್ ಪ್ಲೇನ್ ದೋಸೆ"
+            }
+          ],
+          "price": 105
+        },
+        {
+          "id": 38,
+          "name": "Paneer Masala Dosa",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Masala Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನೀರ್ ಮಸಾಲೆ ದೋಸೆ"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 39,
+          "name": "Paneer Plain Dosa",
+          "displayOrder": 10,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Plain Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನೀರ್ ಪ್ಲೇನ್ ದೋಸೆ"
+            }
+          ],
+          "price": 115
+        },
+        {
+          "id": 40,
+          "name": "Cheese Plain Dosa",
+          "displayOrder": 11,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cheese Plain Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚೀಸ್ ಪ್ಲೇನ್ ದೋಸೆ"
+            }
+          ],
+          "price": 115
+        },
+        {
+          "id": 41,
+          "name": "Cheese Masala Dosa",
+          "displayOrder": 12,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cheese Masala Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚೀಸ್ ಮಸಾಲೆ ದೋಸೆ"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 42,
+          "name": "Rava Dosa",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Rava Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ರವಾ ದೋಸೆ"
+            }
+          ],
+          "price": 115
+        },
+        {
+          "id": 43,
+          "name": "Rava Onion Masala Dosa",
+          "displayOrder": 14,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Rava Onion Masala Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ರವಾ ಈರುಳ್ಳಿ ಮಸಾಲೆ ದೋಸೆ"
+            }
+          ],
+          "price": 135
+        },
+        {
+          "id": 44,
+          "name": "Rava Masala Dosa",
+          "displayOrder": 15,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Rava Masala Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ರವಾ ಮಸಾಲೆ ದೋಸೆ"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 45,
+          "name": "Khali Dosa",
+          "displayOrder": 16,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Khali Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಖಾಲಿ ದೋಸೆ"
+            }
+          ],
+          "price": 110
+        },
+        {
+          "id": 46,
+          "name": "Ghee Masala Dosa",
+          "displayOrder": 17,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Ghee Masala Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಘೀ ಮಸಾಲೆ ದೋಸೆ"
+            }
+          ],
+          "price": 115
+        },
+        {
+          "id": 47,
+          "name": "Ghee Plain Dosa",
+          "displayOrder": 18,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Ghee Plain Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಘೀ ಪ್ಲೇನ್ ದೋಸೆ"
+            }
+          ],
+          "price": 105
+        },
+        {
+          "id": 48,
+          "name": "Mysore Masala Dosa",
+          "displayOrder": 19,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mysore Masala Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮೈಸೂರು ಮಸಾಲೆ ದೋಸೆ"
+            }
+          ],
+          "price": 120
+        },
+        {
+          "id": 49,
+          "name": "Open Dosa",
+          "displayOrder": 20,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Open Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಓಪನ್ ದೋಸೆ"
+            }
+          ],
+          "price": 130
+        },
+        {
+          "id": 50,
+          "name": "Akki Rotti",
+          "displayOrder": 21,
+          "preparationType": null,
+          "startTime": "12:00",
+          "endTime": "22:00",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Akki Rotti"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಅಕ್ಕಿ ರೊಟ್ಟಿ"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 51,
+          "name": "Daily Spl. Dosa's",
+          "displayOrder": 22,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Daily Spl. Dosa's"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಡೈಲಿ ಸ್ಪೆಶಲ್ ದೋಸೆ"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 52,
+          "name": "Ghee Pudi Masala Dosa",
+          "displayOrder": 23,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Ghee Pudi Masala Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಘೀ ಪುಡಿ ಮಸಾಲೆ ದೋಸೆ"
+            }
+          ],
+          "price": 130
+        },
+        {
+          "id": 53,
+          "name": "Ghee Pudi Plain Dosa",
+          "displayOrder": 24,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Ghee Pudi Plain Dosa"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಘೀ ಪುಡಿ ಪ್ಲೇನ್ ದೋಸೆ"
+            }
+          ],
+          "price": 120
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 54,
+      "parentId": null,
+      "sectionKey": "SOUP_VARIETIES",
+      "name": "Soup Varieties",
+      "displayOrder": 4,
+      "startTime": "00:00",
+      "endTime": "23:59",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Soup Varieties"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಸೂಪ್ ವರ್ಣಿಗೆಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 55,
+          "name": "Mushroom with Veg. Soup",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mushroom with Veg. Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಶ್ರೂಮ್ ವಿತ್ ವೆಜ್ ಸೂಪ್"
+            }
+          ],
+          "price": 145
+        },
+        {
+          "id": 56,
+          "name": "Udupi Park Special Soup",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Udupi Park Special Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್ ಸೂಪ್"
+            }
+          ],
+          "price": 160
+        },
+        {
+          "id": 57,
+          "name": "Lemon Coriander Soup",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Lemon Coriander Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಲೆಮನ್ ಕೋರಿಯಂದರ್ ಸೂಪ್"
+            }
+          ],
+          "price": 140
+        },
+        {
+          "id": 58,
+          "name": "Palak Jade Soup",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Palak Jade Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪಾಲಕ್ ಜಡ ಸೂಪ್"
+            }
+          ],
+          "price": 140
+        },
+        {
+          "id": 59,
+          "name": "Cream of Veg.",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cream of Veg."
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕ್ರೀಮ್ ಆಫ್ ವೆಜ್"
+            }
+          ],
+          "price": 130
+        },
+        {
+          "id": 60,
+          "name": "Cream of Mushroom",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cream of Mushroom"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕ್ರೀಮ್ ಆಫ್ ಮಶ್ರೂಮ್"
+            }
+          ],
+          "price": 140
+        },
+        {
+          "id": 61,
+          "name": "Sweet Corn Soup",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Sweet Corn Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ವೀಟ್ ಕಾರ್ನ್ ಸೂಪ್"
+            }
+          ],
+          "price": 130
+        },
+        {
+          "id": 62,
+          "name": "Sweet Corn Veg.",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Sweet Corn Veg."
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ವೀಟ್ ಕಾರ್ನ್ ವೆಜ್"
+            }
+          ],
+          "price": 135
+        },
+        {
+          "id": 63,
+          "name": "Hot & Sour",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Hot & Sour"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಹಾಟ್ & ಸೂರ್"
+            }
+          ],
+          "price": 130
+        },
+        {
+          "id": 64,
+          "name": "Manchew Soup",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Manchew Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಂಚೂ ಸೂಪ್"
+            }
+          ],
+          "price": 130
+        },
+        {
+          "id": 65,
+          "name": "Tomato Soup",
+          "displayOrder": 10,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Tomato Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಟೊಮೆಟೊ ಸೂಪ್"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 66,
+          "name": "French Onion Soup",
+          "displayOrder": 11,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "French Onion Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಫ್ರೆಂಚ್ ಅನಿಯನ್ ಸೂಪ್"
+            }
+          ],
+          "price": 145
+        },
+        {
+          "id": 67,
+          "name": "Spicy Green Peas Soup",
+          "displayOrder": 12,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Spicy Green Peas Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಪೈಸಿ ಗ್ರೀನ್ ಏಿಸ್ ಸೂಪ್"
+            }
+          ],
+          "price": 145
+        },
+        {
+          "id": 68,
+          "name": "Veg. Noodles Soup",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Noodles Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ನೂಡಲ್ಸ್ ಸೂಪ್"
+            }
+          ],
+          "price": 130
+        },
+        {
+          "id": 69,
+          "name": "Veg. Clear Soup",
+          "displayOrder": 14,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Clear Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಕ್ಲಿಯರ್ ಸೂಪ್"
+            }
+          ],
+          "price": 130
+        },
+        {
+          "id": 70,
+          "name": "Schezwa Veg. Soup",
+          "displayOrder": 15,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Schezwa Veg. Soup"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸಜ್ವಾನ್ ವೆಜ್ ಸೂಪ್"
+            }
+          ],
+          "price": 140
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 71,
+      "parentId": null,
+      "sectionKey": "TASTY_STARTERS",
+      "name": "Tasty Starters",
+      "displayOrder": 5,
+      "startTime": "12:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Tasty Starters"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಟೇಸ್ಟಿ ಸ್ಟಾರ್ಟರ್ಸ್"
+        }
+      ],
+      "item": [],
+      "section": [
+        {
+          "id": 72,
+          "parentId": 71,
+          "sectionKey": "MANCHURIAN_CHILLY",
+          "name": "Manchurian / Chilly",
+          "displayOrder": 1,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "sectionText": [
+            {
+              "langCode": "en",
+              "name": "Manchurian / Chilly"
+            }
+          ],
+          "item": [
+            {
+              "id": 73,
+              "name": "Gobi",
+              "displayOrder": 1,
+              "preparationType": "dry",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Gobi"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಗೋಬಿ"
+                }
+              ],
+              "price": 190
+            },
+            {
+              "id": 74,
+              "name": "Gobi",
+              "displayOrder": 1,
+              "preparationType": "gravy",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Gobi"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಗೋಬಿ"
+                }
+              ],
+              "price": 195
+            },
+            {
+              "id": 75,
+              "name": "Baby Corn",
+              "displayOrder": 2,
+              "preparationType": "dry",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Baby Corn"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಬೇಬಿ ಕಾರ್ನ್"
+                }
+              ],
+              "price": 200
+            },
+            {
+              "id": 76,
+              "name": "Baby Corn",
+              "displayOrder": 2,
+              "preparationType": "gravy",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Baby Corn"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಬೇಬಿ ಕಾರ್ನ್"
+                }
+              ],
+              "price": 205
+            },
+            {
+              "id": 77,
+              "name": "Mushroom",
+              "displayOrder": 3,
+              "preparationType": "dry",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Mushroom"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಮಶ್ರೂಮ್"
+                }
+              ],
+              "price": 215
+            },
+            {
+              "id": 78,
+              "name": "Mushroom",
+              "displayOrder": 3,
+              "preparationType": "gravy",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Mushroom"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಮಶ್ರೂಮ್"
+                }
+              ],
+              "price": 220
+            },
+            {
+              "id": 79,
+              "name": "Paneer",
+              "displayOrder": 4,
+              "preparationType": "dry",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Paneer"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪನ್ನೀರ್"
+                }
+              ],
+              "price": 235
+            },
+            {
+              "id": 80,
+              "name": "Paneer",
+              "displayOrder": 4,
+              "preparationType": "gravy",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Paneer"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪನ್ನೀರ್"
+                }
+              ],
+              "price": 240
+            },
+            {
+              "id": 81,
+              "name": "Veg. Ball",
+              "displayOrder": 5,
+              "preparationType": "dry",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Veg. Ball"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ವೆಜ್ ಬಾಲ್"
+                }
+              ],
+              "price": 210
+            },
+            {
+              "id": 82,
+              "name": "Veg. Ball",
+              "displayOrder": 5,
+              "preparationType": "gravy",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Veg. Ball"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ವೆಜ್ ಬಾಲ್"
+                }
+              ],
+              "price": 220
+            },
+            {
+              "id": 83,
+              "name": "Spinach",
+              "displayOrder": 6,
+              "preparationType": "dry",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Spinach"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪಾಲಕ್"
+                }
+              ],
+              "price": 220
+            },
+            {
+              "id": 84,
+              "name": "Spinach",
+              "displayOrder": 6,
+              "preparationType": "gravy",
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Spinach"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪಾಲಕ್"
+                }
+              ],
+              "price": 225
+            }
+          ],
+          "section": []
+        },
+        {
+          "id": 85,
+          "parentId": 71,
+          "sectionKey": "PEPPER_DRY",
+          "name": "Pepper Dry",
+          "displayOrder": 2,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "sectionText": [
+            {
+              "langCode": "en",
+              "name": "Pepper Dry"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪೆಪ್ಪರ್ ಡ್ರೈ"
+            }
+          ],
+          "item": [
+            {
+              "id": 86,
+              "name": "Gobi",
+              "displayOrder": 1,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Gobi"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಗೋಬಿ"
+                }
+              ],
+              "price": 195
+            },
+            {
+              "id": 87,
+              "name": "Baby Corn",
+              "displayOrder": 2,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Baby Corn"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಬೇಬಿ ಕಾರ್ನ್"
+                }
+              ],
+              "price": 205
+            },
+            {
+              "id": 88,
+              "name": "Paneer",
+              "displayOrder": 3,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Paneer"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪನ್ನೀರ್"
+                }
+              ],
+              "price": 240
+            },
+            {
+              "id": 89,
+              "name": "Mushroom",
+              "displayOrder": 4,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Mushroom"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಮಶ್ರೂಮ್"
+                }
+              ],
+              "price": 220
+            },
+            {
+              "id": 90,
+              "name": "Finger Chips",
+              "displayOrder": 5,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Finger Chips"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಫಿಂಗರ್ ಚಿಪ್ಸ್"
+                }
+              ],
+              "price": 120
+            }
+          ],
+          "section": []
+        },
+        {
+          "id": 91,
+          "parentId": 71,
+          "sectionKey": "OUR_SPECIAL_STARTERS",
+          "name": "Our Special Starters",
+          "displayOrder": 3,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "sectionText": [
+            {
+              "langCode": "en",
+              "name": "Our Special Starters"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಪೆಶಲ್ ಸ್ಟಾರ್ಟರ್ಸ್"
+            }
+          ],
+          "item": [
+            {
+              "id": 92,
+              "name": "Crispy Honey Potato",
+              "displayOrder": 1,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Crispy Honey Potato"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಕ್ರಿಸ್ಟಿ ಹನಿ ಪೊಟಾಟೊ"
+                }
+              ],
+              "price": 215
+            },
+            {
+              "id": 93,
+              "name": "American Corn Pepper Dry",
+              "displayOrder": 2,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "American Corn Pepper Dry"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಅಮೆರಿಕನ್ ಕಾರ್ನ್ ಪೆಪ್ಪರ್ ಡ್ರೈ"
+                }
+              ],
+              "price": 215
+            },
+            {
+              "id": 94,
+              "name": "Paneer Lemon Dry",
+              "displayOrder": 3,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Paneer Lemon Dry"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪನ್ನೀರ್ ಲೆಮನ್ ಡ್ರೈ"
+                }
+              ],
+              "price": 260
+            },
+            {
+              "id": 95,
+              "name": "Paneer Mint Dry",
+              "displayOrder": 3,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Paneer Mint Dry"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪನ್ನೀರ್ ಮಿಂಟ್ ಡ್ರೈ"
+                }
+              ],
+              "price": 260
+            },
+            {
+              "id": 96,
+              "name": "Mushroom Lemon Dry",
+              "displayOrder": 4,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Mushroom Lemon Dry"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಮಶ್ರೂಮ್ ಲೆಮನ್ ಡ್ರೈ"
+                }
+              ],
+              "price": 240
+            },
+            {
+              "id": 97,
+              "name": "Mint Dry",
+              "displayOrder": 4,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Mint Dry"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಮಿಂಟ್ ಡ್ರೈ"
+                }
+              ],
+              "price": 240
+            },
+            {
+              "id": 98,
+              "name": "Paneer Havai",
+              "displayOrder": 5,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Paneer Havai"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪನ್ನೀರ್ ಹವಾಯ್"
+                }
+              ],
+              "price": 260
+            },
+            {
+              "id": 99,
+              "name": "Paneer Satay",
+              "displayOrder": 5,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Paneer Satay"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪನ್ನೀರ್ ಸಾಟೇ"
+                }
+              ],
+              "price": 260
+            },
+            {
+              "id": 100,
+              "name": "Gobi Lollipop",
+              "displayOrder": 6,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Gobi Lollipop"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಗೋಬಿ ಲಾಲಿಪಾಪ್"
+                }
+              ],
+              "price": 215
+            },
+            {
+              "id": 101,
+              "name": "Mushroom Green Dry",
+              "displayOrder": 7,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Mushroom Green Dry"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಮಶ್ರೂಮ್ ಗ್ರೀನ್ ಡ್ರೈ"
+                }
+              ],
+              "price": 235
+            },
+            {
+              "id": 102,
+              "name": "Sholey",
+              "displayOrder": 7,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Sholey"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಶೋಲೆ"
+                }
+              ],
+              "price": 235
+            },
+            {
+              "id": 103,
+              "name": "Paneer Sholey",
+              "displayOrder": 8,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Paneer Sholey"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪನ್ನೀರ್ ಶೋಲೆ"
+                }
+              ],
+              "price": 270
+            },
+            {
+              "id": 104,
+              "name": "Paneer China Town",
+              "displayOrder": 8,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Paneer China Town"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪನ್ನೀರ್ ಚೈನಾ ಟೌನ್"
+                }
+              ],
+              "price": 270
+            },
+            {
+              "id": 105,
+              "name": "Baby Corn Golden Fry",
+              "displayOrder": 9,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Baby Corn Golden Fry"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಬೇಬಿ ಕಾರ್ನ್ ಗೋಲ್ಡನ್ ಫ್ರೈ"
+                }
+              ],
+              "price": 220
+            },
+            {
+              "id": 106,
+              "name": "Veg. China Town",
+              "displayOrder": 10,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Veg. China Town"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ವೆಜ್ ಚೈನಾ ಟೌನ್"
+                }
+              ],
+              "price": 250
+            },
+            {
+              "id": 107,
+              "name": "Baby Corn Satay",
+              "displayOrder": 11,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Baby Corn Satay"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಬೇಬಿ ಕಾರ್ನ್ ಸಾಟೇ"
+                }
+              ],
+              "price": 240
+            },
+            {
+              "id": 108,
+              "name": "Gobi 65",
+              "displayOrder": 12,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Gobi 65"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಗೋಬಿ 65"
+                }
+              ],
+              "price": 195
+            },
+            {
+              "id": 109,
+              "name": "Paneer 65",
+              "displayOrder": 13,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Paneer 65"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪನ್ನೀರ್ 65"
+                }
+              ],
+              "price": 245
+            },
+            {
+              "id": 110,
+              "name": "Mushroom 65",
+              "displayOrder": 14,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Mushroom 65"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಮಶ್ರೂಮ್ 65"
+                }
+              ],
+              "price": 225
+            },
+            {
+              "id": 111,
+              "name": "Veg. Crispy",
+              "displayOrder": 15,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Veg. Crispy"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ವೆಜ್ ಕ್ರಿಸ್ಟಿ"
+                }
+              ],
+              "price": 220
+            },
+            {
+              "id": 112,
+              "name": "Veg. Spring Roll",
+              "displayOrder": 16,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Veg. Spring Roll"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ವೆಜ್ ಸ್ಪ್ರಿಂಗ್ ರೋಲ್"
+                }
+              ],
+              "price": 215
+            },
+            {
+              "id": 113,
+              "name": "Paneer Spring Roll",
+              "displayOrder": 17,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Paneer Spring Roll"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಪನ್ನೀರ್ ಸ್ಪ್ರಿಂಗ್ ರೋಲ್"
+                }
+              ],
+              "price": 265
+            },
+            {
+              "id": 114,
+              "name": "Mushroom Spring Roll",
+              "displayOrder": 18,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Mushroom Spring Roll"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಮಶ್ರೂಮ್ ಸ್ಪ್ರಿಂಗ್ ರೋಲ್"
+                }
+              ],
+              "price": 245
+            },
+            {
+              "id": 115,
+              "name": "Hara Bhara Kabab",
+              "displayOrder": 19,
+              "preparationType": null,
+              "startTime": "00:00",
+              "endTime": "23:59",
+              "itemText": [
+                {
+                  "langCode": "en",
+                  "name": "Hara Bhara Kabab"
+                },
+                {
+                  "langCode": "kn",
+                  "name": "ಹರಭರಾ ಕಬಾಬ್"
+                }
+              ],
+              "price": 210
+            }
+          ],
+          "section": []
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "parentId": null,
+      "sectionKey": "MANCHURIAN_GRAVY",
+      "name": "Manchurian Gravy",
+      "displayOrder": 6,
+      "startTime": "12:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Manchurian Gravy"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಮಂಚೂರಿಯನ್ ಗ್ರೇವಿ"
+        }
+      ],
+      "item": [
+        {
+          "id": 117,
+          "name": "Veg. Ball Manchurian",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Ball Manchurian"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಬಾಲ್ ಮಂಚೂರಿಯನ್"
+            }
+          ],
+          "price": 230
+        },
+        {
+          "id": 118,
+          "name": "Veg. Ball Garlic Sauce",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Ball Garlic Sauce"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್. ಬಾಲ್ ಗಾರ್ಲಿಕ್ ಸಾಸ್"
+            }
+          ],
+          "price": 230
+        },
+        {
+          "id": 119,
+          "name": "Veg. Ball Ginger Sauce",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Ball Ginger Sauce"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್. ಬಾಲ್ ಜಿಂಗರ್ ಸಾಸ್"
+            }
+          ],
+          "price": 235
+        },
+        {
+          "id": 120,
+          "name": "Spinach Manchurian",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Spinach Manchurian"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಪಿನಾಚ್ ಮಂಚೂರಿಯನ್"
+            }
+          ],
+          "price": 240
+        },
+        {
+          "id": 121,
+          "name": "Baby Corn Manchurian",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Baby Corn Manchurian"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬೇಬಿ ಕಾರ್ನ್ ಮಂಚೂರಿಯನ್"
+            }
+          ],
+          "price": 215
+        },
+        {
+          "id": 122,
+          "name": "Paneer Chilly",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Chilly"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಚಿಲ್ಲಿ"
+            }
+          ],
+          "price": 250
+        },
+        {
+          "id": 123,
+          "name": "Mushroom Chilly",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mushroom Chilly"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಶ್ರೂಮ್ ಚಿಲ್ಲಿ"
+            }
+          ],
+          "price": 240
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 124,
+      "parentId": null,
+      "sectionKey": "TANDOORI_STARTERS",
+      "name": "Tandoori Starters",
+      "displayOrder": 7,
+      "startTime": "12:00",
+      "endTime": "22:30",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Tandoori Starters"
+        },
+        {
+          "langCode": "kn",
+          "name": "ತಂದೂರಿ ಸ್ಟಾರ್ಟರ್ಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 125,
+          "name": "Paneer Tikka",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Tikka"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಟಿಕ್ಕಾ"
+            }
+          ],
+          "price": 270
+        },
+        {
+          "id": 126,
+          "name": "Mushroom Tikka",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mushroom Tikka"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಶ್ರೂಮ್ ಟಿಕ್ಕಾ"
+            }
+          ],
+          "price": 260
+        },
+        {
+          "id": 127,
+          "name": "Baby Corn Tikka",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Baby Corn Tikka"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬೇಬಿ ಕಾರ್ನ್ ಟಿಕ್ಕಾ"
+            }
+          ],
+          "price": 240
+        },
+        {
+          "id": 128,
+          "name": "Malai Paneer Tikka",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Malai Paneer Tikka"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಲಾಯ್ ಪನ್ನೀರ್ ಟಿಕ್ಕಾ"
+            }
+          ],
+          "price": 280
+        },
+        {
+          "id": 129,
+          "name": "Malai Mushroom Tikka",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Malai Mushroom Tikka"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಲಾಯ್ ಮಶ್ರೂಮ್ ಟಿಕ್ಕಾ"
+            }
+          ],
+          "price": 270
+        },
+        {
+          "id": 130,
+          "name": "Hariyali Paneer Tikka",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Hariyali Paneer Tikka"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಹರಿಯಾಲಿ ಪನ್ನೀರ್ ಟಿಕ್ಕಾ"
+            }
+          ],
+          "price": 285
+        },
+        {
+          "id": 131,
+          "name": "Hariyali Mushroom Tikka",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Hariyali Mushroom Tikka"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಹರಿಯಾಲಿ ಮಶ್ರೂಮ್ ಟಿಕ್ಕಾ"
+            }
+          ],
+          "price": 270
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 132,
+      "parentId": null,
+      "sectionKey": "TANDOORI_BREAD",
+      "name": "Tandoori Bread",
+      "displayOrder": 8,
+      "startTime": "12:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Tandoori Bread"
+        },
+        {
+          "langCode": "kn",
+          "name": "ತಂದೂರಿ ಬ್ರೆಡ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 133,
+          "name": "Roti",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Roti"
+            },
+            {
+              "langCode": "kn",
+              "name": "ರೋಟಿ"
+            }
+          ],
+          "price": 65
+        },
+        {
+          "id": 134,
+          "name": "Nan",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Nan"
+            },
+            {
+              "langCode": "kn",
+              "name": "ನಾನ್"
+            }
+          ],
+          "price": 73
+        },
+        {
+          "id": 135,
+          "name": "Kulcha",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kulcha"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕುಲ್ಚಾ"
+            }
+          ],
+          "price": 73
+        },
+        {
+          "id": 136,
+          "name": "Parota",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Parota"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪರೋಟಾ"
+            }
+          ],
+          "price": 85
+        },
+        {
+          "id": 137,
+          "name": "Butter Roti",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Butter Roti"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬಟರ್ ರೋಟಿ"
+            }
+          ],
+          "price": 70
+        },
+        {
+          "id": 138,
+          "name": "Butter Naan",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Butter Naan"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬಟರ್ ನಾನ್"
+            }
+          ],
+          "price": 80
+        },
+        {
+          "id": 139,
+          "name": "Butter Kulcha",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Butter Kulcha"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬಟರ್ ಕುಲ್ಚಾ"
+            }
+          ],
+          "price": 80
+        },
+        {
+          "id": 140,
+          "name": "Butter Parota",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Butter Parota"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬಟರ್ ಕುಲ್ಚಾ"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 141,
+          "name": "Stuffed Parota",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Stuffed Parota"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಟಫ್ಡ್ ಪರೋಟಾ"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 142,
+          "name": "Staffed Kulcha",
+          "displayOrder": 10,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Staffed Kulcha"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಟಫ್ಡ್ ಕುಲ್ಚಾ"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 143,
+          "name": "Staffed Naan",
+          "displayOrder": 11,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Staffed Naan"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಟಫ್ಡ್ ನಾನ್"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 144,
+          "name": "Masala Kulcha",
+          "displayOrder": 12,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Masala Kulcha"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಸಾಲೆ ಕುಲ್ಚಾ"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 145,
+          "name": "Kashmiri Naan",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kashmiri Naan"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಾಶ್ಮೀರಿ ನಾನ್"
+            }
+          ],
+          "price": 110
+        },
+        {
+          "id": 146,
+          "name": "Mughlai Naan",
+          "displayOrder": 14,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mughlai Naan"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮುಗಲ್ಯೇ ನಾನ್"
+            }
+          ],
+          "price": 110
+        },
+        {
+          "id": 147,
+          "name": "Methi Kulcha",
+          "displayOrder": 15,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Methi Kulcha"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮೇತಿ ಕುಲ್ಚಾ"
+            }
+          ],
+          "price": 75
+        },
+        {
+          "id": 148,
+          "name": "Methi Roti",
+          "displayOrder": 16,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Methi Roti"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮೇಥಿ ರೋಟಿ"
+            }
+          ],
+          "price": 70
+        },
+        {
+          "id": 149,
+          "name": "Aloo Parota",
+          "displayOrder": 17,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Aloo Parota"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಆಲೂ ಪರೋಟಾ"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 150,
+          "name": "Pudina Parota",
+          "displayOrder": 18,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Pudina Parota"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪುದಿನಾ ಪರೋಟಾ"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 151,
+          "name": "Gobi Parota",
+          "displayOrder": 19,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Gobi Parota"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಗೋಬಿ ಪರೋಟಾ"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 152,
+          "name": "Garlic Naan",
+          "displayOrder": 20,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Garlic Naan"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಗಾರ್ಲಿಕ್ ನಾನ್"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 153,
+          "name": "Roasted Papad",
+          "displayOrder": 21,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Roasted Papad"
+            },
+            {
+              "langCode": "kn",
+              "name": "ರೋಸ್ಟೆಡ್ ಪಾಪಡ್"
+            }
+          ],
+          "price": 55
+        },
+        {
+          "id": 154,
+          "name": "Fry Papad",
+          "displayOrder": 22,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Fry Papad"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಫ್ರೈ ಪಾಪಡ್"
+            }
+          ],
+          "price": 50
+        },
+        {
+          "id": 155,
+          "name": "Masala Papad",
+          "displayOrder": 23,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Masala Papad"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಸಾಲೆ ಪಾಪಡ್"
+            }
+          ],
+          "price": 70
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 156,
+      "parentId": null,
+      "sectionKey": "NORTH_INDIAN_DISHES",
+      "name": "North Indian Dishes",
+      "displayOrder": 9,
+      "startTime": "12:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "North Indian Dishes"
+        },
+        {
+          "langCode": "kn",
+          "name": "ನಾರ್ಥ್ ಇಂಡಿಯನ್ ಡಿಶೆಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 157,
+          "name": "Dal Fry",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Dal Fry"
+            },
+            {
+              "langCode": "kn",
+              "name": "ದಾಲ್ ಫ್ರೈ"
+            }
+          ],
+          "price": 175
+        },
+        {
+          "id": 158,
+          "name": "Dal Tadka",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Dal Tadka"
+            },
+            {
+              "langCode": "kn",
+              "name": "ದಾಲ್ ತಡ್ಕಾ"
+            }
+          ],
+          "price": 185
+        },
+        {
+          "id": 159,
+          "name": "Dal Palak",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Dal Palak"
+            },
+            {
+              "langCode": "kn",
+              "name": "ದಾಲ್ ಪಲಾಕ್"
+            }
+          ],
+          "price": 190
+        },
+        {
+          "id": 160,
+          "name": "Dal Makhani",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Dal Makhani"
+            },
+            {
+              "langCode": "kn",
+              "name": "ದಾಲ್ ಮಖನಿ"
+            }
+          ],
+          "price": 190
+        },
+        {
+          "id": 161,
+          "name": "Channa Masala",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Channa Masala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚನ್ನಾ ಮಸಾಲೆ"
+            }
+          ],
+          "price": 180
+        },
+        {
+          "id": 162,
+          "name": "Gobi Masala",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Gobi Masala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಗೋಬಿ ಮಸಾಲ"
+            }
+          ],
+          "price": 180
+        },
+        {
+          "id": 163,
+          "name": "Aloo Gobi Masala",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Aloo Gobi Masala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಆಲೂ ಗೋಬಿ ಮಸಾಲೆ"
+            }
+          ],
+          "price": 180
+        },
+        {
+          "id": 164,
+          "name": "Aloo Mutter",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Aloo Mutter"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಆಲೂ ಮಟರ್"
+            }
+          ],
+          "price": 170
+        },
+        {
+          "id": 165,
+          "name": "Baby Corn Green Masala",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Baby Corn Green Masala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬೇಬಿ ಕಾರ್ನ್ ಗ್ರೀನ್ ಮಸಾಲೆ"
+            }
+          ],
+          "price": 200
+        },
+        {
+          "id": 166,
+          "name": "Mushroom Masala",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mushroom Masala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಶ್ರೂಮ್ ಮಸಾಲೆ"
+            }
+          ],
+          "price": 225
+        },
+        {
+          "id": 167,
+          "name": "Plain Palak",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Plain Palak"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪ್ಲೇನ್ ಪಲಾಕ್"
+            }
+          ],
+          "price": 175
+        },
+        {
+          "id": 168,
+          "name": "Aloo Palak",
+          "displayOrder": 10,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Aloo Palak"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಆಲೂ ಪಲಾಕ್"
+            }
+          ],
+          "price": 180
+        },
+        {
+          "id": 169,
+          "name": "Capsicum Masala",
+          "displayOrder": 11,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Capsicum Masala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕ್ಯಾಪ್ಸಿಕಮ್ ಮಸಾಲೆ"
+            }
+          ],
+          "price": 180
+        },
+        {
+          "id": 170,
+          "name": "Mix Veg. Curry",
+          "displayOrder": 12,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mix Veg. Curry"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಿಕ್ಸಿ ವೆಜ್. ಕರಿ"
+            }
+          ],
+          "price": 190
+        },
+        {
+          "id": 171,
+          "name": "Veg. Hydrabadi",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Hydrabadi"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಹೈದರಾಬಾದಿ/ವೆಜ್ ದೋ-ಪ್ಯಾಜಾ"
+            }
+          ],
+          "price": 205
+        },
+        {
+          "id": 172,
+          "name": "Veg. Do-Pyaza",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Do-Pyaza"
+            }
+          ],
+          "price": 205
+        },
+        {
+          "id": 173,
+          "name": "Veg. Kurma",
+          "displayOrder": 14,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Kurma"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಕುರ್ಮಾ"
+            }
+          ],
+          "price": 190
+        },
+        {
+          "id": 174,
+          "name": "Veg. Makhanwala",
+          "displayOrder": 15,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Makhanwala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಮಖನ್ವಾಲಾ"
+            }
+          ],
+          "price": 210
+        },
+        {
+          "id": 175,
+          "name": "Veg. Shahi Kurma",
+          "displayOrder": 16,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Shahi Kurma"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಶಾಹಿ ಕುರ್ಮಾ"
+            }
+          ],
+          "price": 220
+        },
+        {
+          "id": 176,
+          "name": "Palak Paneer",
+          "displayOrder": 17,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Palak Paneer"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪಲಾಕ್ ಪನ್ನೀರ್"
+            }
+          ],
+          "price": 245
+        },
+        {
+          "id": 177,
+          "name": "Paneer Butter Masala",
+          "displayOrder": 18,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Butter Masala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಬಟರ್ ಮಸಾಲೆ"
+            }
+          ],
+          "price": 250
+        },
+        {
+          "id": 178,
+          "name": "Paneer Kurma",
+          "displayOrder": 19,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Kurma"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಕುರ್ಮಾ"
+            }
+          ],
+          "price": 240
+        },
+        {
+          "id": 179,
+          "name": "Paneer Mutter",
+          "displayOrder": 20,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Mutter"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಮಟರ್"
+            }
+          ],
+          "price": 235
+        },
+        {
+          "id": 180,
+          "name": "Paneer Gucchi",
+          "displayOrder": 21,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Gucchi"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಗುಚಿ"
+            }
+          ],
+          "price": 250
+        },
+        {
+          "id": 181,
+          "name": "Paneer Shahi Kurma",
+          "displayOrder": 22,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Shahi Kurma"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಶಾಹಿ ಕುರ್ಮಾ"
+            }
+          ],
+          "price": 250
+        },
+        {
+          "id": 182,
+          "name": "Dum Aloo Kashmiri",
+          "displayOrder": 23,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Dum Aloo Kashmiri"
+            },
+            {
+              "langCode": "kn",
+              "name": "ದಮ್ ಆಲೂ ಕಾಶ್ಮೀರಿ"
+            }
+          ],
+          "price": 230
+        },
+        {
+          "id": 183,
+          "name": "Dum Aloo Hyderabadi",
+          "displayOrder": 24,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Dum Aloo Hyderabadi"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಧಮ್ ಆಲೂ ಹೈದರಾಬಾದಿ"
+            }
+          ],
+          "price": 235
+        },
+        {
+          "id": 184,
+          "name": "Stuffed Aloo",
+          "displayOrder": 25,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Stuffed Aloo"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಟಫ್ಡ್ ಆಲೂ/ ಸ್ಟಫ್ಡ್ ಟೊಮೆಟೊ"
+            }
+          ],
+          "price": 205
+        },
+        {
+          "id": 185,
+          "name": "Stuffed Tomato",
+          "displayOrder": 25,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Stuffed Tomato"
+            }
+          ],
+          "price": 205
+        },
+        {
+          "id": 186,
+          "name": "Stuffed Capsicum",
+          "displayOrder": 26,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Stuffed Capsicum"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಟಫ್ಡ್ ಕ್ಯಾಪ್ಸಿಕಮ್"
+            }
+          ],
+          "price": 215
+        },
+        {
+          "id": 187,
+          "name": "Veg. Kofta",
+          "displayOrder": 27,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Kofta"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಕೋಫ್ತಾ"
+            }
+          ],
+          "price": 220
+        },
+        {
+          "id": 188,
+          "name": "Paneer Kofta",
+          "displayOrder": 28,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Kofta"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಕೋಫ್ತಾ"
+            }
+          ],
+          "price": 250
+        },
+        {
+          "id": 189,
+          "name": "Nurgis Kofta",
+          "displayOrder": 29,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Nurgis Kofta"
+            },
+            {
+              "langCode": "kn",
+              "name": "ನರ್ಗಿಸ್ ಕೋಫ್ತಾ/ಕಾಶ್ಮೀರಿ ಕೋಫ್ತಾ"
+            }
+          ],
+          "price": 240
+        },
+        {
+          "id": 190,
+          "name": "Kashimiri Kofta",
+          "displayOrder": 29,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kashimiri Kofta"
+            }
+          ],
+          "price": 240
+        },
+        {
+          "id": 191,
+          "name": "Kaju Masala",
+          "displayOrder": 30,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kaju Masala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಾಜು ಮಸಾಲೆ"
+            }
+          ],
+          "price": 270
+        },
+        {
+          "id": 192,
+          "name": "Kaju Mutter",
+          "displayOrder": 31,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kaju Mutter"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಾಜು ಮಟರ್"
+            }
+          ],
+          "price": 255
+        },
+        {
+          "id": 193,
+          "name": "Kaju Paneer",
+          "displayOrder": 32,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kaju Paneer"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಾಜು ಪನ್ನೀರ್"
+            }
+          ],
+          "price": 270
+        },
+        {
+          "id": 194,
+          "name": "Malai Methi Mutter",
+          "displayOrder": 33,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Malai Methi Mutter"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಲಾಯ್ ಮೇಥಿ ಮಟರ್"
+            }
+          ],
+          "price": 240
+        },
+        {
+          "id": 195,
+          "name": "Navarathna Kurma",
+          "displayOrder": 34,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Navarathna Kurma"
+            },
+            {
+              "langCode": "kn",
+              "name": "ನವರತ್ನ ಕುರ್ಮಾ"
+            }
+          ],
+          "price": 240
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 196,
+      "parentId": null,
+      "sectionKey": "SPECIAL_KADAI_DISHES",
+      "name": "Special Kadai Dishes",
+      "displayOrder": 10,
+      "startTime": "12:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Special Kadai Dishes"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಸ್ಪೆಶಲ್ ಕಡಾಯ್ ಡಿಶೆಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 197,
+          "name": "Veg Kollapuri",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg Kollapuri"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಕೊಲ್ಲಾಪುರಿ"
+            }
+          ],
+          "price": 240
+        },
+        {
+          "id": 198,
+          "name": "Kadai Mix Veg.",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kadai Mix Veg."
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಡಾಯ್ ಮಿಕ್ಸ್ ವೆಜ್"
+            }
+          ],
+          "price": 240
+        },
+        {
+          "id": 199,
+          "name": "Kadai Mushroom",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kadai Mushroom"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಡಾಯ್ ಮಶ್ರೂಮ್"
+            }
+          ],
+          "price": 255
+        },
+        {
+          "id": 200,
+          "name": "Kadai Paneer",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kadai Paneer"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಡಾಯ್ ಪನ್ನೀರ್"
+            }
+          ],
+          "price": 270
+        },
+        {
+          "id": 201,
+          "name": "Kadai Jaipuri",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kadai Jaipuri"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಡಾಯ್ ಜೈಪುರಿ"
+            }
+          ],
+          "price": 240
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 202,
+      "parentId": null,
+      "sectionKey": "JAIN_OPTION",
+      "name": "Jain Option",
+      "displayOrder": 11,
+      "startTime": "12:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Jain Option"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಜೈನ್ ಅಪ್ಶನ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 203,
+          "name": "Paneer Butter Masala",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Butter Masala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಬಟರ್ ಮಸಾಲೆ"
+            }
+          ],
+          "price": 270
+        },
+        {
+          "id": 204,
+          "name": "Veg. Makhanwala",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Makhanwala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಮಖನ್ವಾಲಾ"
+            }
+          ],
+          "price": 230
+        },
+        {
+          "id": 205,
+          "name": "Veg. Shahi Kurma",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Shahi Kurma"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್. ಶಾಹಿ ಕುರ್ಮಾ"
+            }
+          ],
+          "price": 230
+        },
+        {
+          "id": 206,
+          "name": "Malai Mutter",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Malai Mutter"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಲಾಯ್ ಮಟರ್"
+            }
+          ],
+          "price": 240
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 207,
+      "parentId": null,
+      "sectionKey": "DRY_VEG",
+      "name": "Dry Veg.",
+      "displayOrder": 12,
+      "startTime": "12:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Dry Veg."
+        },
+        {
+          "langCode": "kn",
+          "name": "ಡ್ರೈ ವೆಜ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 208,
+          "name": "Aloo Jeera Dry",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Aloo Jeera Dry"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಆಲೂ ಜೀರಾ ಡ್ರೈ"
+            }
+          ],
+          "price": 205
+        },
+        {
+          "id": 209,
+          "name": "Aloo Capsicum Dry",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Aloo Capsicum Dry"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಆಲೂ ಕ್ಯಾಪ್ಸಿಕಮ್ ಡ್ರೈ"
+            }
+          ],
+          "price": 200
+        },
+        {
+          "id": 210,
+          "name": "Paneer Burji",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Burji"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಬುರ್ಜಿ"
+            }
+          ],
+          "price": 270
+        },
+        {
+          "id": 211,
+          "name": "Aloo Gobi Dry",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Aloo Gobi Dry"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಆಲೂ ಗೋಬಿ ಡ್ರೈ"
+            }
+          ],
+          "price": 195
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 212,
+      "parentId": null,
+      "sectionKey": "SPECIAL_MAKE_NORTH_DISHES",
+      "name": "Special Make North Dishes",
+      "displayOrder": 13,
+      "startTime": "00:00",
+      "endTime": "23:59",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Special Make North Dishes"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಸ್ಪೆಶಲ್ ಮೇಕ್ ನಾರ್ಥ್ ಡಿಶೆಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 213,
+          "name": "Paneer Tikka Masala",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Tikka Masala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಟಿಕ್ಕಾ ಮಸಾಲ"
+            }
+          ],
+          "price": 280
+        },
+        {
+          "id": 214,
+          "name": "Paneer Pasand",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Pasand"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಪಸಂದ್"
+            }
+          ],
+          "price": 270
+        },
+        {
+          "id": 215,
+          "name": "Veg. Patiyala",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Patiyala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಪಟಿಯಾಲಾ"
+            }
+          ],
+          "price": 260
+        },
+        {
+          "id": 216,
+          "name": "Bara Bangi Kofta",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Bara Bangi Kofta"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬಾರಾ ಬಂಗಿ ಕೋಫ್ತಾ"
+            }
+          ],
+          "price": 265
+        },
+        {
+          "id": 217,
+          "name": "Udupi Park Spl.",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Udupi Park Spl."
+            },
+            {
+              "langCode": "kn",
+              "name": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್"
+            }
+          ],
+          "price": 270
+        },
+        {
+          "id": 218,
+          "name": "Veg. Hariyali",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Hariyali"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಹರಿಯಾಲಿ"
+            }
+          ],
+          "price": 260
+        },
+        {
+          "id": 219,
+          "name": "Veg. Thiranga",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Thiranga"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ತಿರಂಗ"
+            }
+          ],
+          "price": 270
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 220,
+      "parentId": null,
+      "sectionKey": "BASUMATHI_BANDHAR",
+      "name": "Basumathi Bandhar",
+      "displayOrder": 14,
+      "startTime": "12:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Basumathi Bandhar"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಬಾಸುಮತಿ ಬಂದರ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 221,
+          "name": "Steam Rice",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Steam Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಟೀಮ್ ರ್ಯಸ್"
+            }
+          ],
+          "price": 150
+        },
+        {
+          "id": 222,
+          "name": "Veg. Pulav",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Pulav"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಪಲಾವ್"
+            }
+          ],
+          "price": 185
+        },
+        {
+          "id": 223,
+          "name": "Peas Pulav",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Peas Pulav"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪೀಸ್ ಪಲಾವ್"
+            }
+          ],
+          "price": 190
+        },
+        {
+          "id": 224,
+          "name": "Paneer Pulav",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Pulav"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಪಲಾವ್"
+            }
+          ],
+          "price": 200
+        },
+        {
+          "id": 225,
+          "name": "Kashmiri Pulav",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kashmiri Pulav"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಾಶ್ಮೀರಿ ಪಲಾವ್"
+            }
+          ],
+          "price": 205
+        },
+        {
+          "id": 226,
+          "name": "Veg. Biriyani",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Biriyani"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಬಿರಿಯಾನಿ"
+            }
+          ],
+          "price": 200
+        },
+        {
+          "id": 227,
+          "name": "Mughlai Biriyani",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mughlai Biriyani"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮುಗಲ್ಯೇ ಬಿರಿಯಾನಿ"
+            }
+          ],
+          "price": 210
+        },
+        {
+          "id": 228,
+          "name": "Hydrabad Biriyani",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Hydrabad Biriyani"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಹೈದರಾಬಾದಿ ಬಿರಿಯಾನಿ"
+            }
+          ],
+          "price": 215
+        },
+        {
+          "id": 229,
+          "name": "Mushroom Handi Biriyani",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mushroom Handi Biriyani"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಶ್ರೂಮ್ ಹಂಡಿ ಬಿರಿಯಾನಿ"
+            }
+          ],
+          "price": 230
+        },
+        {
+          "id": 230,
+          "name": "Veg. Handi Biriyani",
+          "displayOrder": 10,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Handi Biriyani"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಹಂಡಿ ಬಿರಿಯಾನಿ"
+            }
+          ],
+          "price": 210
+        },
+        {
+          "id": 231,
+          "name": "Dal Kichdi",
+          "displayOrder": 11,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Dal Kichdi"
+            },
+            {
+              "langCode": "kn",
+              "name": "ದಾಲ್ ಖಿಚಡಿ"
+            }
+          ],
+          "price": 195
+        },
+        {
+          "id": 232,
+          "name": "Palak Kichdi",
+          "displayOrder": 12,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Palak Kichdi"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪಾಲಕ್ ಖಿಚಡಿ"
+            }
+          ],
+          "price": 195
+        },
+        {
+          "id": 233,
+          "name": "Udupi Park Spl. Biriyani",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Udupi Park Spl. Biriyani"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್ ಬಿರಿಯಾನಿ"
+            }
+          ],
+          "price": 220
+        },
+        {
+          "id": 234,
+          "name": "Curd Rice",
+          "displayOrder": 14,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Curd Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮೊಸರನ್ನ"
+            }
+          ],
+          "price": 125
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 235,
+      "parentId": null,
+      "sectionKey": "SALADS_AND_RAITHA",
+      "name": "Salads And Raitha",
+      "displayOrder": 15,
+      "startTime": "12:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Salads And Raitha"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಸಲಾದ್ ಮತ್ತು ರ್ಯಥಾ"
+        }
+      ],
+      "item": [
+        {
+          "id": 236,
+          "name": "Green Salad",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Green Salad"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಗ್ರೀನ್ ಸಲಾದ್"
+            }
+          ],
+          "price": 115
+        },
+        {
+          "id": 237,
+          "name": "Mix Raitha",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mix Raitha"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಿಕ್ಸ್ ರ್ಯಥಾ"
+            }
+          ],
+          "price": 105
+        },
+        {
+          "id": 238,
+          "name": "Boondi Raitha",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Boondi Raitha"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬೂಂದಿ ರ್ಯಥಾ"
+            }
+          ],
+          "price": 120
+        },
+        {
+          "id": 239,
+          "name": "Pineapple Raitha",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Pineapple Raitha"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪೈನಾಪಲ್ ರ್ಯಥಾ"
+            }
+          ],
+          "price": 120
+        },
+        {
+          "id": 240,
+          "name": "Cup Curd",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cup Curd"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮೊಸರು ಕಪ್"
+            }
+          ],
+          "price": 55
+        },
+        {
+          "id": 241,
+          "name": "Bowl Curd",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Bowl Curd"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬೌಲ್ ಕರ್ದೋ"
+            }
+          ],
+          "price": 80
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 242,
+      "parentId": null,
+      "sectionKey": "MEALS",
+      "name": "Meals",
+      "displayOrder": 16,
+      "startTime": "12:00",
+      "endTime": "16:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Meals"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಮೀಲ್ಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 243,
+          "name": "South Executive",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "South Executive"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸೌತ್ ಎಕ್ಸಿಕ್ಯೂಟಿವ್"
+            }
+          ],
+          "price": 185
+        },
+        {
+          "id": 244,
+          "name": "North Executive",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "North Executive"
+            },
+            {
+              "langCode": "kn",
+              "name": "ನಾರ್ಥ್ ಎಕ್ಸಿಕ್ಯೂಟಿವ್"
+            }
+          ],
+          "price": 210
+        },
+        {
+          "id": 245,
+          "name": "North Deluxe",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "North Deluxe"
+            },
+            {
+              "langCode": "kn",
+              "name": "ನಾರ್ಥ್ ಡೀಲಕ್ಸ್"
+            }
+          ],
+          "price": 310
+        },
+        {
+          "id": 246,
+          "name": "Chole Batura",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Chole Batura"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚೋಲೆ ಬಥರ"
+            }
+          ],
+          "price": 170
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 247,
+      "parentId": null,
+      "sectionKey": "CHINESE_RICE_VARIETIES",
+      "name": "Chinese Rice Varieties",
+      "displayOrder": 17,
+      "startTime": "12:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Chinese Rice Varieties"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಚೈನೀಸ್ ರ್ಯಸ್ ವರ್ಣಿಗೆಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 248,
+          "name": "Veg. Fried Rice",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Fried Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಫ್ರೈಡ್ ರ್ಯಸ್"
+            }
+          ],
+          "price": 190
+        },
+        {
+          "id": 249,
+          "name": "Schezwan Veg. Fried Rice",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Schezwan Veg. Fried Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸಜ್ವಾನ್ ಫ್ರೈಡ್ ರ್ಯಸ್"
+            }
+          ],
+          "price": 200
+        },
+        {
+          "id": 250,
+          "name": "Paneer Fried Rice",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Fried Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಫ್ರೈಡ್ ರ್ಯಸ್"
+            }
+          ],
+          "price": 210
+        },
+        {
+          "id": 251,
+          "name": "Mushroom Fried Rice",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mushroom Fried Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಶ್ರೂಮ್ ಫ್ರೈಡ್ ರ್ಯಸ್"
+            }
+          ],
+          "price": 200
+        },
+        {
+          "id": 252,
+          "name": "Triple Schezwan Fried Rice",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Triple Schezwan Fried Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಟ್ರಿಪಲ್ ಸಜ್ವಾನ್ ಫ್ರೈಡ್ ರ್ಯಸ್"
+            }
+          ],
+          "price": 240
+        },
+        {
+          "id": 253,
+          "name": "Udupi Park Spl. Fried Rice",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Udupi Park Spl. Fried Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್ ಫ್ರೈಡ್ ರ್ಯಸ್"
+            }
+          ],
+          "price": 210
+        },
+        {
+          "id": 254,
+          "name": "Veg. Ginger Friend Rice",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Ginger Friend Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಜಿಂಗರ್ ಫ್ರೈಡ್ ರ್ಯಸ್"
+            }
+          ],
+          "price": 190
+        },
+        {
+          "id": 255,
+          "name": "Singapore Fried Rice",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Singapore Fried Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸಿಂಗಾಪೂರ್ ಫ್ರೈಡ್ ರ್ಯಸ್"
+            }
+          ],
+          "price": 200
+        },
+        {
+          "id": 256,
+          "name": "Hong Kong Fried Rice",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Hong Kong Fried Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಹಾಂಗ್‌ಕಾಂಗ್ ಫ್ರೈಡ್ ರ್ಯಸ್"
+            }
+          ],
+          "price": 205
+        },
+        {
+          "id": 257,
+          "name": "American Chopsy",
+          "displayOrder": 10,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "American Chopsy"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಅಮೆರಿಕನ್ ಚಾಪ್ಸಿ"
+            }
+          ],
+          "price": 215
+        },
+        {
+          "id": 258,
+          "name": "Chinese Chopsy",
+          "displayOrder": 11,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Chinese Chopsy"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚೈನೀಸ್ ಚಾಪ್ಸಿ"
+            }
+          ],
+          "price": 210
+        },
+        {
+          "id": 259,
+          "name": "Chinese Bhel",
+          "displayOrder": 12,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Chinese Bhel"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚೈನೀಸ್ ಭೇಲ್"
+            }
+          ],
+          "price": 180
+        },
+        {
+          "id": 260,
+          "name": "Ghee Rice",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Ghee Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಘೀ ರ್ಯಸ್"
+            }
+          ],
+          "price": 190
+        },
+        {
+          "id": 261,
+          "name": "Jeera Rice",
+          "displayOrder": 14,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Jeera Rice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಜೀರಾ ರ್ಯಸ್"
+            }
+          ],
+          "price": 195
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 262,
+      "parentId": null,
+      "sectionKey": "NOODLES_VARIETIES",
+      "name": "Noodles Varieties",
+      "displayOrder": 18,
+      "startTime": "12:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Noodles Varieties"
+        },
+        {
+          "langCode": "kn",
+          "name": "ನೂಡಲ್ಸ್ ವರ್ಣಿಗೆಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 263,
+          "name": "Veg. Noodles",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Noodles"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ನೂಡಲ್ಸ್"
+            }
+          ],
+          "price": 195
+        },
+        {
+          "id": 264,
+          "name": "Schezwan Noodles",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Schezwan Noodles"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸಜ್ವಾನ್ ನೂಡಲ್ಸ್"
+            }
+          ],
+          "price": 205
+        },
+        {
+          "id": 265,
+          "name": "Mushroom Noodles",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mushroom Noodles"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಶ್ರೂಮ್ ನೂಡಲ್ಸ್"
+            }
+          ],
+          "price": 205
+        },
+        {
+          "id": 266,
+          "name": "Paneer Noodles",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Noodles"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ನೂಡಲ್ಸ್"
+            }
+          ],
+          "price": 210
+        },
+        {
+          "id": 267,
+          "name": "Veg. Chow Mien",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Chow Mien"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಚೌಮೀನ್"
+            }
+          ],
+          "price": 210
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 268,
+      "parentId": null,
+      "sectionKey": "PAV_BHAJI_VARIETIES",
+      "name": "Pav Bhaji Varieties",
+      "displayOrder": 19,
+      "startTime": "14:30",
+      "endTime": "22:30",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Pav Bhaji Varieties"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಪಾವ್ ಭಾಜಿ ವರ್ಣಿಗೆಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 269,
+          "name": "Pav Bhaji",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Pav Bhaji"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪಾವ್ ಭಾಜಿ"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 270,
+          "name": "Paneer Pav Bhaji",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Paneer Pav Bhaji"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪನ್ನೀರ್ ಪಾವ್ ಭಾಜಿ"
+            }
+          ],
+          "price": 145
+        },
+        {
+          "id": 271,
+          "name": "Cheese Pav Bhaji",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cheese Pav Bhaji"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚೀಸ್ ಪಾವ್ ಭಾಜಿ"
+            }
+          ],
+          "price": 155
+        },
+        {
+          "id": 272,
+          "name": "Extra Pav",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Extra Pav"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಎಕ್ಸ್ಟ್ರಾ ಪಾವ್"
+            }
+          ],
+          "price": 70
+        },
+        {
+          "id": 273,
+          "name": "Masala Pav",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Masala Pav"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಸಾಲೆ ಪಾವ್"
+            }
+          ],
+          "price": 130
+        },
+        {
+          "id": 274,
+          "name": "Udupi Park Spl. Pav Bhaji",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Udupi Park Spl. Pav Bhaji"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್ ಪಾವ್ ಭಾಜಿ"
+            }
+          ],
+          "price": 160
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 275,
+      "parentId": null,
+      "sectionKey": "CHATS_STALL",
+      "name": "Chats Stall",
+      "displayOrder": 20,
+      "startTime": "14:30",
+      "endTime": "22:30",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Chats Stall"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಚಾಟ್ಸ್ ಸ್ಟಾಲ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 276,
+          "name": "Udupi Park Spl. Chat",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Udupi Park Spl. Chat"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್ ಚಾಟ್"
+            }
+          ],
+          "price": 110
+        },
+        {
+          "id": 277,
+          "name": "Pani Puri",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Pani Puri"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪಾನಿ ಪುರಿ"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 278,
+          "name": "Masala Puri",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Masala Puri"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಸಾಲೆ ಪುರಿ"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 279,
+          "name": "Bhel Puri",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Bhel Puri"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಭೇಲ್ ಪುರಿ"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 280,
+          "name": "Shev Puri",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Shev Puri"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸೇವ್ ಪುರಿ"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 281,
+          "name": "Aloo Puri",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Aloo Puri"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಆಲೂ ಪುರಿ"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 282,
+          "name": "Dahi Puri",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Dahi Puri"
+            },
+            {
+              "langCode": "kn",
+              "name": "ದಹಿ ಪುರಿ"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 283,
+          "name": "Sev Dahi Batata Puri",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Sev Dahi Batata Puri"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸೇವ್ ದಹಿ ಬಟಾಟಾ ಪುರಿ"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 284,
+          "name": "Special Bhel",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Special Bhel"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಪೆಶಲ್ ಭೇಲ್"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 285,
+          "name": "Samosa Plain",
+          "displayOrder": 10,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Samosa Plain"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸಮೋಸಾ ಪ್ಲೇನ್"
+            }
+          ],
+          "price": 55
+        },
+        {
+          "id": 286,
+          "name": "Samosa Masala",
+          "displayOrder": 11,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Samosa Masala"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸಮೋಸಾ ಮಸಾಲೆ"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 287,
+          "name": "Vada Pav",
+          "displayOrder": 12,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Vada Pav"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವಡಾ ಪಾವ್"
+            }
+          ],
+          "price": 70
+        },
+        {
+          "id": 288,
+          "name": "Cheese Vada Pav",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cheese Vada Pav"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚೀಸ್ ವಡಾ ಪಾವ್"
+            }
+          ],
+          "price": 80
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 289,
+      "parentId": null,
+      "sectionKey": "CREAM_OF_PARLOUR",
+      "name": "Cream Of Parlour",
+      "displayOrder": 21,
+      "startTime": "09:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Cream Of Parlour"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಕ್ರೀಮ್ ಆಫ್ ಪಾಲರ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 290,
+          "name": "Vanilla",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Vanilla"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆನಿಲ್ಲಾ"
+            }
+          ],
+          "price": 80
+        },
+        {
+          "id": 291,
+          "name": "Strawberry",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Strawberry"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಟ್ರಾಬೆರ್ರಿ"
+            }
+          ],
+          "price": 80
+        },
+        {
+          "id": 292,
+          "name": "Mango",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mango"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮ್ಯಾಂಗೋ"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 293,
+          "name": "Pista",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Pista"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪಿಸ್ತಾ"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 294,
+          "name": "Kesari Pista",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kesari Pista"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕೇಸರಿ ಪಿಸ್ತಾ"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 295,
+          "name": "Chocolate",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Chocolate"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚಾಕ್ಲೇಟ್"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 296,
+          "name": "Butter Scotch",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Butter Scotch"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬಟರ್ಸ್ಕಾಚ್"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 297,
+          "name": "Fig & Honey",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Fig & Honey"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಅಂಜ್ & ಹನಿ"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 298,
+          "name": "Black Current",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Black Current"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬ್ಲಾಕ್ ಕರಂಟ್"
+            }
+          ],
+          "price": 90
+        },
+        {
+          "id": 299,
+          "name": "Dry Fruit",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Dry Fruit"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಡ್ರೈ ಫ್ರೂಟ್"
+            }
+          ],
+          "price": 100
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 300,
+      "parentId": null,
+      "sectionKey": "SPECIAL_MAKE_ICE_CREAMS",
+      "name": "Special Make Ice Creams",
+      "displayOrder": 22,
+      "startTime": "09:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Special Make Ice Creams"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಸ್ಪೆಶಲ್ ಮೇಕ್ ಐಸ್ ಕ್ರೀಮ್ಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 301,
+          "name": "Fried Ice Cream",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Fried Ice Cream"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಫ್ರೈಡ್ ಐ ಕ್ರೀಮ್"
+            }
+          ],
+          "price": 185
+        },
+        {
+          "id": 302,
+          "name": "Gud Bud",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Gud Bud"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಗಡ್ ಬಡ್"
+            }
+          ],
+          "price": 155
+        },
+        {
+          "id": 303,
+          "name": "Banana Split",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Banana Split"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬನಾನಾ ಸ್ಪ್ಲಿಟ್"
+            }
+          ],
+          "price": 165
+        },
+        {
+          "id": 304,
+          "name": "Double Sundae",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Double Sundae"
+            },
+            {
+              "langCode": "kn",
+              "name": "ದಬಲ್ ಸಂಡೇ"
+            }
+          ],
+          "price": 165
+        },
+        {
+          "id": 305,
+          "name": "Triple Sundae",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Triple Sundae"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಟ್ರಿಪಲ್ ಸಂಡೇ"
+            }
+          ],
+          "price": 185
+        },
+        {
+          "id": 306,
+          "name": "Udupi Park Spl.",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Udupi Park Spl."
+            },
+            {
+              "langCode": "kn",
+              "name": "ಉದುಪಿ ಪಾರ್ಕ್ ಸ್ಪೆಶಲ್"
+            }
+          ],
+          "price": 200
+        },
+        {
+          "id": 307,
+          "name": "Nut Sundae",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Nut Sundae"
+            },
+            {
+              "langCode": "kn",
+              "name": "ನಟ್ ಸಂಡೇ"
+            }
+          ],
+          "price": 160
+        },
+        {
+          "id": 308,
+          "name": "Vanilla Nut Sundae",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Vanilla Nut Sundae"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆನಿಲ್ಲಾ ನಟ್ ಸಂಡೇ"
+            }
+          ],
+          "price": 160
+        },
+        {
+          "id": 309,
+          "name": "Chocolate Nut Sundae",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Chocolate Nut Sundae"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚಾಕ್ಲೇಟ್ ನಟ್ ಸಂಡೇ"
+            }
+          ],
+          "price": 165
+        },
+        {
+          "id": 310,
+          "name": "Titanic Special",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Titanic Special"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಟೈಟಾನಿಕ್ ಸ್ಪೆಶಲ್"
+            }
+          ],
+          "price": 205
+        },
+        {
+          "id": 311,
+          "name": "Raja Rani",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Raja Rani"
+            },
+            {
+              "langCode": "kn",
+              "name": "ರಾಜ ರಾಣಿ"
+            }
+          ],
+          "price": 160
+        },
+        {
+          "id": 312,
+          "name": "Honey Moon Special",
+          "displayOrder": 10,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Honey Moon Special"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಹನಿಮೂನ್ ಸ್ಪೆಶಲ್"
+            }
+          ],
+          "price": 170
+        },
+        {
+          "id": 313,
+          "name": "Fruit Sundae",
+          "displayOrder": 11,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Fruit Sundae"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಫ್ರೂಟ್ ಸಂಡೇ"
+            }
+          ],
+          "price": 150
+        },
+        {
+          "id": 314,
+          "name": "Fruit Salad with Ice Cream",
+          "displayOrder": 12,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Fruit Salad with Ice Cream"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಫ್ರೂಟ್ ಸಲಾದ್ ವಿತ್ ಐಸ್ ಕ್ರೀಮ್"
+            }
+          ],
+          "price": 130
+        },
+        {
+          "id": 315,
+          "name": "Fruit Salad Jelly with Ice Cream",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Fruit Salad Jelly with Ice Cream"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಫ್ರೂಟ್ ಸಲಾದ್ ಜೆಲ್ಲಿ ವಿತ್ ಐಸ್ ಕ್ರೀಮ್"
+            }
+          ],
+          "price": 140
+        },
+        {
+          "id": 316,
+          "name": "Fruit Salad",
+          "displayOrder": 14,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Fruit Salad"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಫ್ರೂಟ್ ಸಲಾದ್"
+            }
+          ],
+          "price": 105
+        },
+        {
+          "id": 317,
+          "name": "Tutty Fruity Special",
+          "displayOrder": 15,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Tutty Fruity Special"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಟಟ್ಟಿ ಫ್ರೂಟಿ ಸ್ಪೆಶಲ್"
+            }
+          ],
+          "price": 160
+        },
+        {
+          "id": 318,
+          "name": "Mango Queen (Seasonal)",
+          "displayOrder": 16,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mango Queen (Seasonal)"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮ್ಯಾಂಗೋ ಕ್ವೀನ್ (ಸೀಸನಲ್)"
+            }
+          ],
+          "price": 170
+        },
+        {
+          "id": 319,
+          "name": "Kesar Falooda",
+          "displayOrder": 17,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Kesar Falooda"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕೇಸರ್ ಫಲೂದಾ"
+            }
+          ],
+          "price": 145
+        },
+        {
+          "id": 320,
+          "name": "Royal Falooda",
+          "displayOrder": 17,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Royal Falooda"
+            },
+            {
+              "langCode": "kn",
+              "name": "ರಾಯಲ್ ಫಲೂದಾ"
+            }
+          ],
+          "price": 145
+        },
+        {
+          "id": 321,
+          "name": "Special Falooda",
+          "displayOrder": 18,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Special Falooda"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಪೆಶಲ್ ಫಲೂದಾ"
+            }
+          ],
+          "price": 160
+        },
+        {
+          "id": 322,
+          "name": "Jamoon (1 Pc.)",
+          "displayOrder": 19,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Jamoon (1 Pc.)"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಜಾಮೂನ್ (1 ಪೀಸ್)"
+            }
+          ],
+          "price": 50
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 323,
+      "parentId": null,
+      "sectionKey": "SANDWICHES",
+      "name": "Sandwiches",
+      "displayOrder": 23,
+      "startTime": "09:00",
+      "endTime": "22:30",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Sandwiches"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಸ್ಯಾಂಡ್ ವಿಚ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 324,
+          "name": "Veg. Sandwich",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Sandwich"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಸ್ಯಾಂಡ್ವಿಚ್"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 325,
+          "name": "Veg. Cheese Sandwich",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Cheese Sandwich"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಚೀಸ್ ಸ್ಯಾಂಡ್ವಿಚ್"
+            }
+          ],
+          "price": 110
+        },
+        {
+          "id": 326,
+          "name": "Cheese Sandwich",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cheese Sandwich"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚೀಸ್ ಸ್ಯಾಂಡ್ವಿಚ್"
+            }
+          ],
+          "price": 110
+        },
+        {
+          "id": 327,
+          "name": "Veg. Grill Sandwich",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Grill Sandwich"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಗ್ರಿಲ್ ಸ್ಯಾಂಡ್ವಿಚ್"
+            }
+          ],
+          "price": 110
+        },
+        {
+          "id": 328,
+          "name": "Veg. Cheese Grill Sandwich",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Veg. Cheese Grill Sandwich"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವೆಜ್ ಚೀಸ್ ಗ್ರಿಲ್ ಸ್ಯಾಂಡ್ವಿಚ್"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 329,
+          "name": "Cheese Grill Sandwich",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cheese Grill Sandwich"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚೀಸ್ ಗ್ರಿಲ್ ಸ್ಯಾಂಡ್ವಿಚ್"
+            }
+          ],
+          "price": 120
+        },
+        {
+          "id": 330,
+          "name": "Chilly Cheese Grill Sandwich",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Chilly Cheese Grill Sandwich"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚಿಲ್ಲಿ ಚೀಸ್ ಗ್ರಿಲ್ ಸ್ಯಾಂಡ್ವಿಚ್"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 331,
+          "name": "Bread Butter Jam",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Bread Butter Jam"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬ್ರೆಡ್ ಬಟರ್ ಜಾಮ್"
+            }
+          ],
+          "price": 85
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 332,
+      "parentId": null,
+      "sectionKey": "FRESH_FRUIT_JUICES",
+      "name": "Fresh Fruit Juices",
+      "displayOrder": 24,
+      "startTime": "09:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Fresh Fruit Juices"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಫ್ರೆಶ್ ಫ್ರೂಟ್ ಜ್ಯೂಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 333,
+          "name": "Mosambi",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mosambi"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮೂಸಂಬಿ"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 334,
+          "name": "Orange (Seasonal)",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Orange (Seasonal)"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಿತ್ತಲೆ"
+            }
+          ],
+          "price": 100
+        },
+        {
+          "id": 335,
+          "name": "Pineapple",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Pineapple"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಅನಾನಸ್"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 336,
+          "name": "Apple",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Apple"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಆಪಲ್"
+            }
+          ],
+          "price": 110
+        },
+        {
+          "id": 337,
+          "name": "Grape",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Grape"
+            },
+            {
+              "langCode": "kn",
+              "name": "ದ್ರಾಕ್ಷಿ"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 338,
+          "name": "Cocktail",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cocktail"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕಾಕ್‌ಟೇಲ್"
+            }
+          ],
+          "price": 105
+        },
+        {
+          "id": 339,
+          "name": "Watermelon",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Watermelon"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಹಲ್ಲಂಗಡಿ"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 340,
+          "name": "Muskmelon",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Muskmelon"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಸ್ಕ್‌ಮೆಲನ್"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 341,
+          "name": "Pomegranate",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Pomegranate"
+            },
+            {
+              "langCode": "kn",
+              "name": "ದಾಳಿಂಬೆ"
+            }
+          ],
+          "price": 110
+        },
+        {
+          "id": 342,
+          "name": "Mango (Seasonal)",
+          "displayOrder": 10,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mango (Seasonal)"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಾವಿನ ಹಣ್ಣು (ಸೀಸನಲ್)"
+            }
+          ],
+          "price": 120
+        },
+        {
+          "id": 343,
+          "name": "Fresh Lime Soda",
+          "displayOrder": 11,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Fresh Lime Soda"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಫ್ರೆಶ್ ಲೈಮ್ ಸೋಡಾ"
+            }
+          ],
+          "price": 80
+        },
+        {
+          "id": 344,
+          "name": "Khara Lassi",
+          "displayOrder": 12,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Khara Lassi"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಖಾರಾ ಲಸ್ಸಿ"
+            }
+          ],
+          "price": 85
+        },
+        {
+          "id": 345,
+          "name": "Sweet Lassi",
+          "displayOrder": 13,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Sweet Lassi"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ವೀಟ್ ಲಸ್ಸಿ"
+            }
+          ],
+          "price": 85
+        },
+        {
+          "id": 346,
+          "name": "Lime Juice",
+          "displayOrder": 14,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Lime Juice"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಫ್ರೆಶ್ ಲೈಮ್ ಜ್ಯೂಸ್"
+            }
+          ],
+          "price": 70
+        },
+        {
+          "id": 347,
+          "name": "Butter Milk",
+          "displayOrder": 15,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Butter Milk"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಜ್ಜಿಗೆ"
+            }
+          ],
+          "price": 75
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 348,
+      "parentId": null,
+      "sectionKey": "MILK_SHAKES",
+      "name": "Milk Shakes",
+      "displayOrder": 25,
+      "startTime": "09:00",
+      "endTime": "23:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Milk Shakes"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಮಿಲ್ಕ್ ಶೇಕ್ಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 349,
+          "name": "Apple",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Apple"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಆಪಲ್"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 350,
+          "name": "Chikku",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Chikku"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚಿಕ್ಕು"
+            }
+          ],
+          "price": 115
+        },
+        {
+          "id": 351,
+          "name": "Mango (Seasonal)",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mango (Seasonal)"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮಾವಿನ ಹಣ್ಣು (ಸೀಸನಲ್)"
+            }
+          ],
+          "price": 140
+        },
+        {
+          "id": 352,
+          "name": "Banana",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Banana"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬನಾನಾ"
+            }
+          ],
+          "price": 95
+        },
+        {
+          "id": 353,
+          "name": "Vanilla",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Vanilla"
+            },
+            {
+              "langCode": "kn",
+              "name": "ವನಿಲ್ಲಾ"
+            }
+          ],
+          "price": 115
+        },
+        {
+          "id": 354,
+          "name": "Chocolate",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Chocolate"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಚಾಕೊಲೇಟ್"
+            }
+          ],
+          "price": 120
+        },
+        {
+          "id": 355,
+          "name": "Strawberry",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Strawberry"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಟ್ರಾಬೆರ್ರಿ"
+            }
+          ],
+          "price": 115
+        },
+        {
+          "id": 356,
+          "name": "Pista",
+          "displayOrder": 8,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Pista"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಪಿಸ್ತಾ"
+            }
+          ],
+          "price": 115
+        },
+        {
+          "id": 357,
+          "name": "Pomegranate",
+          "displayOrder": 9,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Pomegranate"
+            },
+            {
+              "langCode": "kn",
+              "name": "ದಾಳಿಂಬೆ"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 358,
+          "name": "Cold Coffee",
+          "displayOrder": 10,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cold Coffee"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕೋಲ್ಡ್ ಕಾಫಿ"
+            }
+          ],
+          "price": 110
+        },
+        {
+          "id": 359,
+          "name": "Cold Badam Milk",
+          "displayOrder": 11,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Cold Badam Milk"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಕೋಲ್ಡ್ ಬಾದಾಮ್ ಮಿಲ್ಕ್"
+            }
+          ],
+          "price": 110
+        },
+        {
+          "id": 360,
+          "name": "Dry Fruit",
+          "displayOrder": 12,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Dry Fruit"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಡ್ರೈ ಫ್ರೂಟ್"
+            }
+          ],
+          "price": 150
+        }
+      ],
+      "section": []
+    },
+    {
+      "id": 361,
+      "parentId": null,
+      "sectionKey": "MOCKTAILS",
+      "name": "Mocktails",
+      "displayOrder": 26,
+      "startTime": "12:00",
+      "endTime": "21:00",
+      "sectionText": [
+        {
+          "langCode": "en",
+          "name": "Mocktails"
+        },
+        {
+          "langCode": "kn",
+          "name": "ಮಾಕ್‌ಟೇಲ್ಸ್"
+        }
+      ],
+      "item": [
+        {
+          "id": 362,
+          "name": "Fruit Punch",
+          "displayOrder": 1,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Fruit Punch"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಫ್ರೂಟ್ ಪಂಚ್"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 363,
+          "name": "Blue Lagoon",
+          "displayOrder": 2,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Blue Lagoon"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಬ್ಲೂ ಲಗೂನ್"
+            }
+          ],
+          "price": 135
+        },
+        {
+          "id": 364,
+          "name": "Orange Lemonade",
+          "displayOrder": 3,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Orange Lemonade"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಆರೇಂಜ್ ಲೆಮೊನೇಡ್"
+            }
+          ],
+          "price": 135
+        },
+        {
+          "id": 365,
+          "name": "Strawberry Lemonade",
+          "displayOrder": 4,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Strawberry Lemonade"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಸ್ಟ್ರಾಬೆರ್ರಿ ಲೆಮೊನೇಡ್"
+            }
+          ],
+          "price": 125
+        },
+        {
+          "id": 366,
+          "name": "Mojito",
+          "displayOrder": 5,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Mojito"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಮೊಹಿಟೊ"
+            }
+          ],
+          "price": 135
+        },
+        {
+          "id": 367,
+          "name": "Red Sun",
+          "displayOrder": 6,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Red Sun"
+            },
+            {
+              "langCode": "kn",
+              "name": "ರೆಡ್ ಸನ್"
+            }
+          ],
+          "price": 135
+        },
+        {
+          "id": 368,
+          "name": "Litchi Spacral",
+          "displayOrder": 7,
+          "preparationType": null,
+          "startTime": "00:00",
+          "endTime": "23:59",
+          "itemText": [
+            {
+              "langCode": "en",
+              "name": "Litchi Spacral"
+            },
+            {
+              "langCode": "kn",
+              "name": "ಅತಿ ಸ್ಪಕ್ರಲ್"
+            }
+          ],
+          "price": 145
+        }
+      ],
+      "section": []
+    }
+  ]
+}

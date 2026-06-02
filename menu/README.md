@@ -1,20 +1,31 @@
 # Menu
 
-This folder contains the restaurant menu data and the script that converts it to a normalized, relational JSON format.
+This folder contains the restaurant menu data and the scripts that process it into a multi-language JSON format.
+
+## Pipeline
+
+```
+scanned-menu.json → [normalize-menu.py] → normalized-menu.json → [translate.py] → menu.json
+```
+
+| Stage | Script | Input | Output | When to run |
+|---|---|---|---|---|
+| Normalise | `normalize-menu.py` | `scanned-menu.json` | `normalized-menu.json` | After editing `scanned-menu.json` |
+| Translate | `translate.py` | `normalized-menu.json` | `menu.json` | After normalising; requires `MODEL` + API key in `.env` |
 
 ## Files
 
 | File | Description |
 |---|---|
 | `scanned-menu.json` | Raw scanned version of the menu (source of truth) |
-| `menu.json` | Output of `convert.py` — normalized, camelCase structure |
-| `convert.py` | Conversion script (Python) |
-| `convert.js` | Conversion script (Node.js, equivalent to `convert.py`) |
+| `normalized-menu.json` | Output of `normalize-menu.py` — normalised structure, English + Kannada only |
+| `menu.json` | Output of `translate.py` — all 10 languages embedded |
+| `normalize-menu.py` | Stage 1 normalisation script (Python) |
+| `translate.py` | Stage 2 translation script — adds 9 Indian languages via LLM |
 | `menu-schema.json` | JSON Schema (draft-07) for `menu.json` |
-| `accessor.py` | Python module — loads `menu.json`, exposes `MENU`, `SEARCH_INDEX`, `SECTION_INDEX`, `menu_search`, `menu_section_search`, and `_render_menu` |
+| `accessor.py` | Python module — loads `menu.json`, exposes `MENU`, search APIs |
 | `__init__.py` | Re-exports `MENU`, `menu_search`, and `menu_section_search` as the public `menu` package API |
 | `test_accessor.py` | CLI tool — print full menu, fuzzy-search items, or browse/search sections |
-| `menu_for_system_prompt.txt` | Pre-rendered menu text for embedding in the LLM system prompt |
 
 ---
 
@@ -29,10 +40,11 @@ A module-level `dict[int, dict]` loaded once at import time. Keys are item IDs; 
 ```python
 {
     "id":           int,   # globally unique item ID
-    "name":         str,   # English name, with preparation type appended when present
-                           #   e.g. "Gobi Manchurian (dry)"
-    "section":      str,   # name of the immediate containing section
-    "section_path": str,   # full ancestor path, e.g. "Tasty Starters Manchurian / Chilly"
+    "name":         str,   # English name (backwards compat shortcut)
+    "section":      str,   # immediate section name in English (backwards compat)
+    "section_path": str,   # full ancestor path in English (backwards compat)
+    "names":        dict,  # {langCode: localised name} — e.g. {"en": "Coffee", "kn": "ಕಾಫಿ", "ta": "காபி"}
+    "section_paths":dict,  # {langCode: localised full path}
     "price":        int,   # price in INR
 }
 ```
@@ -68,11 +80,13 @@ A module-level `list[dict]` built once at import. Each entry describes one secti
 
 ```python
 {
-    "name":         str,        # section display name
-    "path":         str,        # full ancestor path, e.g. "Tasty Starters Manchurian / Chilly"
+    "name":         str,        # section display name in English
+    "path":         str,        # full ancestor path in English
+    "names":        dict,       # {langCode: localised section name}
+    "paths":        dict,       # {langCode: localised full path}
     "depth":        int,        # 0 = top-level, 1 = nested
     "item_count":   int,        # total items including all sub-sections (recursive)
-    "subsections":  list[str],  # direct child section names
+    "subsections":  list[dict], # direct child section names and item counts
     "sample_items": list[str],  # up to 3 item names from this section's direct items
 }
 ```
@@ -99,16 +113,10 @@ menu_section_search(["manchurian"])
 # Returns "Tasty Starters Manchurian / Chilly" (12 items) and "Manchurian Gravy" (7 items)
 ```
 
-### `_render_menu(initial_indent=0) -> str`
+### `format_section_results(results, lang="en") -> str`
 
-Returns the full menu as a human-readable indented string, suitable for embedding in an LLM system prompt.
-
-```python
-from menu.accessor import _render_menu
-
-print(_render_menu())
-print(_render_menu(initial_indent=4))  # indent everything by 4 spaces
-```
+Format a list of section dicts from `menu_section_search` into a human-readable string.
+Pass `lang=` to get localised section path names in the output.
 
 ---
 
@@ -122,11 +130,7 @@ print(_render_menu(initial_indent=4))  # indent everything by 4 spaces
 uv run menu/test_accessor.py menu
 ```
 
-Prints all items grouped by section. Useful to regenerate `menu_for_system_prompt.txt`:
-
-```bash
-uv run menu/test_accessor.py menu > menu/menu_for_system_prompt.txt
-```
+Prints all items grouped by section.
 
 ### Print search index
 
@@ -197,16 +201,6 @@ uv run menu/test_accessor.py section-search manchurian
 
 ---
 
-## System prompt text (`menu_for_system_prompt.txt`)
-
-`menu_for_system_prompt.txt` is a pre-rendered snapshot of the full menu, ready to paste or `read()` directly into an LLM system prompt. Regenerate after any change to `menu.json`:
-
-```bash
-uv run menu/test_accessor.py menu > menu/menu_for_system_prompt.txt
-```
-
----
-
 ## Input structure (`scanned-menu.json`)
 
 The source file has a single top-level `menu` object whose keys are section identifiers. Each section carries its display names, an optional availability window, and either a flat `items` array or a `sub_sections` object containing further sections.
@@ -263,8 +257,17 @@ The output is a fully embedded hierarchy. Every section and item carries a globa
 ```
 {
   "languages": [
-    { "code": "en", "name": "English" },
-    { "code": "kn", "name": "Kannada" }
+    { "code": "en",  "name": "English" },
+    { "code": "kn",  "name": "Kannada" },
+    { "code": "ta",  "name": "Tamil" },
+    { "code": "te",  "name": "Telugu" },
+    { "code": "ml",  "name": "Malayalam" },
+    { "code": "mr",  "name": "Marathi" },
+    { "code": "hi",  "name": "Hindi" },
+    { "code": "ur",  "name": "Urdu" },
+    { "code": "kok", "name": "Konkani" },
+    { "code": "tcy", "name": "Tulu" },
+    { "code": "or",  "name": "Odia" }
   ],
   "section": [
     {
@@ -276,8 +279,10 @@ The output is a fully embedded hierarchy. Every section and item carries a globa
       "startTime":    string,         // "HH:MM" 24-hour; "00:00" when always available
       "endTime":      string,         // "HH:MM" 24-hour; "23:59" when always available
       "sectionText": [
-        { "langCode": "en", "name": string },
-        { "langCode": "kn", "name": string }
+        { "langCode": "en",  "name": string },
+        { "langCode": "kn",  "name": string },
+        { "langCode": "ta",  "name": string },
+        ...
       ],
       "item": [
         {
@@ -288,8 +293,10 @@ The output is a fully embedded hierarchy. Every section and item carries a globa
           "startTime":       string,
           "endTime":         string,
           "itemText": [
-            { "langCode": "en", "name": string },
-            { "langCode": "kn", "name": string }
+            { "langCode": "en",  "name": string },
+            { "langCode": "kn",  "name": string },
+            { "langCode": "ta",  "name": string },
+            ...
           ],
           "price": number
         }
@@ -345,13 +352,17 @@ print('valid')
 
 ---
 
-## Running the conversion
+## Running the pipeline
 
 ```bash
-# Reads scanned-menu.json, writes menu.json (both in this folder)
-uv run python menu/convert.py
+# Stage 1: normalise (after editing scanned-menu.json)
+uv run python menu/normalize-menu.py
+# → menu/normalized-menu.json  (en + kn only)
+
+# Stage 2: translate (requires MODEL + API key in .env)
+uv run python menu/translate.py
+# → menu/menu.json  (all 10 languages)
 
 # Explicit paths
-uv run python menu/convert.py <input.json> <output.json>
-uv run python menu/convert.py menu/scanned-menu.json menu/menu.json
+uv run python menu/normalize-menu.py <input.json> <output.json>
 ```

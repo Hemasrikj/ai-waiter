@@ -9,23 +9,41 @@ def _load_menu() -> dict[int, dict]:
 
     items: dict[int, dict] = {}
 
-    def _walk(sections, ancestor_path=""):
+    def _walk(sections, ancestor_path="", ancestor_paths=None):
+        if ancestor_paths is None:
+            ancestor_paths = {}
         for section in sections:
             section_name = section["name"]
             full_path = f"{ancestor_path} {section_name}".strip()
+
+            # Build per-language section paths for this level
+            section_names_by_lang = {e["langCode"]: e["name"] for e in section.get("sectionText", [])}
+            full_paths_by_lang = {}
+            for lang, sname in section_names_by_lang.items():
+                parent = ancestor_paths.get(lang, "")
+                full_paths_by_lang[lang] = f"{parent} {sname}".strip() if parent else sname
+
             for item in section.get("item", []):
                 prep = item.get("preparationType")
                 display_name = item["name"]
                 if prep:
                     display_name = f"{display_name} ({prep})"
+
+                # Build per-language names dict
+                names_by_lang = {e["langCode"]: e["name"] for e in item.get("itemText", [])}
+                if prep:
+                    names_by_lang = {lang: f"{n} ({prep})" for lang, n in names_by_lang.items()}
+
                 items[item["id"]] = {
                     "id": item["id"],
-                    "name": display_name,
-                    "section": section_name,
-                    "section_path": full_path,
+                    "name": display_name,           # English — backwards compat
+                    "section": section_name,         # English — backwards compat
+                    "section_path": full_path,       # English — backwards compat
+                    "names": names_by_lang,
+                    "section_paths": full_paths_by_lang,
                     "price": item["price"],
                 }
-            _walk(section.get("section", []), full_path)
+            _walk(section.get("section", []), full_path, full_paths_by_lang)
 
     _walk(raw["section"])
     return items
@@ -59,7 +77,8 @@ def _term_score(term: str, words: list[str]) -> float:
 
 def menu_search(terms: list[str], limit: int = 10) -> list[dict]:
     """Fuzzy-search the menu by English keywords. Returns up to `limit` matching MENU entries."""
-    query_terms = [t.lower() for t in terms if t]
+    # Flatten multi-word terms into individual words so "Litchi Spacral" → ["litchi", "spacral"]
+    query_terms = [w for t in terms if t for w in t.lower().split()]
     if not query_terms:
         return []
 
@@ -85,27 +104,41 @@ def _build_section_index() -> list[dict]:
             total += _count_items(sub)
         return total
 
-    def _walk(section_list, ancestor_path="", depth=0):
+    def _walk(section_list, ancestor_path="", ancestor_paths=None, depth=0):
+        if ancestor_paths is None:
+            ancestor_paths = {}
         for section in section_list:
             name = section["name"]
             path = f"{ancestor_path} {name}".strip()
-            direct_item_names = [
-                (f"{it['name']} ({it['preparationType']})" if it.get("preparationType") else it["name"])
-                for it in section.get("item", [])
-            ]
-            subsection_names = [
-                {"name": s["name"], "item_count": _count_items(s)}
+
+            section_names_by_lang = {e["langCode"]: e["name"] for e in section.get("sectionText", [])}
+            paths_by_lang = {}
+            for lang, sname in section_names_by_lang.items():
+                parent = ancestor_paths.get(lang, "")
+                paths_by_lang[lang] = f"{parent} {sname}".strip() if parent else sname
+
+            direct_item_names_by_lang: dict[str, list[str]] = {}
+            for it in section.get("item", []):
+                it_names = {e["langCode"]: e["name"] for e in it.get("itemText", [])}
+                if it.get("preparationType"):
+                    it_names = {lc: f"{n} ({it['preparationType']})" for lc, n in it_names.items()}
+                for lc, n in it_names.items():
+                    direct_item_names_by_lang.setdefault(lc, []).append(n)
+            subsection_entries = [
+                {"name": s["name"], "names": {e["langCode"]: e["name"] for e in s.get("sectionText", [])}, "item_count": _count_items(s)}
                 for s in section.get("section", [])
             ]
             sections.append({
                 "name": name,
                 "path": path,
+                "names": section_names_by_lang,
+                "paths": paths_by_lang,
                 "depth": depth,
                 "item_count": _count_items(section),
-                "subsections": subsection_names,
-                "sample_items": direct_item_names[:3],
+                "subsections": subsection_entries,
+                "sample_items": direct_item_names_by_lang,
             })
-            _walk(section.get("section", []), path, depth + 1)
+            _walk(section.get("section", []), path, paths_by_lang, depth + 1)
 
     _walk(raw["section"])
     return sections
@@ -114,17 +147,26 @@ def _build_section_index() -> list[dict]:
 SECTION_INDEX: list[dict] = _build_section_index()
 
 
-def format_section_results(results: list[dict]) -> str:
+def format_section_results(results: list[dict], lang: str = "en") -> str:
     """Format a list of section dicts (from menu_section_search) into a human-readable string.
     Returns only the section lines — no header — so callers can prepend their own."""
     lines = []
     for section in results:
-        lines.append(f"  [{section['path']}] — {section['item_count']} item(s)")
+        path = section["paths"].get(lang, section["path"])
+        lines.append(f"  [{path}] — {section['item_count']} item(s)")
         if section["subsections"]:
-            sub_str = ", ".join(f"{s['name']} ({s['item_count']})" for s in section["subsections"])
+            sub_str = ", ".join(
+                f"{s['names'].get(lang, s['name'])} ({s['item_count']})"
+                for s in section["subsections"]
+            )
             lines.append(f"    Subsections: {sub_str}")
-        if section["sample_items"]:
-            lines.append(f"    Includes: {', '.join(section['sample_items'])}")
+        sample = section["sample_items"]
+        if isinstance(sample, dict):
+            sample_names = sample.get(lang, sample.get("en", []))[:3]
+        else:
+            sample_names = sample[:3]
+        if sample_names:
+            lines.append(f"    Includes: {', '.join(sample_names)}")
     return "\n".join(lines)
 
 

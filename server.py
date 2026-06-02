@@ -8,6 +8,7 @@ import json
 import os
 import threading
 import time
+from argparse import ArgumentParser
 
 import uvicorn
 from dotenv import load_dotenv
@@ -19,9 +20,11 @@ from fastapi.responses import FileResponse
 load_dotenv()
 
 import ai_waiter
-from ai_waiter import build_graph, extract_text, reset_state, State, DEFAULT_MODEL
+from ai_waiter import build_graph, extract_text, get_reply, reset_state, State, DEFAULT_MODEL, TraceCallbackHandler
 
 graph = build_graph()
+
+_trace_config: dict = {}
 
 # ── Order-update bridge ───────────────────────────────────────────────────────
 # The simulation thread posts status strings here; the WebSocket pump task
@@ -76,11 +79,11 @@ async def websocket_endpoint(ws: WebSocket) -> None:
     try:
         # Greeting
         session_state = await asyncio.to_thread(
-            graph.invoke, {"messages": [{"role": "user", "content": "Hello"}]}
+            graph.invoke, {"messages": [{"role": "user", "content": "Hello"}]}, _trace_config
         )
         await ws.send_json({
             "type": "reply",
-            "text": extract_text(session_state["messages"][-1].content),
+            "text": get_reply(session_state),
         })
 
         while True:
@@ -93,10 +96,11 @@ async def websocket_endpoint(ws: WebSocket) -> None:
                 session_state = await asyncio.to_thread(
                     graph.invoke,
                     {"messages": [{"role": "user", "content": "Hello"}]},
+                    _trace_config,
                 )
                 await ws.send_json({
                     "type": "reply",
-                    "text": extract_text(session_state["messages"][-1].content),
+                    "text": get_reply(session_state),
                 })
 
             elif kind == "message":
@@ -104,10 +108,10 @@ async def websocket_endpoint(ws: WebSocket) -> None:
                 if not text:
                     continue
                 session_state["messages"].append({"role": "user", "content": text})
-                session_state = await asyncio.to_thread(graph.invoke, session_state)
+                session_state = await asyncio.to_thread(graph.invoke, session_state, _trace_config)
                 await ws.send_json({
                     "type": "reply",
-                    "text": extract_text(session_state["messages"][-1].content),
+                    "text": get_reply(session_state),
                 })
 
             else:
@@ -126,6 +130,14 @@ async def websocket_endpoint(ws: WebSocket) -> None:
 # ── Entry point ───────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
+    parser = ArgumentParser()
+    parser.add_argument("--trace", action="store_true", help="Print tool and graph node calls to stdout")
+    parser.add_argument("--port", type=int, default=8000)
+    args = parser.parse_args()
+
+    if args.trace:
+        _trace_config = {"callbacks": [TraceCallbackHandler()]}
+
     model = os.getenv("MODEL", DEFAULT_MODEL)
     print(f"Starting server with model: {model}")
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=False)
+    uvicorn.run(app, host="0.0.0.0", port=args.port, reload=False)

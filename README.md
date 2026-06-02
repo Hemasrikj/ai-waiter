@@ -9,17 +9,16 @@ An agentic AI waiter backed by a structured restaurant menu. The model autonomou
 The agent is built with [LangGraph](https://langchain-ai.github.io/langgraph/). The model runs in a loop, calling tools as needed until it has a final response to return to the user.
 
 ```mermaid
-graph TD
-    __start__([__start__]) --> chatbot
-    chatbot --> tools
-    chatbot --> __end__([__end__])
-    tools --> chatbot
-
-    chatbot["chatbot\n─────────────\nLLM + bound tools\n(any provider via MODEL env var)"]
-    tools["tools\n─────────────\nlist_sections\nmenu_section_lookup\nmenu_lookup\nadd_to_tray\nview_tray\nplace_order\ncheck_order_status"]
+flowchart TD
+    start([start]) --> chatbot["chatbot\nLLM + bound tools"]
+    chatbot -->|done| stop([end])
+    chatbot -->|display tool| prune["prune_display_output\nresult direct to user\nstub stored in context"]
+    chatbot -->|action tool| action["menu_lookup\nadd_to_tray\nview_tray\nplace_order\ncheck_order_status"]
+    prune --> stop
+    action -->|result| chatbot
 ```
 
-Flow: the LLM receives the system prompt and conversation history, then either responds directly (→ `__end__`) or emits a tool call (→ `tools` → back to `chatbot`). This loop continues until no further tool calls are needed.
+Flow: the LLM receives the system prompt and conversation history, then either responds directly (→ `__end__`) or emits a tool call (→ `tools`). Most tools loop back to `chatbot` for the LLM to interpret results. Display-only tools (`get_full_menu`, `list_categories`) route to `prune_display_output` instead — the result is sent directly to the user and replaced with a compact stub in the message history, bypassing the LLM entirely.
 
 ---
 
@@ -48,7 +47,8 @@ cp .env_example .env   # then edit MODEL and any required keys
 ### Start the chatbot
 
 ```bash
-uv run console.py
+uv run console.py           # standard
+uv run console.py --trace   # with tool + token tracing
 ```
 
 The program starts an interactive terminal session. The waiter greets you, then responds to natural-language input.
@@ -56,7 +56,9 @@ The program starts an interactive terminal session. The waiter greets you, then 
 ### Start Webserver Chatbot
 
 ```bash
-uv run python server.py
+uv run python server.py                    # standard
+uv run python server.py --trace            # with tool + token tracing
+uv run python server.py --trace --port 9000  # custom port
 ```
 
 Access the chatbot [http://localhost:8000](http://localhost:8000)
@@ -66,14 +68,15 @@ Access the chatbot [http://localhost:8000](http://localhost:8000)
 
 | Intent | Example input |
 |---|---|
+| See the full menu | `show me the menu` |
 | Explore food categories | `what kind of food do you have?` |
-| Browse a category | `what starters are there?` |
-| Browse the menu | `show me the menu` |
+| Search for specific items | `what dosas do you have?` |
 | Add items | `I'd like 2 masala dosas and a coffee` |
 | Review your tray | `what's in my tray?` |
 | Remove an item | `remove the coffee` |
 | Place the order | `yes, place the order` |
 | Check order status | `what's the status of my order?` |
+| Chat in your language | works in Kannada, Tamil, Telugu, Hindi, Malayalam, and more |
 | Quit | `quit` or `exit` |
 
 ### Order status simulation
@@ -94,8 +97,16 @@ A notification is printed in the terminal each time the status changes.
 
 ## Menu data
 
-The restaurant menu lives in `menu/`. Raw scanned data is converted to a
-normalised JSON format by `menu/convert.py`.
+The restaurant menu lives in `menu/`. Processing happens in two stages:
+
+```
+scanned-menu.json  →  [normalize-menu.py]  →  normalized-menu.json
+                                                       ↓
+                                              [translate.py]  →  menu.json
+```
+
+- `normalize-menu.py` — normalises structure, IDs, timings, and name casing
+- `translate.py` — adds translations for 10 Indian languages via the model in `.env` (run once)
 
 See **[menu/README.md](menu/README.md)** for:
 - Input and output JSON structure
@@ -105,5 +116,6 @@ See **[menu/README.md](menu/README.md)** for:
 
 Quick regeneration:
 ```bash
-uv run python menu/convert.py
+uv run python menu/normalize-menu.py   # scanned-menu.json → normalized-menu.json
+uv run python menu/translate.py        # normalized-menu.json → menu.json (with translations)
 ```
